@@ -16,8 +16,8 @@ namespace App_QLBan_Hang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FGuest());
-            //Application.Run(new FDashboard());
+            //Application.Run(new FGuest());
+            Application.Run(new FDashboard());
 
         }
     }

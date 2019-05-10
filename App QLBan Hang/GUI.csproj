@@ -68,22 +68,22 @@
     <Compile Include="FGuest.Designer.cs">
       <DependentUpon>FGuest.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCDashboard\DDMain.cs">
+    <Compile Include="Dashboard\DDMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCDashboard\DDMain.Designer.cs">
+    <Compile Include="Dashboard\DDMain.Designer.cs">
       <DependentUpon>DDMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCGuest\GTConfig.cs">
+    <Compile Include="Guest\GTConfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCGuest\GTConfig.Designer.cs">
+    <Compile Include="Guest\GTConfig.Designer.cs">
       <DependentUpon>GTConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCGuest\GTLogin.cs">
+    <Compile Include="Guest\GTLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCGuest\GTLogin.Designer.cs">
+    <Compile Include="Guest\GTLogin.Designer.cs">
       <DependentUpon>GTLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Yuh\UC_MenuOne.cs">
@@ -115,10 +115,10 @@
     <EmbeddedResource Include="FTemplate.resx">
       <DependentUpon>FTemplate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCGuest\GTConfig.resx">
+    <EmbeddedResource Include="Guest\GTConfig.resx">
       <DependentUpon>GTConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCGuest\GTLogin.resx">
+    <EmbeddedResource Include="Guest\GTLogin.resx">
       <DependentUpon>GTLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Yuh\UC_MenuOne.resx">
@@ -167,7 +167,9 @@
       <Name>Shared</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-luggage-trolley-filled-32.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-subtract-96.png" />
   </ItemGroup>
@@ -230,6 +232,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-close-window-filled-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-mall-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-purchase-order-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
