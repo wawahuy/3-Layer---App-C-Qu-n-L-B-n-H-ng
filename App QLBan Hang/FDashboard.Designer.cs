@@ -32,6 +32,7 @@
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDashboard));
             this.panel99 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btn_thoat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_menu = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -46,13 +47,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel99.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel_menu.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel99
@@ -67,6 +67,16 @@
             this.panel99.Name = "panel99";
             this.panel99.Size = new System.Drawing.Size(282, 665);
             this.panel99.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel2.Controls.Add(this.btn_thoat);
+            this.bunifuTransition.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.panel2.Location = new System.Drawing.Point(3, 565);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(279, 100);
+            this.panel2.TabIndex = 2;
             // 
             // btn_thoat
             // 
@@ -416,9 +426,9 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel4.BackColor = System.Drawing.Color.White;
             this.bunifuTransition.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(283, 34);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(916, 665);
@@ -446,16 +456,6 @@
             this.bunifuTransition.DefaultAnimation = animation1;
             this.bunifuTransition.MaxAnimationTime = 1000;
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel2.Controls.Add(this.btn_thoat);
-            this.bunifuTransition.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Location = new System.Drawing.Point(3, 565);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(279, 100);
-            this.panel2.TabIndex = 2;
-            // 
             // FDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -473,12 +473,12 @@
             this.Controls.SetChildIndex(this.panel99, 0);
             this.Controls.SetChildIndex(this.panel4, 0);
             this.panel99.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel_menu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

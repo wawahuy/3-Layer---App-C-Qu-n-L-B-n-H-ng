@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTOPermission
+    public class DTOKichCo
     {
+        public int ma;
+        public string ten;
     }
 }

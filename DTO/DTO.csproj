@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTOPermission.cs" />
+    <Compile Include="DTOChiTietSanPham.cs" />
+    <Compile Include="DTOChucVu.cs" />
+    <Compile Include="DTOKichCo.cs" />
+    <Compile Include="DTOLoaiSanPham.cs" />
+    <Compile Include="DTOMau.cs" />
+    <Compile Include="DTOQuyen.cs" />
+    <Compile Include="DTOSanPham.cs" />
     <Compile Include="DTOSql.cs" />
     <Compile Include="Final.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DTOUser.cs" />
+    <Compile Include="DTONhanVien.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
