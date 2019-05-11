@@ -74,6 +74,7 @@
     <Compile Include="Dashboard\DDMain.Designer.cs">
       <DependentUpon>DDMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Guest\GTConfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,6 +86,95 @@
     </Compile>
     <Compile Include="Guest\GTLogin.Designer.cs">
       <DependentUpon>GTLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\Fchitietchucvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\Fchitietchucvu.Designer.cs">
+      <DependentUpon>Fchitietchucvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\FchitietHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\FchitietHD.Designer.cs">
+      <DependentUpon>FchitietHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\Fchitietphieunhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\Fchitietphieunhap.Designer.cs">
+      <DependentUpon>Fchitietphieunhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\Fchucvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\Fchucvu.Designer.cs">
+      <DependentUpon>Fchucvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\Fhoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\Fhoadon.Designer.cs">
+      <DependentUpon>Fhoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\FKhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\FKhachhang.Designer.cs">
+      <DependentUpon>FKhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\Fkichcosp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\Fkichcosp.Designer.cs">
+      <DependentUpon>Fkichcosp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\Floaisp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\Floaisp.Designer.cs">
+      <DependentUpon>Floaisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\FNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\FNhanvien.Designer.cs">
+      <DependentUpon>FNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\F_mausp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\F_mausp.Designer.cs">
+      <DependentUpon>F_mausp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\F_ncc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\F_ncc.Designer.cs">
+      <DependentUpon>F_ncc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\F_phieunhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\F_phieunhap.Designer.cs">
+      <DependentUpon>F_phieunhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\F_quyenht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\F_quyenht.Designer.cs">
+      <DependentUpon>F_quyenht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user forms\F_sanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user forms\F_sanpham.Designer.cs">
+      <DependentUpon>F_sanpham.cs</DependentUpon>
     </Compile>
     <Compile Include="Yuh\UC_MenuOne.cs">
       <SubType>UserControl</SubType>
@@ -121,6 +211,48 @@
     <EmbeddedResource Include="Guest\GTLogin.resx">
       <DependentUpon>GTLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="user forms\Fchitietchucvu.resx">
+      <DependentUpon>Fchitietchucvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\FchitietHD.resx">
+      <DependentUpon>FchitietHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\Fchitietphieunhap.resx">
+      <DependentUpon>Fchitietphieunhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\Fchucvu.resx">
+      <DependentUpon>Fchucvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\Fhoadon.resx">
+      <DependentUpon>Fhoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\FKhachhang.resx">
+      <DependentUpon>FKhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\Fkichcosp.resx">
+      <DependentUpon>Fkichcosp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\Floaisp.resx">
+      <DependentUpon>Floaisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\FNhanvien.resx">
+      <DependentUpon>FNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\F_mausp.resx">
+      <DependentUpon>F_mausp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\F_ncc.resx">
+      <DependentUpon>F_ncc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\F_phieunhap.resx">
+      <DependentUpon>F_phieunhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\F_quyenht.resx">
+      <DependentUpon>F_quyenht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user forms\F_sanpham.resx">
+      <DependentUpon>F_sanpham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Yuh\UC_MenuOne.resx">
       <DependentUpon>UC_MenuOne.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,14 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Yuh\CT_Waiting.resx">
       <DependentUpon>CT_Waiting.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +368,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-purchase-order-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

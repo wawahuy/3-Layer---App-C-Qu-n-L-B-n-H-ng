@@ -30,9 +30,14 @@ namespace App_QLBan_Hang
             foreach (Control ct in panel_menu.Controls)
             {
                 if (ct is Bunifu.Framework.UI.BunifuFlatButton) {
-                    var ob = ((Bunifu.Framework.UI.BunifuFlatButton)ct);
+                    Bunifu.Framework.UI.BunifuFlatButton ob = ((Bunifu.Framework.UI.BunifuFlatButton)ct);
                 }
             }
+        }
+
+        private void Btn_hoadon_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
