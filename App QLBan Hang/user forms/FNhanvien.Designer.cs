@@ -82,7 +82,7 @@
             this.txb_hoten.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_hoten.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txb_hoten.LineThickness = 3;
-            this.txb_hoten.Location = new System.Drawing.Point(208, 203);
+            this.txb_hoten.Location = new System.Drawing.Point(208, 236);
             this.txb_hoten.Margin = new System.Windows.Forms.Padding(4);
             this.txb_hoten.Name = "txb_hoten";
             this.txb_hoten.Size = new System.Drawing.Size(420, 29);
@@ -96,7 +96,7 @@
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(20, 207);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(20, 240);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(144, 25);
             this.bunifuCustomLabel2.TabIndex = 39;
@@ -108,7 +108,7 @@
             this.bunifuCustomLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(20, 285);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(20, 334);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(76, 25);
             this.bunifuCustomLabel3.TabIndex = 42;
@@ -126,7 +126,7 @@
             this.txb_diachi.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_diachi.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txb_diachi.LineThickness = 3;
-            this.txb_diachi.Location = new System.Drawing.Point(208, 281);
+            this.txb_diachi.Location = new System.Drawing.Point(208, 330);
             this.txb_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.txb_diachi.Name = "txb_diachi";
             this.txb_diachi.Size = new System.Drawing.Size(420, 29);
@@ -145,7 +145,7 @@
             this.txb_cmnd.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_cmnd.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txb_cmnd.LineThickness = 3;
-            this.txb_cmnd.Location = new System.Drawing.Point(208, 361);
+            this.txb_cmnd.Location = new System.Drawing.Point(208, 428);
             this.txb_cmnd.Margin = new System.Windows.Forms.Padding(4);
             this.txb_cmnd.Name = "txb_cmnd";
             this.txb_cmnd.Size = new System.Drawing.Size(420, 29);
@@ -159,7 +159,7 @@
             this.bunifuCustomLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(20, 370);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(20, 437);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(72, 25);
             this.bunifuCustomLabel5.TabIndex = 47;
@@ -172,7 +172,7 @@
             this.dtp_ngaysinh.ForeColor = System.Drawing.Color.White;
             this.dtp_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_ngaysinh.FormatCustom = "dd/MM/yyyy";
-            this.dtp_ngaysinh.Location = new System.Drawing.Point(208, 556);
+            this.dtp_ngaysinh.Location = new System.Drawing.Point(208, 630);
             this.dtp_ngaysinh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtp_ngaysinh.Name = "dtp_ngaysinh";
             this.dtp_ngaysinh.Size = new System.Drawing.Size(425, 44);
@@ -186,7 +186,7 @@
             this.bunifuCheckbox1.Checked = true;
             this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
             this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(208, 461);
+            this.bunifuCheckbox1.Location = new System.Drawing.Point(208, 534);
             this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuCheckbox1.Name = "bunifuCheckbox1";
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
@@ -199,7 +199,7 @@
             this.bunifuCheckbox2.Checked = true;
             this.bunifuCheckbox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
             this.bunifuCheckbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox2.Location = new System.Drawing.Point(449, 461);
+            this.bunifuCheckbox2.Location = new System.Drawing.Point(441, 534);
             this.bunifuCheckbox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuCheckbox2.Name = "bunifuCheckbox2";
             this.bunifuCheckbox2.Size = new System.Drawing.Size(20, 20);
@@ -208,7 +208,7 @@
             // bunifuCustomLabel6
             // 
             this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(486, 461);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(468, 534);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(29, 20);
             this.bunifuCustomLabel6.TabIndex = 49;
@@ -217,7 +217,7 @@
             // bunifuCustomLabel7
             // 
             this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(235, 461);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(234, 534);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(42, 20);
             this.bunifuCustomLabel7.TabIndex = 50;
@@ -229,7 +229,7 @@
             this.bunifuCustomLabel8.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(20, 461);
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(19, 534);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
             this.bunifuCustomLabel8.Size = new System.Drawing.Size(90, 25);
             this.bunifuCustomLabel8.TabIndex = 51;
@@ -241,7 +241,7 @@
             this.bunifuCustomLabel9.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(20, 575);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(20, 649);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
             this.bunifuCustomLabel9.Size = new System.Drawing.Size(103, 25);
             this.bunifuCustomLabel9.TabIndex = 52;
@@ -259,7 +259,7 @@
             this.txb_ghichu.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_ghichu.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txb_ghichu.LineThickness = 10;
-            this.txb_ghichu.Location = new System.Drawing.Point(867, 217);
+            this.txb_ghichu.Location = new System.Drawing.Point(867, 236);
             this.txb_ghichu.Margin = new System.Windows.Forms.Padding(4);
             this.txb_ghichu.Name = "txb_ghichu";
             this.txb_ghichu.Size = new System.Drawing.Size(420, 276);
@@ -273,7 +273,7 @@
             this.bunifuCustomLabel10.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(688, 207);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(688, 240);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(79, 25);
             this.bunifuCustomLabel10.TabIndex = 53;
@@ -323,7 +323,7 @@
             this.txb_matkhau.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_matkhau.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txb_matkhau.LineThickness = 3;
-            this.txb_matkhau.Location = new System.Drawing.Point(208, 133);
+            this.txb_matkhau.Location = new System.Drawing.Point(208, 149);
             this.txb_matkhau.Margin = new System.Windows.Forms.Padding(4);
             this.txb_matkhau.Name = "txb_matkhau";
             this.txb_matkhau.Size = new System.Drawing.Size(420, 29);
@@ -337,7 +337,7 @@
             this.bunifuCustomLabel11.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(20, 137);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(20, 153);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(97, 25);
             this.bunifuCustomLabel11.TabIndex = 57;
@@ -382,7 +382,7 @@
             this.txb_luong.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_luong.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txb_luong.LineThickness = 3;
-            this.txb_luong.Location = new System.Drawing.Point(867, 133);
+            this.txb_luong.Location = new System.Drawing.Point(867, 149);
             this.txb_luong.Margin = new System.Windows.Forms.Padding(4);
             this.txb_luong.Name = "txb_luong";
             this.txb_luong.Size = new System.Drawing.Size(420, 29);
@@ -396,7 +396,7 @@
             this.bunifuCustomLabel13.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(688, 137);
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(688, 153);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
             this.bunifuCustomLabel13.Size = new System.Drawing.Size(67, 25);
             this.bunifuCustomLabel13.TabIndex = 61;
