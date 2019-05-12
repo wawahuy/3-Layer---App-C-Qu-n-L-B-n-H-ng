@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class DTOChiTietSanPham
+    public class DTOChiTietHoaDon
     {
         private int ma;
-        private DTOSanPham sanpham;
-        private DTOMau mau;
-        private DTOKichCo kichco;
+        private int gia;
         private int soluong;
+        private int thanhtien;
+        private DTOChiTietSanPham sanpham;
 
         public int Ma
         {
@@ -27,42 +27,16 @@ namespace DTO
             }
         }
 
-        public DTOSanPham Sanpham
+        public int Gia
         {
             get
             {
-                return sanpham;
+                return gia;
             }
 
             set
             {
-                sanpham = value;
-            }
-        }
-
-        public DTOMau Mau
-        {
-            get
-            {
-                return mau;
-            }
-
-            set
-            {
-                mau = value;
-            }
-        }
-
-        public DTOKichCo Kichco
-        {
-            get
-            {
-                return kichco;
-            }
-
-            set
-            {
-                kichco = value;
+                gia = value;
             }
         }
 
@@ -76,6 +50,32 @@ namespace DTO
             set
             {
                 soluong = value;
+            }
+        }
+
+        public int Thanhtien
+        {
+            get
+            {
+                return thanhtien;
+            }
+
+            set
+            {
+                thanhtien = value;
+            }
+        }
+
+        public DTOChiTietSanPham Sanpham
+        {
+            get
+            {
+                return sanpham;
+            }
+
+            set
+            {
+                sanpham = value;
             }
         }
     }

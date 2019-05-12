@@ -8,7 +8,33 @@ namespace DTO
 {
     public class DTOKichCo
     {
-        public int ma;
-        public string ten;
+        private int ma;
+        private string ten;
+
+        public int Ma
+        {
+            get
+            {
+                return ma;
+            }
+
+            set
+            {
+                ma = value;
+            }
+        }
+
+        public string Ten
+        {
+            get
+            {
+                return ten;
+            }
+
+            set
+            {
+                ten = value;
+            }
+        }
     }
 }

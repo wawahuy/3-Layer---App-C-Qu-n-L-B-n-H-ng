@@ -27,12 +27,17 @@ namespace App_QLBan_Hang
             panel99.Width = width;
             bunifuTransition.Show(panel99);
 
-            foreach (Control ct in panel_menu.Controls)
-            {
-                if (ct is Bunifu.Framework.UI.BunifuFlatButton) {
-                    var ob = ((Bunifu.Framework.UI.BunifuFlatButton)ct);
-                }
-            }
         }
+
+        private void btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_nhanvien_Click(object sender, EventArgs e)
+        {
+            transitionPage.openGUI(new Dashboard.UCNhanVien());
+        }
+
     }
 }

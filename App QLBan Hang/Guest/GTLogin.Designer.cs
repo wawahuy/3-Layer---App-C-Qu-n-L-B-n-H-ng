@@ -34,6 +34,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_login = new Bunifu.Framework.UI.BunifuImageButton();
+            this.lb_thongbao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -57,6 +58,7 @@
             this.txb_username.Name = "txb_username";
             this.txb_username.Size = new System.Drawing.Size(370, 44);
             this.txb_username.TabIndex = 2;
+            this.txb_username.Text = "test";
             this.txb_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txb_password
@@ -76,6 +78,7 @@
             this.txb_password.Name = "txb_password";
             this.txb_password.Size = new System.Drawing.Size(370, 44);
             this.txb_password.TabIndex = 3;
+            this.txb_password.Text = "1234";
             this.txb_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txb_password.OnValueChanged += new System.EventHandler(this.txb_password_OnValueChanged);
             // 
@@ -112,22 +115,33 @@
             // 
             // btn_login
             // 
-            this.btn_login.BackColor = System.Drawing.Color.Transparent;
+            this.btn_login.BackColor = System.Drawing.Color.White;
             this.btn_login.Image = global::App_QLBan_Hang.Properties.Resources.icons8_enter_100;
             this.btn_login.ImageActive = null;
-            this.btn_login.Location = new System.Drawing.Point(287, 374);
+            this.btn_login.Location = new System.Drawing.Point(272, 388);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(45, 47);
+            this.btn_login.Size = new System.Drawing.Size(45, 45);
             this.btn_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_login.TabIndex = 7;
+            this.btn_login.TabIndex = 8;
             this.btn_login.TabStop = false;
             this.btn_login.Zoom = 10;
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click_1);
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            // 
+            // lb_thongbao
+            // 
+            this.lb_thongbao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_thongbao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lb_thongbao.Location = new System.Drawing.Point(89, 151);
+            this.lb_thongbao.Name = "lb_thongbao";
+            this.lb_thongbao.Size = new System.Drawing.Size(420, 37);
+            this.lb_thongbao.TabIndex = 9;
+            this.lb_thongbao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GTLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lb_thongbao);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
@@ -153,5 +167,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Bunifu.Framework.UI.BunifuImageButton btn_login;
+        private System.Windows.Forms.Label lb_thongbao;
     }
 }

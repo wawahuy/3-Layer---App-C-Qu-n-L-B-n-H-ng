@@ -14,11 +14,21 @@ namespace App_QLBan_Hang
         [STAThread]
         static void Main()
         {
+            //Init 
+            BUS.BUSSql busSql = new BUS.BUSSql();
+            busSql.LoadDeltailSqlGlobal();
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FGuest());
-            Application.Run(new FDashboard());
+            FormGuest = new FGuest();
+            Application.Run(FormGuest);
+
+            //Application.Run(new FDashboard());
 
         }
+
+
+        public static Form FormGuest;
     }
 }

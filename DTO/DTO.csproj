@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOChiTietHoaDon.cs" />
+    <Compile Include="DTOChiTietPhieuNhap.cs" />
     <Compile Include="DTOChiTietSanPham.cs" />
     <Compile Include="DTOChucVu.cs" />
+    <Compile Include="DTOHoaDon.cs" />
+    <Compile Include="DTOKhachHang.cs" />
     <Compile Include="DTOKichCo.cs" />
     <Compile Include="DTOLoaiSanPham.cs" />
     <Compile Include="DTOMau.cs" />
+    <Compile Include="DTONhaCungCap.cs" />
+    <Compile Include="DTOPhieuNhap.cs" />
     <Compile Include="DTOQuyen.cs" />
     <Compile Include="DTOSanPham.cs" />
     <Compile Include="DTOSql.cs" />

@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard\UCNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UCNhanVien.Designer.cs">
+      <DependentUpon>UCNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,12 +74,6 @@
     <Compile Include="FGuest.Designer.cs">
       <DependentUpon>FGuest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\DDMain.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Dashboard\DDMain.Designer.cs">
-      <DependentUpon>DDMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="Guest\GTConfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,6 +85,12 @@
     </Compile>
     <Compile Include="Guest\GTLogin.Designer.cs">
       <DependentUpon>GTLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yuh\TransitionPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Yuh\TransitionPage.Designer.cs">
+      <DependentUpon>TransitionPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Yuh\UC_MenuOne.cs">
       <SubType>UserControl</SubType>
@@ -106,6 +112,9 @@
     <Compile Include="Yuh\CT_Waiting.Designer.cs">
       <DependentUpon>CT_Waiting.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dashboard\UCNhanVien.resx">
+      <DependentUpon>UCNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FDashboard.resx">
       <DependentUpon>FDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Guest\GTLogin.resx">
       <DependentUpon>GTLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yuh\TransitionPage.resx">
+      <DependentUpon>TransitionPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Yuh\UC_MenuOne.resx">
       <DependentUpon>UC_MenuOne.cs</DependentUpon>
@@ -157,6 +169,10 @@
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{0ac1781f-0f19-48ee-b19b-ecf7a2398ce2}</Project>
       <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{df476fca-662b-4164-b486-98d9f3821d54}</Project>
+      <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{bd071ae1-8cb7-4f44-be63-5f09c839e930}</Project>

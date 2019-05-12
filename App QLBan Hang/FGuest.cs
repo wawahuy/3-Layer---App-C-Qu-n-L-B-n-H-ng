@@ -14,8 +14,6 @@ namespace App_QLBan_Hang
     {
         private UCGuest.GTLogin     ucLogin;
         private UCGuest.GTConfig    ucConfig;
-        private UserControl         ucCurrent;
-        private BUS.BUSSql          busSql;
 
         public FGuest()
         {
@@ -32,8 +30,8 @@ namespace App_QLBan_Hang
             uc_menu.ReferActionClicked();
 
             //Load SqlDeltail
-            busSql = new BUS.BUSSql();
-            busSql.LoadDeltailSqlGlobal();
+            //busSql = new BUS.BUSSql();
+            //busSql.LoadDeltailSqlGlobal();
 
             //Save last guest
             m_guestLast = this;
@@ -41,41 +39,19 @@ namespace App_QLBan_Hang
 
         private void openSupport(object sender, EventArgs e)
         {
-            openGUI(null);
+            transitionPage.openGUI(null);
         }
 
         private void openConfigSql(object sender, EventArgs e)
         {
-            openGUI(ucConfig);
+            transitionPage.openGUI(ucConfig);
         }
 
         public void openLogin(Object obj, EventArgs args)
         {
-            openGUI(ucLogin);
+            transitionPage.openGUI(ucLogin);
         }
 
-
-        private void openGUI(UserControl uc)
-        {
-            if (ucCurrent != null)
-            {
-                panel_main.Controls.Remove(ucCurrent);
-            }
-
-            ucCurrent = uc;
-            
-            if (ucCurrent == null) return;
-            uc.Visible = false;
-            transistionPage.Show(uc);
-
-            ucCurrent.Dock = System.Windows.Forms.DockStyle.Fill;
-            ucCurrent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            ucCurrent.Location = new System.Drawing.Point(0, 0);
-            ucCurrent.Name = "ContentMain";
-            ucCurrent.Size = new System.Drawing.Size(631, 502);
-            ucCurrent.TabIndex = 0;
-            panel_main.Controls.Add(ucCurrent);
-        }
 
 
         private static FGuest m_guestLast;

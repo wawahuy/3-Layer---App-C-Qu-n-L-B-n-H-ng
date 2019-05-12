@@ -32,7 +32,6 @@
             App_QLBan_Hang.YuhUserControl.UC_MenuOne.MenuItem menuItem1 = new App_QLBan_Hang.YuhUserControl.UC_MenuOne.MenuItem();
             App_QLBan_Hang.YuhUserControl.UC_MenuOne.MenuItem menuItem2 = new App_QLBan_Hang.YuhUserControl.UC_MenuOne.MenuItem();
             App_QLBan_Hang.YuhUserControl.UC_MenuOne.MenuItem menuItem3 = new App_QLBan_Hang.YuhUserControl.UC_MenuOne.MenuItem();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FGuest));
             this.panel_menu = new System.Windows.Forms.Panel();
@@ -41,7 +40,7 @@
             this.panel_main = new System.Windows.Forms.Panel();
             this.ucWaiting = new App_QLBan_Hang.UC_Waiting();
             this.transistion = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.transistionPage = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.transitionPage = new App_QLBan_Hang.Yuh.TransitionPage(this.components);
             this.panel_menu.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +50,6 @@
             this.panel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
             this.panel_menu.Controls.Add(this.uc_menu);
             this.panel_menu.Controls.Add(this.panel3);
-            this.transistionPage.SetDecoration(this.panel_menu, BunifuAnimatorNS.DecorationType.None);
             this.transistion.SetDecoration(this.panel_menu, BunifuAnimatorNS.DecorationType.None);
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_menu.Location = new System.Drawing.Point(1, 34);
@@ -62,7 +60,6 @@
             // uc_menu
             // 
             this.uc_menu.BackColor = System.Drawing.Color.Transparent;
-            this.transistionPage.SetDecoration(this.uc_menu, BunifuAnimatorNS.DecorationType.None);
             this.transistion.SetDecoration(this.uc_menu, BunifuAnimatorNS.DecorationType.None);
             this.uc_menu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uc_menu.Location = new System.Drawing.Point(0, 144);
@@ -108,7 +105,6 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
             this.panel3.BackgroundImage = global::App_QLBan_Hang.Properties.Resources.icons8_playstore_100;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.transistionPage.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.transistion.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -120,7 +116,6 @@
             // 
             this.panel_main.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel_main.Controls.Add(this.ucWaiting);
-            this.transistionPage.SetDecoration(this.panel_main, BunifuAnimatorNS.DecorationType.None);
             this.transistion.SetDecoration(this.panel_main, BunifuAnimatorNS.DecorationType.None);
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(159, 34);
@@ -131,7 +126,6 @@
             // ucWaiting
             // 
             this.ucWaiting.BackColor = System.Drawing.Color.White;
-            this.transistionPage.SetDecoration(this.ucWaiting, BunifuAnimatorNS.DecorationType.None);
             this.transistion.SetDecoration(this.ucWaiting, BunifuAnimatorNS.DecorationType.None);
             this.ucWaiting.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucWaiting.Location = new System.Drawing.Point(0, 0);
@@ -146,29 +140,6 @@
             // 
             this.transistion.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transistion.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 1F;
-            this.transistion.DefaultAnimation = animation2;
-            this.transistion.MaxAnimationTime = 400;
-            this.transistion.TimeStep = 0.01F;
-            // 
-            // transistionPage
-            // 
-            this.transistionPage.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.transistionPage.Cursor = null;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
             animation1.LeafCoeff = 0F;
@@ -177,16 +148,23 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
             animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
             animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.transistionPage.DefaultAnimation = animation1;
-            this.transistionPage.Interval = 1;
-            this.transistionPage.MaxAnimationTime = 1000;
+            animation1.TransparencyCoeff = 1F;
+            this.transistion.DefaultAnimation = animation1;
+            this.transistion.MaxAnimationTime = 400;
+            this.transistion.TimeStep = 0.01F;
+            // 
+            // transitionPage
+            // 
+            this.transitionPage.Yuh_Anim_type = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.transitionPage.Yuh_interval = 10;
+            this.transitionPage.Yuh_Panel_main = this.panel_main;
+            this.transitionPage.Yuh_timemax = 1000;
             // 
             // FGuest
             // 
@@ -196,7 +174,6 @@
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_menu);
             this.transistion.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.transistionPage.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Name = "FGuest";
             this.Text = "Quản lý bán hàng";
             this.YuhControlParent = this.panel_menu;
@@ -221,6 +198,6 @@
         private YuhUserControl.UC_MenuOne uc_menu;
         private UC_Waiting ucWaiting;
         private BunifuAnimatorNS.BunifuTransition transistion;
-        private BunifuAnimatorNS.BunifuTransition transistionPage;
+        private Yuh.TransitionPage transitionPage;
     }
 }

@@ -97,6 +97,11 @@ namespace DAO
             return l;
         }
 
+        public static Object GetClassPropertyDBValue<T>(string pro, T obj)
+        {
+            if (obj == null) return DBNull.Value;
+            return typeof(T).GetProperty(pro).GetValue(obj);
+        }
 
         /// <summary>
         /// Class SQL
@@ -236,7 +241,6 @@ namespace DAO
             YuhsqlDeltail = m_sqlDelt;
         }
 
-
         /// <summary>
         /// Query
         /// </summary>
@@ -246,7 +250,17 @@ namespace DAO
         public DAOSql Query(string query)
         {
             m_connection = GetConnection();
-            m_command = new SqlCommand(query);
+            m_command = new SqlCommand(query, m_connection);
+            return this;
+        }
+
+        public DAOSql Procedure(string query)
+        {
+            m_connection = GetConnection();
+            m_command = new SqlCommand();
+            m_command.CommandType = CommandType.StoredProcedure;
+            m_command.CommandText = query;
+            m_command.Connection = m_connection;
             return this;
         }
 
@@ -264,10 +278,16 @@ namespace DAO
             return this;
         }
 
+        public DAOSql BindParam(string name, Object value)
+        {
+            m_command.Parameters.AddWithValue(name, value);
+            return this;
+        }
+
         public SqlDataReader ExecuteReader()
         {
             SqlDataReader data = m_command.ExecuteReader();
-            m_connection.Close();
+            //m_connection.Close();
             return data;
         }
 
@@ -281,7 +301,7 @@ namespace DAO
         public Object ExecuteScalar()
         {
             object data = m_command.ExecuteScalar();
-            m_connection.Close();
+            //m_connection.Close();
             return data;
         }
     }

@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class DTOMau
+    public class DTONhaCungCap
     {
         private int ma;
         private string ten;
+        private string diachi;
+        private string sdt;
 
         public int Ma
         {
@@ -34,6 +36,32 @@ namespace DTO
             set
             {
                 ten = value;
+            }
+        }
+
+        public string Diachi
+        {
+            get
+            {
+                return diachi;
+            }
+
+            set
+            {
+                diachi = value;
+            }
+        }
+
+        public string Sdt
+        {
+            get
+            {
+                return sdt;
+            }
+
+            set
+            {
+                sdt = value;
             }
         }
     }

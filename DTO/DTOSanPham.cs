@@ -8,9 +8,61 @@ namespace DTO
 {
     public class DTOSanPham
     {
-        public int ma;
-        public int gia;
-        public int sanpham;
-        public DTOLoaiSanPham loai;
+        private int ma;
+        private int gia;
+        private int sanpham;
+        private DTOLoaiSanPham loai;
+
+        public int Ma
+        {
+            get
+            {
+                return ma;
+            }
+
+            set
+            {
+                ma = value;
+            }
+        }
+
+        public int Gia
+        {
+            get
+            {
+                return gia;
+            }
+
+            set
+            {
+                gia = value;
+            }
+        }
+
+        public int Sanpham
+        {
+            get
+            {
+                return sanpham;
+            }
+
+            set
+            {
+                sanpham = value;
+            }
+        }
+
+        public DTOLoaiSanPham Loai
+        {
+            get
+            {
+                return loai;
+            }
+
+            set
+            {
+                loai = value;
+            }
+        }
     }
 }

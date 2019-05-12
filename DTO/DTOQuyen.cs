@@ -8,7 +8,33 @@ namespace DTO
 {
     public class DTOQuyen
     {
-        public string ten;
-        public string ma;
+        private string ten;
+        private int ma;
+
+        public string Ten
+        {
+            get
+            {
+                return ten;
+            }
+
+            set
+            {
+                ten = value;
+            }
+        }
+
+        public int Ma
+        {
+            get
+            {
+                return ma;
+            }
+
+            set
+            {
+                ma = value;
+            }
+        }
     }
 }

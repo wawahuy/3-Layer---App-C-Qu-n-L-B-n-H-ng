@@ -8,8 +8,47 @@ namespace DTO
 {
     public class DTOChucVu
     {
-        public string machucvu;
-        public string tenchucvu;
-        public DTOQuyen[] quyen;
+        private int machucvu;
+        private string tenchucvu;
+        private DTOQuyen[] quyen;
+
+        public int Machucvu
+        {
+            get
+            {
+                return machucvu;
+            }
+
+            set
+            {
+                machucvu = value;
+            }
+        }
+
+        public string Tenchucvu
+        {
+            get
+            {
+                return tenchucvu;
+            }
+
+            set
+            {
+                tenchucvu = value;
+            }
+        }
+
+        public DTOQuyen[] Quyen
+        {
+            get
+            {
+                return quyen;
+            }
+
+            set
+            {
+                quyen = value;
+            }
+        }
     }
 }

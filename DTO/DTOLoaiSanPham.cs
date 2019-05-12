@@ -8,8 +8,47 @@ namespace DTO
 {
     public class DTOLoaiSanPham
     {
-        public int ma;
-        public string ten;
-        public string donvi;
+        private int ma;
+        private string ten;
+        private string donvi;
+
+        public int Ma
+        {
+            get
+            {
+                return ma;
+            }
+
+            set
+            {
+                ma = value;
+            }
+        }
+
+        public string Ten
+        {
+            get
+            {
+                return ten;
+            }
+
+            set
+            {
+                ten = value;
+            }
+        }
+
+        public string Donvi
+        {
+            get
+            {
+                return donvi;
+            }
+
+            set
+            {
+                donvi = value;
+            }
+        }
     }
 }

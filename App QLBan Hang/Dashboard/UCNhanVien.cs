@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace App_QLBan_Hang.UCDashboard
+namespace App_QLBan_Hang.Dashboard
 {
-    public partial class DDMain : UserControl
+    public partial class UCNhanVien : UserControl
     {
-        public DDMain()
+        public UCNhanVien()
         {
             InitializeComponent();
+
+            datagrid.DataSource = new DAO.DAONhanVien().Lay();
         }
     }
 }

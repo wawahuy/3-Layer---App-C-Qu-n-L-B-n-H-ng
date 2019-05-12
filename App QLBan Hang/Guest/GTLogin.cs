@@ -18,13 +18,33 @@ namespace App_QLBan_Hang.UCGuest
         }
 
 
-        private void btn_login_Click_1(object sender, EventArgs e)
-        {
-        }
-
+        
         private void txb_password_OnValueChanged(object sender, EventArgs e)
         {
             this.txb_password.isPassword = true;
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            string thongbao = "";
+            BUS.BUSNhanVien bnv = new BUS.BUSNhanVien();
+            DTO.DTONhanVien nv = bnv.DangNhap(txb_username.Text, txb_password.Text, ref thongbao);
+            if ( nv != null) 
+            {
+                Program.FormGuest.Hide();
+                new FDashboard().ShowDialog();
+                Program.FormGuest.Show();
+            }
+            else
+            {
+                lb_thongbao.Visible = true;
+                Shared.SFunction.SetTimeOut(
+                    () => Invoke((Action)(() => lb_thongbao.Visible = false))
+                , 2000);
+                lb_thongbao.Text = thongbao;
+            }
+
+            
         }
     }
 }
