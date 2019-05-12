@@ -15,8 +15,12 @@ namespace App_QLBan_Hang.Dashboard
         public UCNhanVien()
         {
             InitializeComponent();
+            llb_danhsach_LinkClicked(null, null);
+        }
 
-            datagrid.DataSource = new DAO.DAONhanVien().Lay();
+        private void llb_danhsach_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            transitionPage.openGUI(new Dashboard.NhanVien.UC_NV_DanhSach());
         }
     }
 }

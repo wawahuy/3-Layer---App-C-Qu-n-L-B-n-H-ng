@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard\NhanVien\UC_NV_DanhSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\NhanVien\UC_NV_DanhSach.Designer.cs">
+      <DependentUpon>UC_NV_DanhSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\UCNhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     <Compile Include="Yuh\CT_Waiting.Designer.cs">
       <DependentUpon>CT_Waiting.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_DanhSach.resx">
+      <DependentUpon>UC_NV_DanhSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\UCNhanVien.resx">
       <DependentUpon>UCNhanVien.cs</DependentUpon>
     </EmbeddedResource>

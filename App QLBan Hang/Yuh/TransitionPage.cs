@@ -102,7 +102,7 @@ namespace App_QLBan_Hang.Yuh
             ucCurrent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             ucCurrent.Location = new System.Drawing.Point(0, 0);
             ucCurrent.Name = "ContentMain";
-            ucCurrent.Size = new System.Drawing.Size(631, 502);
+            //ucCurrent.Size = new System.Drawing.Size(631, 502);
             ucCurrent.TabIndex = 0;
             panel_main.Controls.Add(ucCurrent);
         }
