@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BUS
 {
@@ -30,6 +31,27 @@ namespace BUS
             }
 
             return nv;
+        }
+
+
+
+        public int xoaNhanVien(DataGridViewSelectedRowCollection rows)
+        {
+            int soDongXoa = 0;
+            foreach (DataGridViewRow row in rows)
+            {
+                DTO.DTONhanVien nv = (DTO.DTONhanVien)row.DataBoundItem;
+                DAO.DAONhanVien daonv = new DAO.DAONhanVien();
+                soDongXoa += daonv.Xoa(nv) ? 1 : 0;
+            }
+
+            return soDongXoa;
+        }
+
+
+        public List<DTO.DTONhanVien> layHetNhanVien()
+        {
+            return new DAO.DAONhanVien().Lay();
         }
 
     }

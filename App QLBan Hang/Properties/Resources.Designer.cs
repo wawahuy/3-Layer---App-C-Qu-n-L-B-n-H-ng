@@ -283,6 +283,16 @@ namespace App_QLBan_Hang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_recurring_appointment_exception_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-recurring-appointment-exception-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_services_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-services-32", resourceCulture);
@@ -316,6 +326,16 @@ namespace App_QLBan_Hang.Properties {
         internal static System.Drawing.Bitmap icons8_user_male_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-male-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_view_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-view-filled-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

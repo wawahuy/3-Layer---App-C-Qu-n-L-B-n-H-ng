@@ -15,6 +15,7 @@ namespace App_QLBan_Hang
         public FDashboard()
         {
             InitializeComponent();
+            btn_nhanvien_Click(null, null);
         }
 
         private void btn_menu_Click(object sender, EventArgs e)

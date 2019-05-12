@@ -56,6 +56,12 @@
     <Compile Include="Dashboard\NhanVien\UC_NV_DanhSach.Designer.cs">
       <DependentUpon>UC_NV_DanhSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\NhanVien\UC_NV_Xem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\NhanVien\UC_NV_Xem.Designer.cs">
+      <DependentUpon>UC_NV_Xem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\UCNhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_DanhSach.resx">
       <DependentUpon>UC_NV_DanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_Xem.resx">
+      <DependentUpon>UC_NV_Xem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\UCNhanVien.resx">
       <DependentUpon>UCNhanVien.cs</DependentUpon>
@@ -284,6 +293,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-exit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-view-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-recurring-appointment-exception-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

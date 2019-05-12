@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.llb_danhsach = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.llb_themnhanvien = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_suanv = new System.Windows.Forms.Label();
+            this.label_xemnv = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
             this.transitionPage = new App_QLBan_Hang.Yuh.TransitionPage(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,27 +71,28 @@
             this.llb_danhsach.Text = "Danh Sách";
             this.llb_danhsach.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_danhsach_LinkClicked);
             // 
-            // linkLabel1
+            // llb_themnhanvien
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.MidnightBlue;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.linkLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.DimGray;
-            this.linkLabel1.Location = new System.Drawing.Point(155, 26);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(108, 16);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Thêm Nhân Viên";
+            this.llb_themnhanvien.ActiveLinkColor = System.Drawing.Color.MidnightBlue;
+            this.llb_themnhanvien.AutoSize = true;
+            this.llb_themnhanvien.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
+            this.llb_themnhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.llb_themnhanvien.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.llb_themnhanvien.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.llb_themnhanvien.LinkColor = System.Drawing.Color.DimGray;
+            this.llb_themnhanvien.Location = new System.Drawing.Point(155, 26);
+            this.llb_themnhanvien.Name = "llb_themnhanvien";
+            this.llb_themnhanvien.Size = new System.Drawing.Size(108, 16);
+            this.llb_themnhanvien.TabIndex = 4;
+            this.llb_themnhanvien.TabStop = true;
+            this.llb_themnhanvien.Text = "Thêm Nhân Viên";
+            this.llb_themnhanvien.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_themnhanvien_LinkClicked);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.linkLabel1);
+            this.panel1.Controls.Add(this.label_suanv);
+            this.panel1.Controls.Add(this.label_xemnv);
+            this.panel1.Controls.Add(this.llb_themnhanvien);
             this.panel1.Controls.Add(this.llb_danhsach);
             this.panel1.Controls.Add(this.bunifuSeparator1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -99,6 +100,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(916, 81);
             this.panel1.TabIndex = 5;
+            // 
+            // label_suanv
+            // 
+            this.label_suanv.AutoSize = true;
+            this.label_suanv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label_suanv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
+            this.label_suanv.Location = new System.Drawing.Point(493, 26);
+            this.label_suanv.Name = "label_suanv";
+            this.label_suanv.Size = new System.Drawing.Size(97, 16);
+            this.label_suanv.TabIndex = 6;
+            this.label_suanv.Text = "Sửa Nhân Viên";
+            // 
+            // label_xemnv
+            // 
+            this.label_xemnv.AutoSize = true;
+            this.label_xemnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label_xemnv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
+            this.label_xemnv.Location = new System.Drawing.Point(328, 26);
+            this.label_xemnv.Name = "label_xemnv";
+            this.label_xemnv.Size = new System.Drawing.Size(100, 16);
+            this.label_xemnv.TabIndex = 5;
+            this.label_xemnv.Text = "Xem Nhân Viên";
             // 
             // panel_main
             // 
@@ -111,31 +134,9 @@
             // transitionPage
             // 
             this.transitionPage.Yuh_Anim_type = BunifuAnimatorNS.AnimationType.Particles;
-            this.transitionPage.Yuh_interval = 10;
+            this.transitionPage.Yuh_interval = 1;
             this.transitionPage.Yuh_Panel_main = this.panel_main;
             this.transitionPage.Yuh_timemax = 1000;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.label1.Location = new System.Drawing.Point(328, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Xem Nhân Viên";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.label2.Location = new System.Drawing.Point(493, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Sửa Nhân Viên";
             // 
             // UCNhanVien
             // 
@@ -154,11 +155,11 @@
         #endregion
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.LinkLabel llb_danhsach;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel llb_themnhanvien;
         private System.Windows.Forms.Panel panel1;
         private Yuh.TransitionPage transitionPage;
         private System.Windows.Forms.Panel panel_main;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_suanv;
+        private System.Windows.Forms.Label label_xemnv;
     }
 }

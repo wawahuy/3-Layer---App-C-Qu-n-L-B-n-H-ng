@@ -50,6 +50,15 @@ namespace DAO
         }
 
 
+        public bool Xoa(DTO.DTONhanVien nhanvien)
+        {
+            return new DAOSql()
+                        .Procedure("XoaNhanVien")
+                        .BindParam("@ma", nhanvien.Ma)
+                        .ExecuteNonQuery() > 0;
+        }
+
+
         private List<DTO.DTONhanVien> TachDTO(SqlDataReader reader)
         {
             List<DTO.DTONhanVien> danhsach = new List<DTO.DTONhanVien>();
@@ -85,7 +94,7 @@ namespace DAO
         {
             return TachDTO(
                     new DAOSql()
-                        .Query("Select * from nhanvien")
+                        .Query("Select * from nhanvien where xoa = 0")
                         .ExecuteReader());
         }
 
