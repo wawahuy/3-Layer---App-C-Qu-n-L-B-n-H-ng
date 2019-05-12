@@ -93,9 +93,59 @@ namespace App_QLBan_Hang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_document_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-document-filled-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_detective_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-detective-filled-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_property_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-edit-property-filled-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_property_filled_321 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-edit-property-filled-321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_enter_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-enter-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-exit-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +236,16 @@ namespace App_QLBan_Hang.Properties {
         internal static System.Drawing.Bitmap icons8_minimize_window_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-minimize-window-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_name_tag_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-name-tag-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

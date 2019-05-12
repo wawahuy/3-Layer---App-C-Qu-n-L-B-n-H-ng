@@ -51,7 +51,7 @@
             // 
             // panel99
             // 
-            this.panel99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
+            this.panel99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
             this.panel99.Controls.Add(this.panel_menu);
             this.panel99.Controls.Add(this.panel3);
             this.bunifuTransition.SetDecoration(this.panel99, BunifuAnimatorNS.DecorationType.None);
@@ -63,6 +63,7 @@
             // 
             // panel_menu
             // 
+            this.panel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
             this.panel_menu.Controls.Add(this.btn_thoat);
             this.panel_menu.Controls.Add(this.btn_nhanvien);
             this.bunifuTransition.SetDecoration(this.panel_menu, BunifuAnimatorNS.DecorationType.None);
@@ -75,7 +76,7 @@
             // 
             this.btn_thoat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(102)))));
             this.btn_thoat.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.btn_thoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
+            this.btn_thoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
             this.btn_thoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_thoat.BorderRadius = 0;
             this.btn_thoat.ButtonText = "   Đăng xuất";
@@ -84,23 +85,23 @@
             this.btn_thoat.DisabledColor = System.Drawing.Color.Gray;
             this.btn_thoat.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_thoat.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_thoat.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_purchase_order_32;
+            this.btn_thoat.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_exit_32;
             this.btn_thoat.Iconimage_right = null;
             this.btn_thoat.Iconimage_right_Selected = null;
             this.btn_thoat.Iconimage_Selected = null;
-            this.btn_thoat.IconMarginLeft = 0;
+            this.btn_thoat.IconMarginLeft = 12;
             this.btn_thoat.IconMarginRight = 0;
             this.btn_thoat.IconRightVisible = false;
             this.btn_thoat.IconRightZoom = 0D;
             this.btn_thoat.IconVisible = true;
-            this.btn_thoat.IconZoom = 70D;
+            this.btn_thoat.IconZoom = 60D;
             this.btn_thoat.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btn_thoat.IsTab = true;
             this.btn_thoat.Location = new System.Drawing.Point(0, 46);
             this.btn_thoat.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
-            this.btn_thoat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
+            this.btn_thoat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
+            this.btn_thoat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
             this.btn_thoat.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.btn_thoat.selected = false;
             this.btn_thoat.Size = new System.Drawing.Size(282, 46);
@@ -115,7 +116,7 @@
             // 
             this.btn_nhanvien.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(102)))));
             this.btn_nhanvien.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.btn_nhanvien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
+            this.btn_nhanvien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
             this.btn_nhanvien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_nhanvien.BorderRadius = 0;
             this.btn_nhanvien.ButtonText = "   Nhân Viên";
@@ -124,11 +125,11 @@
             this.btn_nhanvien.DisabledColor = System.Drawing.Color.Gray;
             this.btn_nhanvien.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_nhanvien.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_nhanvien.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_purchase_order_32;
+            this.btn_nhanvien.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_name_tag_32;
             this.btn_nhanvien.Iconimage_right = null;
             this.btn_nhanvien.Iconimage_right_Selected = null;
             this.btn_nhanvien.Iconimage_Selected = null;
-            this.btn_nhanvien.IconMarginLeft = 0;
+            this.btn_nhanvien.IconMarginLeft = 7;
             this.btn_nhanvien.IconMarginRight = 0;
             this.btn_nhanvien.IconRightVisible = false;
             this.btn_nhanvien.IconRightZoom = 0D;
@@ -139,8 +140,8 @@
             this.btn_nhanvien.Location = new System.Drawing.Point(0, 0);
             this.btn_nhanvien.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.btn_nhanvien.Name = "btn_nhanvien";
-            this.btn_nhanvien.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
-            this.btn_nhanvien.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
+            this.btn_nhanvien.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
+            this.btn_nhanvien.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
             this.btn_nhanvien.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.btn_nhanvien.selected = true;
             this.btn_nhanvien.Size = new System.Drawing.Size(282, 46);
@@ -153,7 +154,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
             this.panel3.Controls.Add(this.btn_menu);
             this.panel3.Controls.Add(this.bunifuImageButton1);
             this.panel3.Controls.Add(this.label1);
@@ -167,7 +168,7 @@
             // btn_menu
             // 
             this.btn_menu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
+            this.btn_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
             this.bunifuTransition.SetDecoration(this.btn_menu, BunifuAnimatorNS.DecorationType.None);
             this.btn_menu.Image = global::App_QLBan_Hang.Properties.Resources.icons8_menu_32;
             this.btn_menu.ImageActive = null;
@@ -244,8 +245,8 @@
             // 
             // transitionPage
             // 
-            this.transitionPage.Yuh_Anim_type = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.transitionPage.Yuh_interval = 10;
+            this.transitionPage.Yuh_Anim_type = BunifuAnimatorNS.AnimationType.Particles;
+            this.transitionPage.Yuh_interval = 1;
             this.transitionPage.Yuh_Panel_main = this.panel_main;
             this.transitionPage.Yuh_timemax = 1000;
             // 

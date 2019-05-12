@@ -22,9 +22,9 @@ namespace App_QLBan_Hang
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             FormGuest = new FGuest();
-            Application.Run(FormGuest);
+            //Application.Run(FormGuest);
 
-            //Application.Run(new FDashboard());
+            Application.Run(new FDashboard());
 
         }
 

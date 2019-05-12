@@ -17,5 +17,23 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
             InitializeComponent();
             datagrid.DataSource = new DAO.DAONhanVien().Lay();
         }
+
+
+        private void btn_xoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datagrid_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewSelectedRowCollection rows = datagrid.SelectedRows;
+            btn_xoa.Visible = rows.Count >= 1;
+            btn_sua.Visible = rows.Count == 1;
+        }
     }
 }
