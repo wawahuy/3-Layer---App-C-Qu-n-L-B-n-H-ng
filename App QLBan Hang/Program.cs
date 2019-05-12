@@ -16,8 +16,15 @@ namespace App_QLBan_Hang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< Updated upstream
             //Application.Run(new FGuest());
             Application.Run(new FDashboard());
+=======
+            FormGuest = new FGuest();
+            Application.Run(FormGuest);
+
+            ///Application.Run(new FDashboard());
+>>>>>>> Stashed changes
 
         }
     }
