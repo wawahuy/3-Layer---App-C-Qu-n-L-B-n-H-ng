@@ -110,6 +110,12 @@
     <Compile Include="Yuh\UC_MenuOne.Designer.cs">
       <DependentUpon>UC_MenuOne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Yuh\UC_MenuTop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Yuh\UC_MenuTop.Designer.cs">
+      <DependentUpon>UC_MenuTop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Yuh\UC_Waiting.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Yuh\UC_MenuOne.resx">
       <DependentUpon>UC_MenuOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yuh\UC_MenuTop.resx">
+      <DependentUpon>UC_MenuTop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Yuh\UC_Waiting.resx">
       <DependentUpon>UC_Waiting.cs</DependentUpon>

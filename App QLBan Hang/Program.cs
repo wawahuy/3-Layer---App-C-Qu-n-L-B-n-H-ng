@@ -18,7 +18,6 @@ namespace App_QLBan_Hang
             BUS.BUSSql busSql = new BUS.BUSSql();
             busSql.LoadDeltailSqlGlobal();
 
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             FormGuest = new FGuest();
