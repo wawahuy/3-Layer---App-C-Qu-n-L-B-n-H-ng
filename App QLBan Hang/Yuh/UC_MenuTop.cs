@@ -40,6 +40,8 @@ namespace App_QLBan_Hang.Yuh
                         item.linklabel.BringToFront();
                         item.linklabel.Click += (object sender, EventArgs args) =>
                         {
+                            if (!item.Enable) return;
+
                             yuhitems.All(item2 =>
                             {
                                 item2.linklabel.LinkColor = item2.Coloridel;
@@ -49,7 +51,7 @@ namespace App_QLBan_Hang.Yuh
                             ((LinkLabel)sender).LinkColor = item.Colorselected;
 
                             if(YuhClick != null)
-                                YuhClick(sender, null);
+                                YuhClick(item, null);
                         };
 
                         y += item.linklabel.Size.Width + 50;
@@ -58,6 +60,22 @@ namespace App_QLBan_Hang.Yuh
                 
             }
         }
+
+
+        public void click(int index)
+        {
+            yuhitems.All(item2 =>
+            {
+                item2.linklabel.LinkColor = item2.Coloridel;
+                return true;
+            });
+
+            Yuhitems[index].linklabel.LinkColor = Yuhitems[index].Colorselected;
+
+            if (YuhClick != null)
+                YuhClick(Yuhitems[index], null);
+        }
+
 
         public Font Yuhfont
         {
@@ -133,7 +151,7 @@ namespace App_QLBan_Hang.Yuh
                 set
                 {
                     enable = value;
-                    this.linklabel.Enabled = enable;
+                    //this.linklabel.Enabled = enable;
                 }
             }
 

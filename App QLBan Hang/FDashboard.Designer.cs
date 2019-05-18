@@ -248,7 +248,7 @@
             this.transitionPage.Yuh_Anim_type = BunifuAnimatorNS.AnimationType.Particles;
             this.transitionPage.Yuh_interval = 1;
             this.transitionPage.Yuh_Panel_main = this.panel_main;
-            this.transitionPage.Yuh_timemax = 1000;
+            this.transitionPage.Yuh_timemax = 500;
             // 
             // FDashboard
             // 

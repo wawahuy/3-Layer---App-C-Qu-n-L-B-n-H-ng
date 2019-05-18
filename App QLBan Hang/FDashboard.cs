@@ -12,8 +12,11 @@ namespace App_QLBan_Hang
 {
     public partial class FDashboard : FTemplate
     {
+        static FDashboard currentShow;
+
         public FDashboard()
         {
+            currentShow = this;
             InitializeComponent();
             btn_nhanvien_Click(null, null);
         }
@@ -38,6 +41,11 @@ namespace App_QLBan_Hang
         private void btn_nhanvien_Click(object sender, EventArgs e)
         {
             transitionPage.openGUI(new Dashboard.UCNhanVien());
+        }
+
+        public static void openUserControl(UserControl uc)
+        {
+            currentShow.transitionPage.openGUINoAnimation(uc);
         }
 
     }

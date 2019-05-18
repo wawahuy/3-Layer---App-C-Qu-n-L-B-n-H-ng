@@ -106,5 +106,27 @@ namespace App_QLBan_Hang.Yuh
             ucCurrent.TabIndex = 0;
             panel_main.Controls.Add(ucCurrent);
         }
+
+
+        public void openGUINoAnimation(UserControl uc)
+        {
+            if (ucCurrent != null)
+            {
+                panel_main.Controls.Remove(ucCurrent);
+            }
+
+            ucCurrent = uc;
+
+            if (ucCurrent == null) return;
+            uc.Visible = true;
+
+            ucCurrent.Dock = System.Windows.Forms.DockStyle.Fill;
+            ucCurrent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            ucCurrent.Location = new System.Drawing.Point(0, 0);
+            ucCurrent.Name = "ContentMain";
+            //ucCurrent.Size = new System.Drawing.Size(631, 502);
+            ucCurrent.TabIndex = 0;
+            panel_main.Controls.Add(ucCurrent);
+        }
     }
 }

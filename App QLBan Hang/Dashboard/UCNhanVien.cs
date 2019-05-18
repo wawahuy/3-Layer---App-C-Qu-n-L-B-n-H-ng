@@ -16,25 +16,37 @@ namespace App_QLBan_Hang.Dashboard
         public UCNhanVien()
         {
             InitializeComponent();
+            clickXemDanhSach();
         }
 
+        public void clickXemDanhSach()
+        {
+            uC_MenuTop.click(0);
+        }
 
-        private void llb_danhsach_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        public void xemDanhSach()
         {
             transitionPage.openGUI(new Dashboard.NhanVien.UC_NV_DanhSach());
         }
 
-        private void llb_themnhanvien_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-        }
-
         public void xemThongTin(DTO.DTONhanVien nhanvien)
         {
+            uC_MenuTop.click(2);
             transitionPage.openGUI(new Dashboard.NhanVien.UC_NV_Xem(nhanvien));
         }
 
         private void uC_MenuTop1_YuhClick(object sender, EventArgs e)
         {
+            Yuh.UC_MenuTop.UC_MenuTopChild item = (Yuh.UC_MenuTop.UC_MenuTopChild)sender;
+
+            switch(item.Text)
+            {   
+                case "Danh sách":
+                    xemDanhSach();
+                    break;
+            }
+
+
 
         }
     }
