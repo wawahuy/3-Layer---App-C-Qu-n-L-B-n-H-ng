@@ -29,6 +29,11 @@ namespace App_QLBan_Hang.Dashboard
             transitionPage.openGUI(new Dashboard.NhanVien.UC_NV_DanhSach());
         }
 
+        public void themNhanVien()
+        {
+            transitionPage.openGUI(new Dashboard.NhanVien.UC_NV_Them());
+        }
+
         public void xemThongTin(DTO.DTONhanVien nhanvien)
         {
             uC_MenuTop.click(2);
@@ -43,6 +48,10 @@ namespace App_QLBan_Hang.Dashboard
             {   
                 case "Danh sách":
                     xemDanhSach();
+                    break;
+
+                case "Thêm nhân viên":
+                    themNhanVien();
                     break;
             }
 

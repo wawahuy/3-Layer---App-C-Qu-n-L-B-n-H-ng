@@ -60,7 +60,6 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
 
         private void btn_xem_Click(object sender, EventArgs e)
         {
-            //UCNhanVien.CurrentShow.xemThongTin((DTO.DTONhanVien)datagrid.SelectedRows[0].DataBoundItem);
             UCNhanVien nv = new UCNhanVien();
             nv.xemThongTin((DTO.DTONhanVien)datagrid.SelectedRows[0].DataBoundItem);
             FDashboard.openUserControl(nv);
