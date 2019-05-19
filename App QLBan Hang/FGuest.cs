@@ -87,6 +87,9 @@ namespace App_QLBan_Hang
                 m_guestLast.transistion.Show(m_guestLast.ucWaiting);
         }
 
-        
+        private void Uc_menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -42,6 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAOSql.cs" />
+    <Compile Include="DAO_chucvu.cs" />
+    <Compile Include="DAO_ctchucvu.cs" />
+    <Compile Include="DAO_CTHD.cs" />
+    <Compile Include="DAO_ctnhaphang.cs" />
+    <Compile Include="DAO_hoadon.cs" />
+    <Compile Include="DAO_kcsp.cs" />
+    <Compile Include="DAO_khachhang.cs" />
+    <Compile Include="DAO_loaisp.cs" />
+    <Compile Include="DAO_mausp.cs" />
+    <Compile Include="DAO_ncc.cs" />
+    <Compile Include="DAO_nhanvien.cs" />
+    <Compile Include="DAO_phieunhap.cs" />
+    <Compile Include="DAO_quyenht.cs" />
+    <Compile Include="DAO_sanpham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

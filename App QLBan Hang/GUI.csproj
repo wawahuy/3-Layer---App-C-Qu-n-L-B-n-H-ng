@@ -111,89 +111,89 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="user forms\Fchitietchucvu.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_chitietchucvu.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\Fchitietchucvu.Designer.cs">
-      <DependentUpon>Fchitietchucvu.cs</DependentUpon>
+    <Compile Include="user forms\UC_chitietchucvu.Designer.cs">
+      <DependentUpon>UC_chitietchucvu.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\FchitietHD.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_chucvu.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\FchitietHD.Designer.cs">
-      <DependentUpon>FchitietHD.cs</DependentUpon>
+    <Compile Include="user forms\UC_chucvu.Designer.cs">
+      <DependentUpon>UC_chucvu.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\Fchitietphieunhap.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_CTHD.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\Fchitietphieunhap.Designer.cs">
-      <DependentUpon>Fchitietphieunhap.cs</DependentUpon>
+    <Compile Include="user forms\UC_CTHD.Designer.cs">
+      <DependentUpon>UC_CTHD.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\Fchucvu.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_CTnhaphang.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\Fchucvu.Designer.cs">
-      <DependentUpon>Fchucvu.cs</DependentUpon>
+    <Compile Include="user forms\UC_CTnhaphang.Designer.cs">
+      <DependentUpon>UC_CTnhaphang.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\Fhoadon.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_hoadon.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\Fhoadon.Designer.cs">
-      <DependentUpon>Fhoadon.cs</DependentUpon>
+    <Compile Include="user forms\UC_hoadon.Designer.cs">
+      <DependentUpon>UC_hoadon.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\FKhachhang.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_khachhang.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\FKhachhang.Designer.cs">
-      <DependentUpon>FKhachhang.cs</DependentUpon>
+    <Compile Include="user forms\UC_khachhang.Designer.cs">
+      <DependentUpon>UC_khachhang.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\Fkichcosp.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_kichcosp.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\Fkichcosp.Designer.cs">
-      <DependentUpon>Fkichcosp.cs</DependentUpon>
+    <Compile Include="user forms\UC_kichcosp.Designer.cs">
+      <DependentUpon>UC_kichcosp.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\Floaisp.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_loaisp.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\Floaisp.Designer.cs">
-      <DependentUpon>Floaisp.cs</DependentUpon>
+    <Compile Include="user forms\UC_loaisp.Designer.cs">
+      <DependentUpon>UC_loaisp.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\FNhanvien.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_mausp.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\FNhanvien.Designer.cs">
-      <DependentUpon>FNhanvien.cs</DependentUpon>
+    <Compile Include="user forms\UC_mausp.Designer.cs">
+      <DependentUpon>UC_mausp.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\F_mausp.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_NCC.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\F_mausp.Designer.cs">
-      <DependentUpon>F_mausp.cs</DependentUpon>
+    <Compile Include="user forms\UC_NCC.Designer.cs">
+      <DependentUpon>UC_NCC.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\F_ncc.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_nhanvien.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\F_ncc.Designer.cs">
-      <DependentUpon>F_ncc.cs</DependentUpon>
+    <Compile Include="user forms\UC_nhanvien.Designer.cs">
+      <DependentUpon>UC_nhanvien.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\F_phieunhap.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_phieunhap.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\F_phieunhap.Designer.cs">
-      <DependentUpon>F_phieunhap.cs</DependentUpon>
+    <Compile Include="user forms\UC_phieunhap.Designer.cs">
+      <DependentUpon>UC_phieunhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\F_quyenht.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_quyenht.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\F_quyenht.Designer.cs">
-      <DependentUpon>F_quyenht.cs</DependentUpon>
+    <Compile Include="user forms\UC_quyenht.Designer.cs">
+      <DependentUpon>UC_quyenht.cs</DependentUpon>
     </Compile>
-    <Compile Include="user forms\F_sanpham.cs">
-      <SubType>Form</SubType>
+    <Compile Include="user forms\UC_sanpham.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user forms\F_sanpham.Designer.cs">
-      <DependentUpon>F_sanpham.cs</DependentUpon>
+    <Compile Include="user forms\UC_sanpham.Designer.cs">
+      <DependentUpon>UC_sanpham.cs</DependentUpon>
     </Compile>
     <Compile Include="Yuh\UC_MenuOne.cs">
       <SubType>UserControl</SubType>
@@ -230,47 +230,47 @@
     <EmbeddedResource Include="Guest\GTLogin.resx">
       <DependentUpon>GTLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\Fchitietchucvu.resx">
-      <DependentUpon>Fchitietchucvu.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_chitietchucvu.resx">
+      <DependentUpon>UC_chitietchucvu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\FchitietHD.resx">
-      <DependentUpon>FchitietHD.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_chucvu.resx">
+      <DependentUpon>UC_chucvu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\Fchitietphieunhap.resx">
-      <DependentUpon>Fchitietphieunhap.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_CTHD.resx">
+      <DependentUpon>UC_CTHD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\Fchucvu.resx">
-      <DependentUpon>Fchucvu.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_CTnhaphang.resx">
+      <DependentUpon>UC_CTnhaphang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\Fhoadon.resx">
-      <DependentUpon>Fhoadon.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_hoadon.resx">
+      <DependentUpon>UC_hoadon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\FKhachhang.resx">
-      <DependentUpon>FKhachhang.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_khachhang.resx">
+      <DependentUpon>UC_khachhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\Fkichcosp.resx">
-      <DependentUpon>Fkichcosp.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_kichcosp.resx">
+      <DependentUpon>UC_kichcosp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\Floaisp.resx">
-      <DependentUpon>Floaisp.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_loaisp.resx">
+      <DependentUpon>UC_loaisp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\FNhanvien.resx">
-      <DependentUpon>FNhanvien.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_mausp.resx">
+      <DependentUpon>UC_mausp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\F_mausp.resx">
-      <DependentUpon>F_mausp.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_NCC.resx">
+      <DependentUpon>UC_NCC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\F_ncc.resx">
-      <DependentUpon>F_ncc.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_nhanvien.resx">
+      <DependentUpon>UC_nhanvien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\F_phieunhap.resx">
-      <DependentUpon>F_phieunhap.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_phieunhap.resx">
+      <DependentUpon>UC_phieunhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\F_quyenht.resx">
-      <DependentUpon>F_quyenht.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_quyenht.resx">
+      <DependentUpon>UC_quyenht.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user forms\F_sanpham.resx">
-      <DependentUpon>F_sanpham.cs</DependentUpon>
+    <EmbeddedResource Include="user forms\UC_sanpham.resx">
+      <DependentUpon>UC_sanpham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Yuh\UC_MenuOne.resx">
       <DependentUpon>UC_MenuOne.cs</DependentUpon>

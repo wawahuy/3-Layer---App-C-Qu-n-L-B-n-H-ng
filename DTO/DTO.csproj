@@ -43,6 +43,11 @@
   <ItemGroup>
     <Compile Include="DTOPermission.cs" />
     <Compile Include="DTOSql.cs" />
+    <Compile Include="DTO_chucvu.cs" />
+    <Compile Include="DTO_CTHD.cs" />
+    <Compile Include="DTO_hoadon.cs" />
+    <Compile Include="DTO_NhanVien.cs" />
+    <Compile Include="DTO_sanpham.cs" />
     <Compile Include="Final.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DTOUser.cs" />

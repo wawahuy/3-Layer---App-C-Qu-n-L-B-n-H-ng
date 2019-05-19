@@ -54,9 +54,10 @@
             this.transistionPage.SetDecoration(this.panel_menu, BunifuAnimatorNS.DecorationType.None);
             this.transistion.SetDecoration(this.panel_menu, BunifuAnimatorNS.DecorationType.None);
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_menu.Location = new System.Drawing.Point(1, 34);
+            this.panel_menu.Location = new System.Drawing.Point(3, 54);
+            this.panel_menu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(158, 510);
+            this.panel_menu.Size = new System.Drawing.Size(237, 781);
             this.panel_menu.TabIndex = 1;
             // 
             // uc_menu
@@ -65,9 +66,10 @@
             this.transistionPage.SetDecoration(this.uc_menu, BunifuAnimatorNS.DecorationType.None);
             this.transistion.SetDecoration(this.uc_menu, BunifuAnimatorNS.DecorationType.None);
             this.uc_menu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_menu.Location = new System.Drawing.Point(0, 144);
+            this.uc_menu.Location = new System.Drawing.Point(0, 222);
+            this.uc_menu.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.uc_menu.Name = "uc_menu";
-            this.uc_menu.Size = new System.Drawing.Size(158, 366);
+            this.uc_menu.Size = new System.Drawing.Size(237, 559);
             this.uc_menu.TabIndex = 1;
             this.uc_menu.YuhAlignText = System.Drawing.ContentAlignment.MiddleLeft;
             this.uc_menu.YuhBackColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(73)))));
@@ -102,6 +104,7 @@
             this.uc_menu.YuhSelectedItem = 0;
             this.uc_menu.YuhTextColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.uc_menu.YuhTextColorIdel = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.uc_menu.Load += new System.EventHandler(this.Uc_menu_Load);
             // 
             // panel3
             // 
@@ -112,8 +115,9 @@
             this.transistion.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(158, 144);
+            this.panel3.Size = new System.Drawing.Size(237, 222);
             this.panel3.TabIndex = 0;
             // 
             // panel_main
@@ -123,9 +127,10 @@
             this.transistionPage.SetDecoration(this.panel_main, BunifuAnimatorNS.DecorationType.None);
             this.transistion.SetDecoration(this.panel_main, BunifuAnimatorNS.DecorationType.None);
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(159, 34);
+            this.panel_main.Location = new System.Drawing.Point(240, 54);
+            this.panel_main.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(629, 510);
+            this.panel_main.Size = new System.Drawing.Size(941, 781);
             this.panel_main.TabIndex = 2;
             // 
             // ucWaiting
@@ -135,9 +140,10 @@
             this.transistion.SetDecoration(this.ucWaiting, BunifuAnimatorNS.DecorationType.None);
             this.ucWaiting.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucWaiting.Location = new System.Drawing.Point(0, 0);
+            this.ucWaiting.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.ucWaiting.Name = "ucWaiting";
             this.ucWaiting.ProcessColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(102)))));
-            this.ucWaiting.Size = new System.Drawing.Size(629, 510);
+            this.ucWaiting.Size = new System.Drawing.Size(941, 781);
             this.ucWaiting.TabIndex = 0;
             this.ucWaiting.TextDeltail = "Xin chờ...";
             this.ucWaiting.Visible = false;
@@ -154,7 +160,7 @@
             animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
             animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
             animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation2.Padding = new System.Windows.Forms.Padding(0);
             animation2.RotateCoeff = 0F;
             animation2.RotateLimit = 0F;
             animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
@@ -177,7 +183,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -190,14 +196,16 @@
             // 
             // FGuest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 545);
+            this.ClientSize = new System.Drawing.Size(1184, 838);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_menu);
             this.transistion.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.transistionPage.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.Name = "FGuest";
+            this.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Text = "Quản lý bán hàng";
             this.YuhControlParent = this.panel_menu;
             this.YuhIcon = global::App_QLBan_Hang.Properties.Resources.icons8_small_business_161;
