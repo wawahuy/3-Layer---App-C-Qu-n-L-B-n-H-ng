@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDashboard));
             this.panel99 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_thoat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_menu = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_phanquyen = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_sanpham = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_nhanvien = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_khachhang = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -122,7 +121,6 @@
             // panel_menu
             // 
             this.panel_menu.Controls.Add(this.bunifuFlatButton1);
-            this.panel_menu.Controls.Add(this.btn_phanquyen);
             this.panel_menu.Controls.Add(this.btn_sanpham);
             this.panel_menu.Controls.Add(this.btn_nhanvien);
             this.panel_menu.Controls.Add(this.btn_khachhang);
@@ -160,7 +158,7 @@
             this.bunifuFlatButton1.IconZoom = 70D;
             this.bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 355);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 284);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 15, 4, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
@@ -173,45 +171,6 @@
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btn_phanquyen
-            // 
-            this.btn_phanquyen.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(102)))));
-            this.btn_phanquyen.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.btn_phanquyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
-            this.btn_phanquyen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_phanquyen.BorderRadius = 0;
-            this.btn_phanquyen.ButtonText = "                     Phân Quyền";
-            this.btn_phanquyen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition.SetDecoration(this.btn_phanquyen, BunifuAnimatorNS.DecorationType.None);
-            this.btn_phanquyen.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
-            this.btn_phanquyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_phanquyen.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_phanquyen.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_phanquyen.Iconimage")));
-            this.btn_phanquyen.Iconimage_right = null;
-            this.btn_phanquyen.Iconimage_right_Selected = null;
-            this.btn_phanquyen.Iconimage_Selected = null;
-            this.btn_phanquyen.IconMarginLeft = 0;
-            this.btn_phanquyen.IconMarginRight = 0;
-            this.btn_phanquyen.IconRightVisible = false;
-            this.btn_phanquyen.IconRightZoom = 0D;
-            this.btn_phanquyen.IconVisible = true;
-            this.btn_phanquyen.IconZoom = 70D;
-            this.btn_phanquyen.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btn_phanquyen.IsTab = true;
-            this.btn_phanquyen.Location = new System.Drawing.Point(0, 284);
-            this.btn_phanquyen.Margin = new System.Windows.Forms.Padding(4, 15, 4, 5);
-            this.btn_phanquyen.Name = "btn_phanquyen";
-            this.btn_phanquyen.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
-            this.btn_phanquyen.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
-            this.btn_phanquyen.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_phanquyen.selected = true;
-            this.btn_phanquyen.Size = new System.Drawing.Size(423, 71);
-            this.btn_phanquyen.TabIndex = 5;
-            this.btn_phanquyen.Text = "                     Phân Quyền";
-            this.btn_phanquyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_phanquyen.Textcolor = System.Drawing.Color.White;
-            this.btn_phanquyen.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btn_sanpham
             // 
@@ -450,22 +409,22 @@
             // 
             this.bunifuTransition.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
             this.bunifuTransition.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 20;
-            animation2.Padding = new System.Windows.Forms.Padding(30);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 20;
+            animation1.Padding = new System.Windows.Forms.Padding(30);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition.DefaultAnimation = animation1;
             this.bunifuTransition.MaxAnimationTime = 1000;
             // 
             // FDashboard
@@ -509,7 +468,6 @@
         private Bunifu.Framework.UI.BunifuImageButton btn_menu;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_phanquyen;
         private Bunifu.Framework.UI.BunifuFlatButton btn_sanpham;
         private Bunifu.Framework.UI.BunifuFlatButton btn_nhanvien;
         private Bunifu.Framework.UI.BunifuFlatButton btn_khachhang;

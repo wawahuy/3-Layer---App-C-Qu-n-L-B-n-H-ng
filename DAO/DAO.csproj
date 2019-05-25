@@ -45,7 +45,7 @@
     <Compile Include="DAO_chucvu.cs" />
     <Compile Include="DAO_ctchucvu.cs" />
     <Compile Include="DAO_CTHD.cs" />
-    <Compile Include="DAO_ctnhaphang.cs" />
+    <Compile Include="DAO_ctphieunhap.cs" />
     <Compile Include="DAO_hoadon.cs" />
     <Compile Include="DAO_kcsp.cs" />
     <Compile Include="DAO_khachhang.cs" />

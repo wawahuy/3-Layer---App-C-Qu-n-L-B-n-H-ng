@@ -19,7 +19,7 @@ namespace DAO
             return dtNV;
 
         }
-        public bool themKhachHang()
+        public bool themNhanVien()
         {
             try
             {
@@ -41,7 +41,7 @@ namespace DAO
             }
             return false;
         }
-        public bool suaKhachHang()
+        public bool suaNhanVien()
         {
             try
             {
@@ -63,7 +63,7 @@ namespace DAO
             }
             return false;
         }
-        public bool xoaKhachHang(int manv)
+        public bool xoaNhanVien(int manv)
         {
             try
             {

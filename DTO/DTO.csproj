@@ -44,9 +44,17 @@
     <Compile Include="DTOPermission.cs" />
     <Compile Include="DTOSql.cs" />
     <Compile Include="DTO_chucvu.cs" />
+    <Compile Include="DTO_ctchucvu.cs" />
     <Compile Include="DTO_CTHD.cs" />
+    <Compile Include="DTO_ctphieunhap.cs" />
     <Compile Include="DTO_hoadon.cs" />
+    <Compile Include="DTO_kichcosp.cs" />
+    <Compile Include="DTO_loaisp.cs" />
+    <Compile Include="DTO_mausp.cs" />
+    <Compile Include="DTO_ncc.cs" />
     <Compile Include="DTO_NhanVien.cs" />
+    <Compile Include="DTO_phieunhap.cs" />
+    <Compile Include="DTO_quyenht.cs" />
     <Compile Include="DTO_sanpham.cs" />
     <Compile Include="Final.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -11,6 +11,14 @@ namespace DAO
 {
     class DAO_CTHD:DAOSql
     {
+        public DataTable loadHD()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("select * from HoaDon,", YuhGetDBConnection());
+            DataTable dthd = new DataTable();
+            da.Fill(dthd);
+            return dthd;
+
+        }
         public bool themcthd()
         {
             try
@@ -38,7 +46,7 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update CTHD set ()");
+                string query = string.Format("update HoaDon set ()");
                 SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
 
 

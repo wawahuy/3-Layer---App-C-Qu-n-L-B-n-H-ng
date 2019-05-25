@@ -9,22 +9,22 @@ using System.Data;
 
 namespace DAO
 {
-    class DAO_phieunhap:DAOSql
+    class DAO_ctphieunhap:DAOSql
     {
-        public DataTable layphieunhap()
+        public DataTable layctphieunhap()
         {
-            SqlDataAdapter da = new SqlDataAdapter("select * from PhieuNhap,", YuhGetDBConnection());
-            DataTable dtpn = new DataTable();
-            da.Fill(dtpn);
-            return dtpn;
+            SqlDataAdapter da = new SqlDataAdapter("select * from CTPhieuNhap,", YuhGetDBConnection());
+            DataTable dtctpn = new DataTable();
+            da.Fill(dtctpn);
+            return dtctpn;
 
         }
-        public bool themphieunhap()
+        public bool themctphieunhap()
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("insert into  ");
+                string query = string.Format("insert into CTPhieuNhap values( )");
                 SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
 
 
@@ -41,12 +41,12 @@ namespace DAO
             }
             return false;
         }
-        public bool suaKphieunhap()
+        public bool suactphieunhap()
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update   set ()");
+                string query = string.Format("update CTPhieuNhap set ()");
                 SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
 
 
@@ -63,12 +63,12 @@ namespace DAO
             }
             return false;
         }
-        public bool xoaphieunhap(int mapn)
+        public bool xoactphieunhap(int mapn)
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from  ", mapn);
+                string query = string.Format("delete from CTPhieuNhap where  ", mapn);
                 SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
 
 
