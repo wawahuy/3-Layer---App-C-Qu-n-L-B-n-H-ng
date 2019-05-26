@@ -24,9 +24,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("insert into KichCoSP values( )");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("ThemKichCoSP", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -46,9 +46,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update KichCoSP set ()");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("SuaKichCoSP", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -63,14 +63,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoakcsp(int makc)
+        public bool xoakcsp( )
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from KichCoSP where  ", makc);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

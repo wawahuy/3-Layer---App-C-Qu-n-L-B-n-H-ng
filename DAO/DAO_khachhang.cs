@@ -25,9 +25,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("insert into KhachHang values(@tenkh, @diachi, @gioitinh, @cmnd, @ngaysinh, @diem)");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
                 
+                SqlCommand cmd = new SqlCommand("ThemKhachHang", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -47,9 +47,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update KhachHang set (@tenkh, @diachi, @gioitinh, @cmnd, @ngaysinh, @diem)");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                
+                SqlCommand cmd = new SqlCommand("SuaKhachHang", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -64,14 +64,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoaKhachHang(int makh)
+        public bool xoaKhachHang( )
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from KhachHang where MaKH= {0}",makh );
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                
+                SqlCommand cmd = new SqlCommand("", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

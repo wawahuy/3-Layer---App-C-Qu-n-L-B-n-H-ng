@@ -13,10 +13,10 @@ namespace DAO
     {
         public DataTable loadHD()
         {
-            SqlDataAdapter da = new SqlDataAdapter("select * from HoaDon,", YuhGetDBConnection());
-            DataTable dthd = new DataTable();
-            da.Fill(dthd);
-            return dthd;
+            SqlDataAdapter da = new SqlDataAdapter("select * from CTHoaDon,", YuhGetDBConnection());
+            DataTable dtcthd = new DataTable();
+            da.Fill(dtcthd);
+            return dtcthd;
 
         }
         public bool themcthd()
@@ -24,9 +24,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("ThemCTHoaDon", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -46,9 +46,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update HoaDon set ()");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("SuaCTHoaDon", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -63,14 +63,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoacthd(int macthd)
+        public bool xoacthd( )
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from Hoadon where ", macthd);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

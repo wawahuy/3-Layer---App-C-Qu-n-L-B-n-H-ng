@@ -16,9 +16,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("ThemChucVu", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -38,9 +38,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update ChucVu set ()");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("SuaChucVu", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -60,9 +60,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from ChucVu where ", macv);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("", YuhGetDBConnection()); 
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

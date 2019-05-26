@@ -46,6 +46,7 @@
     <Compile Include="DTO_chucvu.cs" />
     <Compile Include="DTO_ctchucvu.cs" />
     <Compile Include="DTO_CTHD.cs" />
+    <Compile Include="DTO_cthoadon.cs" />
     <Compile Include="DTO_ctphieunhap.cs" />
     <Compile Include="DTO_hoadon.cs" />
     <Compile Include="DTO_kichcosp.cs" />

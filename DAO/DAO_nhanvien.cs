@@ -24,9 +24,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("insert into NhanVien values( )");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("ThemNhanVien", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -46,9 +46,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update NhanVien set ()");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("SuaNhanVien", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -63,14 +63,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoaNhanVien(int manv)
+        public bool xoaNhanVien( )
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from NhanVien where MaNV= {0}", manv);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand( "", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

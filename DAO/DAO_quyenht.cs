@@ -14,9 +14,9 @@ namespace DAO
         public DataTable layquyenht()
         {
             SqlDataAdapter da = new SqlDataAdapter("select * from QuyenHeThong,", YuhGetDBConnection());
-            DataTable dtKH = new DataTable();
-            da.Fill(dtKH);
-            return dtKH;
+            DataTable dtqht = new DataTable();
+            da.Fill(dtqht);
+            return dtqht;
 
         }
         public bool themquyenht()
@@ -24,9 +24,8 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("insert into  ");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                SqlCommand cmd = new SqlCommand("Themquyenht", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -46,9 +45,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update  ");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+ 
+                SqlCommand cmd = new SqlCommand("Suaquyenht", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -63,14 +62,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoaquyenht(int maquyen)
+        public bool xoaquyenht( )
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from  ", maquyen);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+ 
+                SqlCommand cmd = new SqlCommand( "", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

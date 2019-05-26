@@ -24,9 +24,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("insert into  NhaCungCap values( )");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+ 
+                SqlCommand cmd = new SqlCommand("ThemNCC", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -46,9 +46,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update  NhaCungCap set ()");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+  
+                SqlCommand cmd = new SqlCommand("SuaNCC", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -63,14 +63,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoancc(int mancc)
+        public bool xoancc( )
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from  NhaCungCap where  ", mancc);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+ 
+                SqlCommand cmd = new SqlCommand("", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

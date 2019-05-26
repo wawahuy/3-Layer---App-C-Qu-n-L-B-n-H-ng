@@ -24,9 +24,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+             
+                SqlCommand cmd = new SqlCommand("Themsanpham", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -46,9 +46,9 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update SanPham set ()");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+ 
+                SqlCommand cmd = new SqlCommand("Suasanpham", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -63,14 +63,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoaSanPham(int masp)
+        public bool xoaSanPham( )
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from SanPham where MaSP= {0}", masp);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+ 
+                SqlCommand cmd = new SqlCommand("Xoasanpham", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

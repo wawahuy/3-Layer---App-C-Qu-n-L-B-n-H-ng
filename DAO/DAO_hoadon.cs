@@ -19,14 +19,14 @@ namespace DAO
             return dthd;
 
         }
-        public bool themSanPham()
+        public bool ThemHoaDon()
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("ThemHoaDon", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -41,14 +41,14 @@ namespace DAO
             }
             return false;
         }
-        public bool suaSanPham()
+        public bool SuaHoaDon()
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update HoaDon set ()");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("SuaHoaDon", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -63,14 +63,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoaSanPham(int mahd)
+        public bool xoaHpadon(int mahd)
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from Hoadon where MaSP= {0}", mahd);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

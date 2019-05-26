@@ -24,9 +24,8 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("insert into MauSP values( )");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                SqlCommand cmd = new SqlCommand("ThemMauSP", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -46,9 +45,8 @@ namespace DAO
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("update MauSP set ()");
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                SqlCommand cmd = new SqlCommand("SuaMauSP", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
@@ -63,14 +61,14 @@ namespace DAO
             }
             return false;
         }
-        public bool xoamausp(int mamau)
+        public bool xoamausp( )
         {
             try
             {
                 YuhGetDBConnection();
-                string query = string.Format("delete from MauSP where  ", mamau);
-                SqlCommand cmd = new SqlCommand(query, YuhGetDBConnection());
-
+                 
+                SqlCommand cmd = new SqlCommand("", YuhGetDBConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
