@@ -33,7 +33,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDashboard));
             this.panel99 = new System.Windows.Forms.Panel();
             this.panel_menu = new System.Windows.Forms.Panel();
-            this.btn_thoat = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_nhanvien = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_menu = new Bunifu.Framework.UI.BunifuImageButton();
@@ -64,7 +64,7 @@
             // panel_menu
             // 
             this.panel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
-            this.panel_menu.Controls.Add(this.btn_thoat);
+            this.panel_menu.Controls.Add(this.bunifuFlatButton1);
             this.panel_menu.Controls.Add(this.btn_nhanvien);
             this.bunifuTransition.SetDecoration(this.panel_menu, BunifuAnimatorNS.DecorationType.None);
             this.panel_menu.Location = new System.Drawing.Point(0, 139);
@@ -72,45 +72,44 @@
             this.panel_menu.Size = new System.Drawing.Size(282, 461);
             this.panel_menu.TabIndex = 1;
             // 
-            // btn_thoat
+            // bunifuFlatButton1
             // 
-            this.btn_thoat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(102)))));
-            this.btn_thoat.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.btn_thoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
-            this.btn_thoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_thoat.BorderRadius = 0;
-            this.btn_thoat.ButtonText = "   Đăng xuất";
-            this.btn_thoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition.SetDecoration(this.btn_thoat, BunifuAnimatorNS.DecorationType.None);
-            this.btn_thoat.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_thoat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_thoat.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_thoat.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_exit_32;
-            this.btn_thoat.Iconimage_right = null;
-            this.btn_thoat.Iconimage_right_Selected = null;
-            this.btn_thoat.Iconimage_Selected = null;
-            this.btn_thoat.IconMarginLeft = 12;
-            this.btn_thoat.IconMarginRight = 0;
-            this.btn_thoat.IconRightVisible = false;
-            this.btn_thoat.IconRightZoom = 0D;
-            this.btn_thoat.IconVisible = true;
-            this.btn_thoat.IconZoom = 60D;
-            this.btn_thoat.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btn_thoat.IsTab = true;
-            this.btn_thoat.Location = new System.Drawing.Point(0, 46);
-            this.btn_thoat.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
-            this.btn_thoat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.btn_thoat.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.btn_thoat.selected = false;
-            this.btn_thoat.Size = new System.Drawing.Size(282, 46);
-            this.btn_thoat.TabIndex = 2;
-            this.btn_thoat.Text = "   Đăng xuất";
-            this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_thoat.Textcolor = System.Drawing.Color.White;
-            this.btn_thoat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(102)))));
+            this.bunifuFlatButton1.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "   Chức Vụ";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_development_skill_321;
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 7;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = false;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 70D;
+            this.bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.bunifuFlatButton1.IsTab = true;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 46);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(282, 46);
+            this.bunifuFlatButton1.TabIndex = 2;
+            this.bunifuFlatButton1.Text = "   Chức Vụ";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btn_nhanvien
             // 
@@ -287,7 +286,7 @@
         private System.Windows.Forms.Panel panel_menu;
         private Bunifu.Framework.UI.BunifuImageButton btn_menu;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_thoat;
         private Yuh.TransitionPage transitionPage;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }

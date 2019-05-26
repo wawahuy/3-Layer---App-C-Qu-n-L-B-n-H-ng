@@ -123,6 +123,26 @@ namespace App_QLBan_Hang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_development_skill_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-development-skill-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_development_skill_321 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-development-skill-321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_edit_property_filled_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-edit-property-filled-32", resourceCulture);

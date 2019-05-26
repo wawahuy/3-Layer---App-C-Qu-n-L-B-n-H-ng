@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAOChucVu.cs" />
     <Compile Include="DAONhanVien.cs" />
     <Compile Include="DAOSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

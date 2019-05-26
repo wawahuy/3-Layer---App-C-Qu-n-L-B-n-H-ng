@@ -54,5 +54,10 @@ namespace BUS
             return new DAO.DAONhanVien().Lay();
         }
 
+        public bool them(DTO.DTONhanVien nv)
+        {
+            return new DAO.DAONhanVien().Them(nv);
+        }
+
     }
 }

@@ -10,6 +10,17 @@ namespace Shared
     public static class SFunction
     {
 
+        public static List<U> GetArrByPrototype<T, U>(List<T> items, string namePropGet)
+        {
+            List<U> l = new List<U>();
+            foreach(T item in items)
+            {
+                l.Add((U)typeof(T).GetProperty(namePropGet).GetValue(item));
+            }
+            return l;
+        }
+        
+
         public static void SetTimeOut(Action action, int time)
         {
             System.Timers.Timer timer = new System.Timers.Timer(time);
@@ -37,5 +48,6 @@ namespace Shared
                 list.AddRange(Enumerable.Repeat(element, size - count));
             }
         }
+
     }
 }

@@ -25,7 +25,7 @@ namespace DAO
                 .BindParam("@sdt", nhanvien.Sdt)
                 .BindParam("@ngaysinh", nhanvien.Ngaysinh, System.Data.SqlDbType.Date)
                 .BindParam("@luong", nhanvien.Luong)
-                .BindParam("@chucvu", DAOSql.GetClassPropertyDBValue("Machucvu", nhanvien.Chucvu))
+                .BindParam("@chucvu", nhanvien.Chucvu.Machucvu)
                 .ExecuteNonQuery() > 0;
         }
 
@@ -78,10 +78,8 @@ namespace DAO
                 nhanvien.Luong = (int)reader["luong"];
                 nhanvien.Gianhap = (DateTime)reader["gianhap"];
                 nhanvien.Sdt = (string)reader["sdt"];
-
-                //int machucvu = (int)reader["chucvu"];
-                //nhanvien.Chucvu = new DTO.DTOChucVu();
-                //nhanvien.Chucvu.Machucvu = (int)dt.Select("id = " + machucvu.ToString());
+                int macv = (int)(reader["macv"] ?? 0);
+                nhanvien.Chucvu = (new DAO.DAOChucVu()).LayChucVuQuaID(macv);
 
                 danhsach.Add(nhanvien);
             }
@@ -104,7 +102,7 @@ namespace DAO
             List<DTO.DTONhanVien> ds =
                 TachDTO(
                     new DAOSql()
-                        .Query("Select * from nhanvien where taikhoan = @u and matkhau = @p")
+                        .Query("Select * from nhanvien where taikhoan = @u and matkhau = @p and xoa=0")
                         .BindParam("@u", taikhoan)
                         .BindParam("@p", matkhau)
                         .ExecuteReader());

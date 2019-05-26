@@ -30,6 +30,9 @@
         {
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_refer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_themvaxem = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_them = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,23 +43,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox10 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuDatepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_xoa = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_xem_cv = new Bunifu.Framework.UI.BunifuImageButton();
+            this.txb_chucvu = new Bunifu.Framework.UI.BunifuDropdown();
+            this.txb_ngaysinh = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.txb_gianhap = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.txb_gioitinh = new Bunifu.Framework.UI.BunifuDropdown();
+            this.txb_sdt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txb_luong = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txb_diachi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txb_cmnd = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txb_hoten = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txb_taikhoan = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.lb_thongbao = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txb_pass2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txb_pass1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_xem_cv)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label10
@@ -75,15 +82,120 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.bunifuFlatButton2);
-            this.groupBox2.Controls.Add(this.bunifuFlatButton1);
-            this.groupBox2.Controls.Add(this.btn_xoa);
-            this.groupBox2.Location = new System.Drawing.Point(608, 17);
+            this.groupBox2.Controls.Add(this.btn_refer);
+            this.groupBox2.Controls.Add(this.btn_themvaxem);
+            this.groupBox2.Controls.Add(this.btn_them);
+            this.groupBox2.Location = new System.Drawing.Point(608, 368);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(275, 201);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
+            // 
+            // btn_refer
+            // 
+            this.btn_refer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_refer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_refer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_refer.BorderRadius = 5;
+            this.btn_refer.ButtonText = "Làm mới";
+            this.btn_refer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_refer.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_refer.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_refer.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
+            this.btn_refer.Iconimage_right = null;
+            this.btn_refer.Iconimage_right_Selected = null;
+            this.btn_refer.Iconimage_Selected = null;
+            this.btn_refer.IconMarginLeft = 0;
+            this.btn_refer.IconMarginRight = 0;
+            this.btn_refer.IconRightVisible = true;
+            this.btn_refer.IconRightZoom = 0D;
+            this.btn_refer.IconVisible = true;
+            this.btn_refer.IconZoom = 50D;
+            this.btn_refer.IsTab = false;
+            this.btn_refer.Location = new System.Drawing.Point(16, 144);
+            this.btn_refer.Name = "btn_refer";
+            this.btn_refer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_refer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
+            this.btn_refer.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_refer.selected = false;
+            this.btn_refer.Size = new System.Drawing.Size(243, 35);
+            this.btn_refer.TabIndex = 22;
+            this.btn_refer.Text = "Làm mới";
+            this.btn_refer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_refer.Textcolor = System.Drawing.Color.White;
+            this.btn_refer.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_refer.Click += new System.EventHandler(this.btn_refer_Click);
+            // 
+            // btn_themvaxem
+            // 
+            this.btn_themvaxem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_themvaxem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_themvaxem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_themvaxem.BorderRadius = 5;
+            this.btn_themvaxem.ButtonText = "Thêm Và Xem";
+            this.btn_themvaxem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_themvaxem.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_themvaxem.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_themvaxem.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
+            this.btn_themvaxem.Iconimage_right = null;
+            this.btn_themvaxem.Iconimage_right_Selected = null;
+            this.btn_themvaxem.Iconimage_Selected = null;
+            this.btn_themvaxem.IconMarginLeft = 0;
+            this.btn_themvaxem.IconMarginRight = 0;
+            this.btn_themvaxem.IconRightVisible = true;
+            this.btn_themvaxem.IconRightZoom = 0D;
+            this.btn_themvaxem.IconVisible = true;
+            this.btn_themvaxem.IconZoom = 50D;
+            this.btn_themvaxem.IsTab = false;
+            this.btn_themvaxem.Location = new System.Drawing.Point(16, 92);
+            this.btn_themvaxem.Name = "btn_themvaxem";
+            this.btn_themvaxem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_themvaxem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
+            this.btn_themvaxem.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_themvaxem.selected = false;
+            this.btn_themvaxem.Size = new System.Drawing.Size(243, 35);
+            this.btn_themvaxem.TabIndex = 21;
+            this.btn_themvaxem.Text = "Thêm Và Xem";
+            this.btn_themvaxem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_themvaxem.Textcolor = System.Drawing.Color.White;
+            this.btn_themvaxem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_themvaxem.Click += new System.EventHandler(this.btn_themvaxem_Click);
+            // 
+            // btn_them
+            // 
+            this.btn_them.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_them.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_them.BorderRadius = 5;
+            this.btn_them.ButtonText = "Thêm ";
+            this.btn_them.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_them.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_them.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_them.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
+            this.btn_them.Iconimage_right = null;
+            this.btn_them.Iconimage_right_Selected = null;
+            this.btn_them.Iconimage_Selected = null;
+            this.btn_them.IconMarginLeft = 0;
+            this.btn_them.IconMarginRight = 0;
+            this.btn_them.IconRightVisible = true;
+            this.btn_them.IconRightZoom = 0D;
+            this.btn_them.IconVisible = true;
+            this.btn_them.IconZoom = 50D;
+            this.btn_them.IsTab = false;
+            this.btn_them.Location = new System.Drawing.Point(16, 38);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_them.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
+            this.btn_them.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_them.selected = false;
+            this.btn_them.Size = new System.Drawing.Size(243, 35);
+            this.btn_them.TabIndex = 20;
+            this.btn_them.Text = "Thêm ";
+            this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_them.Textcolor = System.Drawing.Color.White;
+            this.btn_them.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // label9
             // 
@@ -144,7 +256,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(35, 151);
+            this.label4.Location = new System.Drawing.Point(35, 131);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 15);
             this.label4.TabIndex = 3;
@@ -170,7 +282,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(35, 49);
+            this.label2.Location = new System.Drawing.Point(23, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 15);
             this.label2.TabIndex = 1;
@@ -183,7 +295,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(35, 99);
+            this.label1.Location = new System.Drawing.Point(35, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 15);
             this.label1.TabIndex = 0;
@@ -206,17 +318,16 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.bunifuImageButton1);
-            this.groupBox1.Controls.Add(this.bunifuDropdown2);
-            this.groupBox1.Controls.Add(this.bunifuDatepicker2);
-            this.groupBox1.Controls.Add(this.bunifuDatepicker1);
-            this.groupBox1.Controls.Add(this.bunifuDropdown1);
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox10);
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox7);
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox6);
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox5);
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox2);
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.groupBox1.Controls.Add(this.btn_xem_cv);
+            this.groupBox1.Controls.Add(this.txb_chucvu);
+            this.groupBox1.Controls.Add(this.txb_ngaysinh);
+            this.groupBox1.Controls.Add(this.txb_gianhap);
+            this.groupBox1.Controls.Add(this.txb_gioitinh);
+            this.groupBox1.Controls.Add(this.txb_sdt);
+            this.groupBox1.Controls.Add(this.txb_luong);
+            this.groupBox1.Controls.Add(this.txb_diachi);
+            this.groupBox1.Controls.Add(this.txb_cmnd);
+            this.groupBox1.Controls.Add(this.txb_hoten);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
@@ -225,350 +336,360 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(34, 17);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(547, 552);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin";
+            this.groupBox1.Text = "Thông tin chi tiết";
             // 
-            // bunifuMaterialTextbox1
+            // btn_xem_cv
             // 
-            this.bunifuMaterialTextbox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btn_xem_cv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "nguyenvana";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(153, 20);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(364, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 10;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_xem_cv.BackColor = System.Drawing.Color.White;
+            this.btn_xem_cv.Image = global::App_QLBan_Hang.Properties.Resources.icons8_add_new_64;
+            this.btn_xem_cv.ImageActive = null;
+            this.btn_xem_cv.Location = new System.Drawing.Point(364, 443);
+            this.btn_xem_cv.Name = "btn_xem_cv";
+            this.btn_xem_cv.Size = new System.Drawing.Size(29, 35);
+            this.btn_xem_cv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_xem_cv.TabIndex = 24;
+            this.btn_xem_cv.TabStop = false;
+            this.btn_xem_cv.Zoom = 10;
             // 
-            // bunifuMaterialTextbox2
+            // txb_chucvu
             // 
-            this.bunifuMaterialTextbox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_chucvu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "Nguyễn Văn A";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(153, 70);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(364, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 11;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_chucvu.BackColor = System.Drawing.Color.Transparent;
+            this.txb_chucvu.BorderRadius = 3;
+            this.txb_chucvu.ForeColor = System.Drawing.Color.White;
+            this.txb_chucvu.Items = new string[0];
+            this.txb_chucvu.Location = new System.Drawing.Point(153, 443);
+            this.txb_chucvu.Name = "txb_chucvu";
+            this.txb_chucvu.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_chucvu.onHoverColor = System.Drawing.Color.Gray;
+            this.txb_chucvu.selectedIndex = -1;
+            this.txb_chucvu.Size = new System.Drawing.Size(205, 35);
+            this.txb_chucvu.TabIndex = 23;
             // 
-            // bunifuMaterialTextbox5
+            // txb_ngaysinh
             // 
-            this.bunifuMaterialTextbox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_ngaysinh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "331234567";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(153, 226);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(364, 44);
-            this.bunifuMaterialTextbox5.TabIndex = 14;
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_ngaysinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_ngaysinh.BorderRadius = 0;
+            this.txb_ngaysinh.ForeColor = System.Drawing.Color.White;
+            this.txb_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txb_ngaysinh.FormatCustom = "dd/MM/yyyy";
+            this.txb_ngaysinh.Location = new System.Drawing.Point(153, 182);
+            this.txb_ngaysinh.Name = "txb_ngaysinh";
+            this.txb_ngaysinh.Size = new System.Drawing.Size(364, 36);
+            this.txb_ngaysinh.TabIndex = 22;
+            this.txb_ngaysinh.Value = new System.DateTime(2019, 5, 19, 23, 34, 32, 315);
             // 
-            // bunifuMaterialTextbox6
+            // txb_gianhap
             // 
-            this.bunifuMaterialTextbox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_gianhap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox6.HintText = "ấp A, huyện B, tỉnh C, VN";
-            this.bunifuMaterialTextbox6.isPassword = false;
-            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox6.LineThickness = 3;
-            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(153, 278);
-            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
-            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(364, 44);
-            this.bunifuMaterialTextbox6.TabIndex = 15;
-            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_gianhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_gianhap.BorderRadius = 0;
+            this.txb_gianhap.ForeColor = System.Drawing.Color.White;
+            this.txb_gianhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txb_gianhap.FormatCustom = "dd/MM/yyyy";
+            this.txb_gianhap.Location = new System.Drawing.Point(153, 390);
+            this.txb_gianhap.Name = "txb_gianhap";
+            this.txb_gianhap.Size = new System.Drawing.Size(364, 36);
+            this.txb_gianhap.TabIndex = 21;
+            this.txb_gianhap.Value = new System.DateTime(2019, 5, 19, 23, 34, 32, 315);
             // 
-            // bunifuMaterialTextbox7
+            // txb_gioitinh
             // 
-            this.bunifuMaterialTextbox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_gioitinh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuMaterialTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox7.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox7.HintText = "10000000 (Tính bằn VNĐ)";
-            this.bunifuMaterialTextbox7.isPassword = false;
-            this.bunifuMaterialTextbox7.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox7.LineThickness = 3;
-            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(153, 330);
-            this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
-            this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(364, 44);
-            this.bunifuMaterialTextbox7.TabIndex = 16;
-            this.bunifuMaterialTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_gioitinh.BackColor = System.Drawing.Color.Transparent;
+            this.txb_gioitinh.BorderRadius = 3;
+            this.txb_gioitinh.ForeColor = System.Drawing.Color.White;
+            this.txb_gioitinh.Items = new string[] {
+        "Nam",
+        "Nữ"};
+            this.txb_gioitinh.Location = new System.Drawing.Point(153, 111);
+            this.txb_gioitinh.Name = "txb_gioitinh";
+            this.txb_gioitinh.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_gioitinh.onHoverColor = System.Drawing.Color.Gray;
+            this.txb_gioitinh.selectedIndex = -1;
+            this.txb_gioitinh.Size = new System.Drawing.Size(97, 35);
+            this.txb_gioitinh.TabIndex = 20;
             // 
-            // bunifuMaterialTextbox10
+            // txb_sdt
             // 
-            this.bunifuMaterialTextbox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_sdt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuMaterialTextbox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox10.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox10.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox10.HintText = "0123456789";
-            this.bunifuMaterialTextbox10.isPassword = false;
-            this.bunifuMaterialTextbox10.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox10.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox10.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMaterialTextbox10.LineThickness = 3;
-            this.bunifuMaterialTextbox10.Location = new System.Drawing.Point(153, 486);
-            this.bunifuMaterialTextbox10.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox10.Name = "bunifuMaterialTextbox10";
-            this.bunifuMaterialTextbox10.Size = new System.Drawing.Size(364, 44);
-            this.bunifuMaterialTextbox10.TabIndex = 19;
-            this.bunifuMaterialTextbox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_sdt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_sdt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_sdt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_sdt.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_sdt.HintText = "0123456789";
+            this.txb_sdt.isPassword = false;
+            this.txb_sdt.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_sdt.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_sdt.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_sdt.LineThickness = 3;
+            this.txb_sdt.Location = new System.Drawing.Point(153, 486);
+            this.txb_sdt.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_sdt.Name = "txb_sdt";
+            this.txb_sdt.Size = new System.Drawing.Size(364, 44);
+            this.txb_sdt.TabIndex = 19;
+            this.txb_sdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_sdt.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
+            this.txb_sdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
             // 
-            // bunifuDropdown1
+            // txb_luong
             // 
-            this.bunifuDropdown1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_luong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[0];
-            this.bunifuDropdown1.Location = new System.Drawing.Point(153, 131);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(97, 35);
-            this.bunifuDropdown1.TabIndex = 20;
+            this.txb_luong.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_luong.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_luong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_luong.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_luong.HintText = "10000000 (Tính bằn VNĐ)";
+            this.txb_luong.isPassword = false;
+            this.txb_luong.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_luong.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_luong.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_luong.LineThickness = 3;
+            this.txb_luong.Location = new System.Drawing.Point(153, 330);
+            this.txb_luong.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_luong.Name = "txb_luong";
+            this.txb_luong.Size = new System.Drawing.Size(364, 44);
+            this.txb_luong.TabIndex = 16;
+            this.txb_luong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_luong.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
+            this.txb_luong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
             // 
-            // bunifuDatepicker1
+            // txb_diachi
             // 
-            this.bunifuDatepicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_diachi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bunifuDatepicker1.FormatCustom = "dd/MM/yyyy";
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(153, 390);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(364, 36);
-            this.bunifuDatepicker1.TabIndex = 21;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 5, 19, 23, 34, 32, 315);
+            this.txb_diachi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_diachi.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_diachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_diachi.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_diachi.HintText = "ấp A, huyện B, tỉnh C, VN";
+            this.txb_diachi.isPassword = false;
+            this.txb_diachi.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_diachi.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_diachi.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_diachi.LineThickness = 3;
+            this.txb_diachi.Location = new System.Drawing.Point(153, 278);
+            this.txb_diachi.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_diachi.Name = "txb_diachi";
+            this.txb_diachi.Size = new System.Drawing.Size(364, 44);
+            this.txb_diachi.TabIndex = 15;
+            this.txb_diachi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_diachi.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
             // 
-            // bunifuDatepicker2
+            // txb_cmnd
             // 
-            this.bunifuDatepicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_cmnd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuDatepicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuDatepicker2.BorderRadius = 0;
-            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bunifuDatepicker2.FormatCustom = "dd/MM/yyyy";
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(153, 182);
-            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(364, 36);
-            this.bunifuDatepicker2.TabIndex = 22;
-            this.bunifuDatepicker2.Value = new System.DateTime(2019, 5, 19, 23, 34, 32, 315);
+            this.txb_cmnd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_cmnd.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_cmnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_cmnd.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_cmnd.HintText = "331234567";
+            this.txb_cmnd.isPassword = false;
+            this.txb_cmnd.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_cmnd.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_cmnd.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_cmnd.LineThickness = 3;
+            this.txb_cmnd.Location = new System.Drawing.Point(153, 226);
+            this.txb_cmnd.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_cmnd.Name = "txb_cmnd";
+            this.txb_cmnd.Size = new System.Drawing.Size(364, 44);
+            this.txb_cmnd.TabIndex = 14;
+            this.txb_cmnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_cmnd.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
+            this.txb_cmnd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
             // 
-            // bunifuDropdown2
+            // txb_hoten
             // 
-            this.bunifuDropdown2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_hoten.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.BorderRadius = 3;
-            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.Items = new string[0];
-            this.bunifuDropdown2.Location = new System.Drawing.Point(153, 443);
-            this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown2.selectedIndex = -1;
-            this.bunifuDropdown2.Size = new System.Drawing.Size(205, 35);
-            this.bunifuDropdown2.TabIndex = 23;
+            this.txb_hoten.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_hoten.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_hoten.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_hoten.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_hoten.HintText = "Nguyễn Văn A";
+            this.txb_hoten.isPassword = false;
+            this.txb_hoten.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_hoten.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_hoten.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_hoten.LineThickness = 3;
+            this.txb_hoten.Location = new System.Drawing.Point(153, 39);
+            this.txb_hoten.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_hoten.Name = "txb_hoten";
+            this.txb_hoten.Size = new System.Drawing.Size(364, 44);
+            this.txb_hoten.TabIndex = 11;
+            this.txb_hoten.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_hoten.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
             // 
-            // bunifuFlatButton2
+            // txb_taikhoan
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 5;
-            this.bunifuFlatButton2.ButtonText = "Thêm Và Mở Danh Sách";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 50D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(16, 144);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(243, 35);
-            this.bunifuFlatButton2.TabIndex = 22;
-            this.bunifuFlatButton2.Text = "Thêm Và Mở Danh Sách";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 5;
-            this.bunifuFlatButton1.ButtonText = "Thêm Và Xem";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 50D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(16, 92);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(243, 35);
-            this.bunifuFlatButton1.TabIndex = 21;
-            this.bunifuFlatButton1.Text = "Thêm Và Xem";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_xoa.BorderRadius = 5;
-            this.btn_xoa.ButtonText = "Thêm ";
-            this.btn_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_xoa.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_xoa.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_xoa.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
-            this.btn_xoa.Iconimage_right = null;
-            this.btn_xoa.Iconimage_right_Selected = null;
-            this.btn_xoa.Iconimage_Selected = null;
-            this.btn_xoa.IconMarginLeft = 0;
-            this.btn_xoa.IconMarginRight = 0;
-            this.btn_xoa.IconRightVisible = true;
-            this.btn_xoa.IconRightZoom = 0D;
-            this.btn_xoa.IconVisible = true;
-            this.btn_xoa.IconZoom = 50D;
-            this.btn_xoa.IsTab = false;
-            this.btn_xoa.Location = new System.Drawing.Point(16, 38);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xoa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.btn_xoa.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_xoa.selected = false;
-            this.btn_xoa.Size = new System.Drawing.Size(243, 35);
-            this.btn_xoa.TabIndex = 20;
-            this.btn_xoa.Text = "Thêm ";
-            this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_xoa.Textcolor = System.Drawing.Color.White;
-            this.btn_xoa.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txb_taikhoan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuImageButton1.Image = global::App_QLBan_Hang.Properties.Resources.icons8_add_new_64;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(364, 443);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(29, 35);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 24;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.txb_taikhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_taikhoan.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_taikhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_taikhoan.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_taikhoan.HintText = "nguyenvana";
+            this.txb_taikhoan.isPassword = false;
+            this.txb_taikhoan.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_taikhoan.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_taikhoan.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_taikhoan.LineThickness = 3;
+            this.txb_taikhoan.Location = new System.Drawing.Point(26, 58);
+            this.txb_taikhoan.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_taikhoan.Name = "txb_taikhoan";
+            this.txb_taikhoan.Size = new System.Drawing.Size(222, 37);
+            this.txb_taikhoan.TabIndex = 10;
+            this.txb_taikhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_taikhoan.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
+            // 
+            // lb_thongbao
+            // 
+            this.lb_thongbao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lb_thongbao.Location = new System.Drawing.Point(605, 295);
+            this.lb_thongbao.Name = "lb_thongbao";
+            this.lb_thongbao.Size = new System.Drawing.Size(278, 48);
+            this.lb_thongbao.TabIndex = 4;
+            this.lb_thongbao.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txb_pass2);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.txb_pass1);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.txb_taikhoan);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Location = new System.Drawing.Point(608, 17);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(275, 270);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Nhập thông tin đăng nhập";
+            // 
+            // txb_pass2
+            // 
+            this.txb_pass2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txb_pass2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_pass2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_pass2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_pass2.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_pass2.HintText = "";
+            this.txb_pass2.isPassword = true;
+            this.txb_pass2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_pass2.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_pass2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_pass2.LineThickness = 3;
+            this.txb_pass2.Location = new System.Drawing.Point(26, 222);
+            this.txb_pass2.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_pass2.Name = "txb_pass2";
+            this.txb_pass2.Size = new System.Drawing.Size(222, 37);
+            this.txb_pass2.TabIndex = 14;
+            this.txb_pass2.Text = "nguyenvana";
+            this.txb_pass2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.Location = new System.Drawing.Point(23, 203);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(128, 15);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Nhập lại mật khẩu:";
+            // 
+            // txb_pass1
+            // 
+            this.txb_pass1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txb_pass1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_pass1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_pass1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_pass1.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_pass1.HintText = "";
+            this.txb_pass1.isPassword = true;
+            this.txb_pass1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_pass1.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_pass1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_pass1.LineThickness = 3;
+            this.txb_pass1.Location = new System.Drawing.Point(26, 141);
+            this.txb_pass1.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_pass1.Name = "txb_pass1";
+            this.txb_pass1.Size = new System.Drawing.Size(222, 37);
+            this.txb_pass1.TabIndex = 12;
+            this.txb_pass1.Text = "nguyenvana";
+            this.txb_pass1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.Location = new System.Drawing.Point(23, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 15);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Mật khẩu:";
             // 
             // UC_NV_Them
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.lb_thongbao);
             this.Controls.Add(this.groupBox1);
             this.Name = "UC_NV_Them";
             this.Size = new System.Drawing.Size(916, 584);
+            this.Load += new System.EventHandler(this.UC_NV_Them_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_xem_cv)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuFlatButton btn_xoa;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_them;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label9;
@@ -581,18 +702,24 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox10;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown2;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker2;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_sdt;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_luong;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_diachi;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_cmnd;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_hoten;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_taikhoan;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_refer;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_themvaxem;
+        private Bunifu.Framework.UI.BunifuDropdown txb_gioitinh;
+        private Bunifu.Framework.UI.BunifuDropdown txb_chucvu;
+        private Bunifu.Framework.UI.BunifuDatepicker txb_ngaysinh;
+        private Bunifu.Framework.UI.BunifuDatepicker txb_gianhap;
+        private Bunifu.Framework.UI.BunifuImageButton btn_xem_cv;
+        private System.Windows.Forms.Label lb_thongbao;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_pass1;
+        private System.Windows.Forms.Label label11;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_pass2;
+        private System.Windows.Forms.Label label12;
     }
 }
