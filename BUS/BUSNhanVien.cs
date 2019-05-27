@@ -49,14 +49,67 @@ namespace BUS
         }
 
 
+
         public List<DTO.DTONhanVien> layHetNhanVien()
         {
             return new DAO.DAONhanVien().Lay();
         }
 
+
         public bool them(DTO.DTONhanVien nv)
         {
             return new DAO.DAONhanVien().Them(nv);
+        }
+
+
+        public bool sua(DTO.DTONhanVien nv)
+        {
+            return new DAO.DAONhanVien().Sua(nv);
+        }
+
+
+        public bool xoaNhanVien(DTO.DTONhanVien nv)
+        {
+            return new DAO.DAONhanVien().Xoa(nv);
+        }
+
+
+        public bool tonTaiTaiKhoan(string tk)
+        {
+            return new DAO.DAONhanVien().LayVoiTenTK(tk) != null;
+        }
+
+
+        public List<DTO.DTONhanVien> TimTheoChucVu(string chucvu)
+        {
+            return new DAO.DAONhanVien().TimNV_ChucVu(chucvu);
+        }
+
+        //0 Nam , 1 Nữ
+        public List<DTO.DTONhanVien> TimTheoGioiTinh(bool gioitinh)
+        {
+            return new DAO.DAONhanVien().TimNV_GioiTinh(gioitinh);
+        }
+
+
+        public List<DTO.DTONhanVien> TimTheoTaiKhoan(string tentaikhoan)
+        {
+            return new List<DTO.DTONhanVien>() { new DAO.DAONhanVien().LayVoiTenTK(tentaikhoan) };
+        }
+
+        public List<DTO.DTONhanVien> TimTheoTen(string tennv)
+        {
+            return new DAO.DAONhanVien().TimNV_Ten(tennv);
+        }
+
+        public List<DTO.DTONhanVien> TimTheoCMND(string cmnd)
+        {
+            return new DAO.DAONhanVien().TimNV_CMND(cmnd);
+        }
+
+        public List<DTO.DTONhanVien> TimTheoSDT(string sdt)
+        {
+            return new DAO.DAONhanVien().TimNV_SDT(sdt);
         }
 
     }

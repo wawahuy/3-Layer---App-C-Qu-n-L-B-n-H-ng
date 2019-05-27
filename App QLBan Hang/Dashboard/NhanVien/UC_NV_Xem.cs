@@ -36,19 +36,33 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
             lb_taikhoan.Text = nv.Taikhoan;
         }
 
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
+            UCNhanVien nv = new UCNhanVien();
+            nv.suaThongTin(nhanvien);
+            FDashboard.openUserControl(nv);
+        }
+
         private void btn_xoa_Click(object sender, EventArgs e)
         {
 
-        }
+            if (MessageBox.Show("Bạn có muốn xóa nhân viên này không ?", "Chú ý", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                return;
+            }
 
-        private void btn_sua_Click(object sender, EventArgs e)
-        {
-
+            if(new BUS.BUSNhanVien().xoaNhanVien(nhanvien))
+            {
+               MessageBox.Show("Xóa nhân viên thành công!");
+               FDashboard.openUserControl(new UCNhanVien());
+            } else
+            {
+                MessageBox.Show("Xóa nhân viên thất bại!");
+            }
         }
 
         private void btn_xem_ds_hoa_don_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

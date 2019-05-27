@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.datagrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.taikhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,10 +47,11 @@
             this.giotinht = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.dd_loaitimkiem = new Bunifu.Framework.UI.BunifuDropdown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.lb_alert_search = new System.Windows.Forms.Label();
+            this.dd_search = new Bunifu.Framework.UI.BunifuDropdown();
+            this.txb_search = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_lammoi = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_xem_ds_hoa_don = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -60,28 +61,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // datagrid
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.datagrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.datagrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.datagrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.datagrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.datagrid.ColumnHeadersHeight = 40;
             this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -108,13 +108,13 @@
             this.datagrid.Name = "datagrid";
             this.datagrid.ReadOnly = true;
             this.datagrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.datagrid.RowHeadersWidth = 20;
             this.datagrid.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datagrid.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(147)))), ((int)(((byte)(255)))));
@@ -240,62 +240,84 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách";
             // 
-            // bunifuDropdown1
+            // dd_loaitimkiem
             // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[0];
-            this.bunifuDropdown1.Location = new System.Drawing.Point(18, 21);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(132)))));
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(207, 35);
-            this.bunifuDropdown1.TabIndex = 6;
+            this.dd_loaitimkiem.BackColor = System.Drawing.Color.Transparent;
+            this.dd_loaitimkiem.BorderRadius = 3;
+            this.dd_loaitimkiem.ForeColor = System.Drawing.Color.White;
+            this.dd_loaitimkiem.Items = new string[] {
+        "Tấc cả",
+        "Tìm theo Tài Khoản",
+        "Tìm theo Tên",
+        "Tìm theo CMND",
+        "Tìm theo SĐT",
+        "Tìm theo Chức Vụ",
+        "Tìm theo Giới tính"};
+            this.dd_loaitimkiem.Location = new System.Drawing.Point(18, 21);
+            this.dd_loaitimkiem.Name = "dd_loaitimkiem";
+            this.dd_loaitimkiem.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.dd_loaitimkiem.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(132)))));
+            this.dd_loaitimkiem.selectedIndex = 0;
+            this.dd_loaitimkiem.Size = new System.Drawing.Size(260, 35);
+            this.dd_loaitimkiem.TabIndex = 6;
+            this.dd_loaitimkiem.onItemSelected += new System.EventHandler(this.dd_loaitimkiem_onItemSelected);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.bunifuMetroTextbox1);
-            this.groupBox2.Controls.Add(this.bunifuImageButton1);
-            this.groupBox2.Controls.Add(this.bunifuDropdown1);
+            this.groupBox2.Controls.Add(this.lb_alert_search);
+            this.groupBox2.Controls.Add(this.dd_search);
+            this.groupBox2.Controls.Add(this.txb_search);
+            this.groupBox2.Controls.Add(this.dd_loaitimkiem);
             this.groupBox2.Location = new System.Drawing.Point(17, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(298, 116);
+            this.groupBox2.Size = new System.Drawing.Size(298, 128);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm kiếm";
             // 
-            // bunifuMetroTextbox1
+            // lb_alert_search
             // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.bunifuMetroTextbox1.BorderThickness = 3;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(18, 63);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(260, 35);
-            this.bunifuMetroTextbox1.TabIndex = 7;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.lb_alert_search.ForeColor = System.Drawing.Color.Brown;
+            this.lb_alert_search.Location = new System.Drawing.Point(15, 102);
+            this.lb_alert_search.Name = "lb_alert_search";
+            this.lb_alert_search.Size = new System.Drawing.Size(263, 23);
+            this.lb_alert_search.TabIndex = 9;
+            this.lb_alert_search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // bunifuImageButton1
+            // dd_search
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuImageButton1.Image = global::App_QLBan_Hang.Properties.Resources.icons8_detective_filled_32;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.InitialImage = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(242, 21);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(36, 35);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton1.TabIndex = 5;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.dd_search.BackColor = System.Drawing.Color.Transparent;
+            this.dd_search.BorderRadius = 3;
+            this.dd_search.ForeColor = System.Drawing.Color.White;
+            this.dd_search.Items = new string[0];
+            this.dd_search.Location = new System.Drawing.Point(18, 63);
+            this.dd_search.Name = "dd_search";
+            this.dd_search.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.dd_search.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(132)))));
+            this.dd_search.selectedIndex = -1;
+            this.dd_search.Size = new System.Drawing.Size(260, 35);
+            this.dd_search.TabIndex = 8;
+            this.dd_search.Visible = false;
+            this.dd_search.onItemSelected += new System.EventHandler(this.dd_search_onItemSelected);
+            // 
+            // txb_search
+            // 
+            this.txb_search.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(132)))));
+            this.txb_search.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.txb_search.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(132)))));
+            this.txb_search.BorderThickness = 3;
+            this.txb_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_search.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_search.isPassword = false;
+            this.txb_search.Location = new System.Drawing.Point(18, 64);
+            this.txb_search.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_search.Name = "txb_search";
+            this.txb_search.Size = new System.Drawing.Size(260, 34);
+            this.txb_search.TabIndex = 7;
+            this.txb_search.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_search.Visible = false;
+            this.txb_search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_search_KeyPress);
             // 
             // groupBox3
             // 
@@ -307,7 +329,7 @@
             this.groupBox3.Controls.Add(this.btn_xem);
             this.groupBox3.Location = new System.Drawing.Point(617, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(285, 116);
+            this.groupBox3.Size = new System.Drawing.Size(285, 128);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Hành động";
@@ -368,7 +390,7 @@
             this.btn_xem_ds_hoa_don.IconVisible = true;
             this.btn_xem_ds_hoa_don.IconZoom = 50D;
             this.btn_xem_ds_hoa_don.IsTab = false;
-            this.btn_xem_ds_hoa_don.Location = new System.Drawing.Point(19, 63);
+            this.btn_xem_ds_hoa_don.Location = new System.Drawing.Point(19, 64);
             this.btn_xem_ds_hoa_don.Name = "btn_xem_ds_hoa_don";
             this.btn_xem_ds_hoa_don.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.btn_xem_ds_hoa_don.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
@@ -499,7 +521,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -525,13 +546,14 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private Bunifu.Framework.UI.BunifuFlatButton btn_xem;
         private Bunifu.Framework.UI.BunifuFlatButton btn_xoa;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
+        private Bunifu.Framework.UI.BunifuDropdown dd_loaitimkiem;
         private System.Windows.Forms.GroupBox groupBox2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private Bunifu.Framework.UI.BunifuFlatButton btn_sua;
         private Bunifu.Framework.UI.BunifuFlatButton btn_xem_ds_hoa_don;
         private Bunifu.Framework.UI.BunifuFlatButton btn_lammoi;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txb_search;
+        private Bunifu.Framework.UI.BunifuDropdown dd_search;
+        private System.Windows.Forms.Label lb_alert_search;
     }
 }

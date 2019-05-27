@@ -73,7 +73,7 @@ namespace DTO
             set
             {
                 giotinh = value;
-                tengioitinh = giotinh ? "Nam" : "Nữ";
+                tengioitinh = giotinh ? "Nữ" : "Nam";
             }
         }
 

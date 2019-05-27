@@ -11,25 +11,41 @@ using System.Text.RegularExpressions;
 
 namespace App_QLBan_Hang.Dashboard.NhanVien
 {
-    public partial class UC_NV_Them : UserControl
+    public partial class UC_NV_Sua : UserControl
     {
-        public UC_NV_Them()
+        DTO.DTONhanVien nhanvien;
+
+        public UC_NV_Sua()
         {
             InitializeComponent();
         }
 
-        private void btn_them_Click(object sender, EventArgs e)
+
+        public UC_NV_Sua(DTO.DTONhanVien nv)
         {
-            DTO.DTONhanVien nv = themNhanVien();
-            if ( nv != null)
-            {
-                xoaNoiDungForm();
-            }
+            InitializeComponent();
+            nhanvien = nv;
+
+            txb_hoten.Text = nv.Ten;
+            txb_gioitinh.selectedIndex = nv.Giotinh ? 1 : 0;
+            txb_cmnd.Text = nv.Cmnd;
+            txb_ngaysinh.Value = nv.Ngaysinh;
+            txb_diachi.Text = nv.Diachi;
+            txb_luong.Text = nv.Luong.ToString();
+            txb_gianhap.Value = nv.Gianhap;
+            txb_pass1.Text = txb_pass2.Text = nv.Matkhau;
+            txb_taikhoan.Text = nv.Taikhoan;
+            txb_sdt.Text = nv.Sdt;
         }
 
-        private void btn_themvaxem_Click(object sender, EventArgs e)
+        private void btn_sua_Click(object sender, EventArgs e)
         {
-            DTO.DTONhanVien nv = themNhanVien();
+            DTO.DTONhanVien nv = suaNhanVien();
+        }
+
+        private void btn_suavaxem_Click(object sender, EventArgs e)
+        {
+            DTO.DTONhanVien nv = suaNhanVien();
             if (nv != null)
             {
                 UCNhanVien ucnv = new UCNhanVien();
@@ -39,7 +55,7 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
         }
 
 
-        private DTO.DTONhanVien themNhanVien()
+        private DTO.DTONhanVien suaNhanVien()
         {
             if (!checkTextBox())
             {
@@ -47,7 +63,6 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
                 return null;
             }
 
-            DTO.DTONhanVien nhanvien = new DTO.DTONhanVien();
             nhanvien.Taikhoan = txb_taikhoan.Text;
             nhanvien.Ten = txb_hoten.Text;
             nhanvien.Giotinh = txb_gioitinh.selectedIndex == 0;
@@ -60,15 +75,15 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
             nhanvien.Cmnd = txb_cmnd.Text;
             nhanvien.Ngaysinh = txb_ngaysinh.Value;
 
-            bool status = (new BUS.BUSNhanVien()).them(nhanvien);
+            bool status = (new BUS.BUSNhanVien()).sua(nhanvien);
 
             if (!status)
             {
-                MessageBox.Show("Thêm nhân viên thất bại!");
+                MessageBox.Show("Sủa nhân viên thất bại!");
                 return null;
             } else
             {
-                MessageBox.Show("Thêm nhân viên thành công!");
+                MessageBox.Show("Sửa nhân viên thành công!");
                 return nhanvien;
             }
 
@@ -76,7 +91,7 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
 
         private void xoaNoiDungForm()
         {
-            txb_cmnd.Text = txb_diachi.Text = txb_hoten.Text = txb_taikhoan.Text = txb_luong.Text = txb_sdt.Text = txb_pass1.Text = txb_pass2.Text = "";
+            txb_cmnd.Text = txb_diachi.Text = txb_hoten.Text = txb_taikhoan.Text = txb_luong.Text = txb_sdt.Text = "";
         }
 
         private void txb_number_KeyPress(object sender, KeyPressEventArgs e)
@@ -119,28 +134,6 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
             }
 
             
-            // Kiểm tra tên tài khoản
-            lb_taikhoan.Text = "";
-            if (txb_taikhoan.Text == "")
-            {
-                complete = false;
-            }
-            else if ((new BUS.BUSNhanVien()).tonTaiTaiKhoan(txb_taikhoan.Text))
-            {
-                lb_taikhoan.Text = "Tài khoản này đã tồn tại!\r\n";
-                complete = false;
-            }
-            else if (txb_taikhoan.Text.Length < 6)
-            {
-                lb_taikhoan.Text = "Vui lòng nhập tài khoản >= 6 kí tự!\r\n";
-                complete = false;
-            }
-            else if (!Regex.IsMatch(txb_taikhoan.Text, @"^[a-zA-Z0-9_]+$"))
-            {
-                lb_taikhoan.Text = "Vui lòng nhập tài khoản không có kí tự đặc biệc!\r\n";
-                complete = false;
-            }
-
             lb_gioitinh.Text = "";
             if (txb_gioitinh.selectedIndex == -1)
             {
@@ -200,11 +193,23 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
             BUS.BUSChucVu chucvu = new BUS.BUSChucVu();
             List<string> cvs = Shared.SFunction.GetArrByPrototype<DTO.DTOChucVu, string>(chucvu.layHetChucVu(), "Tenchucvu");
             txb_chucvu.Items = cvs.ToArray();
+
+            int pos = -1;
+            txb_chucvu.Items.All((string item) => {
+                if (item == nhanvien.Tenchucvu) txb_chucvu.selectedIndex = ++pos;
+                return true;
+            });
         }
 
         private void btn_refer_Click(object sender, EventArgs e)
         {
             xoaNoiDungForm();
+        }
+
+        private void txb_chucvu_onItemSelected(object sender, EventArgs e)
+        {
+            checkTextBox();
+
         }
 
         private void txb_gioitinh_onItemSelected(object sender, EventArgs e)

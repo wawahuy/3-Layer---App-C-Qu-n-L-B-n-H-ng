@@ -50,7 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_xem_ds_hoa_don = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_sua = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_xoa = new Bunifu.Framework.UI.BunifuFlatButton();
             this.groupBox1.SuspendLayout();
@@ -291,50 +290,14 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.btn_xem_ds_hoa_don);
             this.groupBox2.Controls.Add(this.btn_sua);
             this.groupBox2.Controls.Add(this.btn_xoa);
             this.groupBox2.Location = new System.Drawing.Point(604, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(275, 199);
+            this.groupBox2.Size = new System.Drawing.Size(275, 158);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
-            // 
-            // btn_xem_ds_hoa_don
-            // 
-            this.btn_xem_ds_hoa_don.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xem_ds_hoa_don.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xem_ds_hoa_don.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_xem_ds_hoa_don.BorderRadius = 5;
-            this.btn_xem_ds_hoa_don.ButtonText = "Xem  DS Hóa Đơn";
-            this.btn_xem_ds_hoa_don.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_xem_ds_hoa_don.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_xem_ds_hoa_don.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_xem_ds_hoa_don.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_view_filled_32;
-            this.btn_xem_ds_hoa_don.Iconimage_right = null;
-            this.btn_xem_ds_hoa_don.Iconimage_right_Selected = null;
-            this.btn_xem_ds_hoa_don.Iconimage_Selected = null;
-            this.btn_xem_ds_hoa_don.IconMarginLeft = 0;
-            this.btn_xem_ds_hoa_don.IconMarginRight = 0;
-            this.btn_xem_ds_hoa_don.IconRightVisible = true;
-            this.btn_xem_ds_hoa_don.IconRightZoom = 0D;
-            this.btn_xem_ds_hoa_don.IconVisible = true;
-            this.btn_xem_ds_hoa_don.IconZoom = 50D;
-            this.btn_xem_ds_hoa_don.IsTab = false;
-            this.btn_xem_ds_hoa_don.Location = new System.Drawing.Point(18, 143);
-            this.btn_xem_ds_hoa_don.Name = "btn_xem_ds_hoa_don";
-            this.btn_xem_ds_hoa_don.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xem_ds_hoa_don.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.btn_xem_ds_hoa_don.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_xem_ds_hoa_don.selected = false;
-            this.btn_xem_ds_hoa_don.Size = new System.Drawing.Size(243, 35);
-            this.btn_xem_ds_hoa_don.TabIndex = 22;
-            this.btn_xem_ds_hoa_don.Text = "Xem  DS Hóa Đơn";
-            this.btn_xem_ds_hoa_don.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_xem_ds_hoa_don.Textcolor = System.Drawing.Color.White;
-            this.btn_xem_ds_hoa_don.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xem_ds_hoa_don.Click += new System.EventHandler(this.btn_xem_ds_hoa_don_Click);
             // 
             // btn_sua
             // 
@@ -445,7 +408,6 @@
         private System.Windows.Forms.Label lb_gioitinh;
         private System.Windows.Forms.Label lb_hoten;
         private System.Windows.Forms.Label lb_taikhoan;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_xem_ds_hoa_don;
         private Bunifu.Framework.UI.BunifuFlatButton btn_sua;
         private Bunifu.Framework.UI.BunifuFlatButton btn_xoa;
     }

@@ -109,6 +109,17 @@ namespace DAO
             return ds.Count == 0 ? null : ds[0];
         }
 
+        public DTO.DTONhanVien LayVoiTenTK(string taikhoan)
+        {
+            List<DTO.DTONhanVien> ds =
+                TachDTO(
+                    new DAOSql()
+                        .Query("Select * from nhanvien where taikhoan = @u and xoa=0")
+                        .BindParam("@u", taikhoan)
+                        .ExecuteReader());
+            return ds.Count == 0 ? null : ds[0];
+        }
+
 
         public DTO.DTONhanVien LayVoiMa(int ma)
         {
@@ -119,6 +130,54 @@ namespace DAO
                         .BindParam("@ma", ma)
                         .ExecuteReader());
             return ds.Count == 0 ? null : ds[0];
+        }
+
+
+        public List<DTO.DTONhanVien> TimNV_ChucVu(string tenchucvu)
+        {
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select nv.* from nhanvien nv, chucvu cv where nv.macv = cv.macv and cv.tencv = @ten and xoa = 0")
+                        .BindParam("@ten", tenchucvu)
+                        .ExecuteReader());
+        }
+
+
+        public List<DTO.DTONhanVien> TimNV_GioiTinh(bool gioitinh)
+        {
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select * from nhanvien where gioitinh = @gioitinh and xoa = 0")
+                        .BindParam("@gioitinh", gioitinh)
+                        .ExecuteReader());
+        }
+
+
+        public List<DTO.DTONhanVien> TimNV_Ten(string tennv)
+        {
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select * from nhanvien where tennv like @ten and xoa = 0")
+                        .BindParam("@ten", "%"+tennv+"%")
+                        .ExecuteReader());
+        }
+
+        public List<DTO.DTONhanVien> TimNV_SDT(string sdt)
+        {
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select * from nhanvien where SDT like @sdt and xoa = 0")
+                        .BindParam("@sdt", sdt+'%')
+                        .ExecuteReader());
+        }
+
+        public List<DTO.DTONhanVien> TimNV_CMND(string cmnd)
+        {
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select * from nhanvien where CMND like @cmnd and xoa = 0")
+                        .BindParam("@cmnd", cmnd + '%')
+                        .ExecuteReader());
         }
 
     }

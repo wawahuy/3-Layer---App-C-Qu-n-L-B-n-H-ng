@@ -56,6 +56,12 @@
     <Compile Include="Dashboard\NhanVien\UC_NV_DanhSach.Designer.cs">
       <DependentUpon>UC_NV_DanhSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\NhanVien\UC_NV_Sua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\NhanVien\UC_NV_Sua.Designer.cs">
+      <DependentUpon>UC_NV_Sua.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\NhanVien\UC_NV_Them.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </Compile>
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_DanhSach.resx">
       <DependentUpon>UC_NV_DanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_Sua.resx">
+      <DependentUpon>UC_NV_Sua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_Them.resx">
       <DependentUpon>UC_NV_Them.cs</DependentUpon>

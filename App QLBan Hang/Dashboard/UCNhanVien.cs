@@ -40,6 +40,12 @@ namespace App_QLBan_Hang.Dashboard
             transitionPage.openGUI(new Dashboard.NhanVien.UC_NV_Xem(nhanvien));
         }
 
+        public void suaThongTin(DTO.DTONhanVien nhanvien)
+        {
+            uC_MenuTop.click(3);
+            transitionPage.openGUI(new Dashboard.NhanVien.UC_NV_Sua(nhanvien));
+        }
+
         private void uC_MenuTop1_YuhClick(object sender, EventArgs e)
         {
             Yuh.UC_MenuTop.UC_MenuTopChild item = (Yuh.UC_MenuTop.UC_MenuTopChild)sender;

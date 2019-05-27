@@ -1,6 +1,6 @@
 ﻿namespace App_QLBan_Hang.Dashboard.NhanVien
 {
-    partial class UC_NV_Them
+    partial class UC_NV_Sua
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,9 +30,8 @@
         {
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_refer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_themvaxem = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_them = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_suavaxem = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_sua = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -91,9 +90,8 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.btn_refer);
-            this.groupBox2.Controls.Add(this.btn_themvaxem);
-            this.groupBox2.Controls.Add(this.btn_them);
+            this.groupBox2.Controls.Add(this.btn_suavaxem);
+            this.groupBox2.Controls.Add(this.btn_sua);
             this.groupBox2.Location = new System.Drawing.Point(608, 368);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(275, 201);
@@ -101,110 +99,75 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
-            // btn_refer
+            // btn_suavaxem
             // 
-            this.btn_refer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_refer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_refer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_refer.BorderRadius = 5;
-            this.btn_refer.ButtonText = "Làm mới";
-            this.btn_refer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_refer.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_refer.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_refer.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
-            this.btn_refer.Iconimage_right = null;
-            this.btn_refer.Iconimage_right_Selected = null;
-            this.btn_refer.Iconimage_Selected = null;
-            this.btn_refer.IconMarginLeft = 0;
-            this.btn_refer.IconMarginRight = 0;
-            this.btn_refer.IconRightVisible = true;
-            this.btn_refer.IconRightZoom = 0D;
-            this.btn_refer.IconVisible = true;
-            this.btn_refer.IconZoom = 50D;
-            this.btn_refer.IsTab = false;
-            this.btn_refer.Location = new System.Drawing.Point(16, 144);
-            this.btn_refer.Name = "btn_refer";
-            this.btn_refer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_refer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.btn_refer.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_refer.selected = false;
-            this.btn_refer.Size = new System.Drawing.Size(243, 35);
-            this.btn_refer.TabIndex = 22;
-            this.btn_refer.Text = "Làm mới";
-            this.btn_refer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_refer.Textcolor = System.Drawing.Color.White;
-            this.btn_refer.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refer.Click += new System.EventHandler(this.btn_refer_Click);
+            this.btn_suavaxem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_suavaxem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_suavaxem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_suavaxem.BorderRadius = 5;
+            this.btn_suavaxem.ButtonText = "Sửa Và Xem";
+            this.btn_suavaxem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_suavaxem.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_suavaxem.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_suavaxem.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
+            this.btn_suavaxem.Iconimage_right = null;
+            this.btn_suavaxem.Iconimage_right_Selected = null;
+            this.btn_suavaxem.Iconimage_Selected = null;
+            this.btn_suavaxem.IconMarginLeft = 0;
+            this.btn_suavaxem.IconMarginRight = 0;
+            this.btn_suavaxem.IconRightVisible = true;
+            this.btn_suavaxem.IconRightZoom = 0D;
+            this.btn_suavaxem.IconVisible = true;
+            this.btn_suavaxem.IconZoom = 50D;
+            this.btn_suavaxem.IsTab = false;
+            this.btn_suavaxem.Location = new System.Drawing.Point(16, 128);
+            this.btn_suavaxem.Name = "btn_suavaxem";
+            this.btn_suavaxem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_suavaxem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
+            this.btn_suavaxem.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_suavaxem.selected = false;
+            this.btn_suavaxem.Size = new System.Drawing.Size(243, 35);
+            this.btn_suavaxem.TabIndex = 21;
+            this.btn_suavaxem.Text = "Sửa Và Xem";
+            this.btn_suavaxem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_suavaxem.Textcolor = System.Drawing.Color.White;
+            this.btn_suavaxem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_suavaxem.Click += new System.EventHandler(this.btn_suavaxem_Click);
             // 
-            // btn_themvaxem
+            // btn_sua
             // 
-            this.btn_themvaxem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_themvaxem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_themvaxem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_themvaxem.BorderRadius = 5;
-            this.btn_themvaxem.ButtonText = "Thêm Và Xem";
-            this.btn_themvaxem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_themvaxem.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_themvaxem.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_themvaxem.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
-            this.btn_themvaxem.Iconimage_right = null;
-            this.btn_themvaxem.Iconimage_right_Selected = null;
-            this.btn_themvaxem.Iconimage_Selected = null;
-            this.btn_themvaxem.IconMarginLeft = 0;
-            this.btn_themvaxem.IconMarginRight = 0;
-            this.btn_themvaxem.IconRightVisible = true;
-            this.btn_themvaxem.IconRightZoom = 0D;
-            this.btn_themvaxem.IconVisible = true;
-            this.btn_themvaxem.IconZoom = 50D;
-            this.btn_themvaxem.IsTab = false;
-            this.btn_themvaxem.Location = new System.Drawing.Point(16, 92);
-            this.btn_themvaxem.Name = "btn_themvaxem";
-            this.btn_themvaxem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_themvaxem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.btn_themvaxem.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_themvaxem.selected = false;
-            this.btn_themvaxem.Size = new System.Drawing.Size(243, 35);
-            this.btn_themvaxem.TabIndex = 21;
-            this.btn_themvaxem.Text = "Thêm Và Xem";
-            this.btn_themvaxem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_themvaxem.Textcolor = System.Drawing.Color.White;
-            this.btn_themvaxem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_themvaxem.Click += new System.EventHandler(this.btn_themvaxem_Click);
-            // 
-            // btn_them
-            // 
-            this.btn_them.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_them.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_them.BorderRadius = 5;
-            this.btn_them.ButtonText = "Thêm ";
-            this.btn_them.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_them.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_them.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_them.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
-            this.btn_them.Iconimage_right = null;
-            this.btn_them.Iconimage_right_Selected = null;
-            this.btn_them.Iconimage_Selected = null;
-            this.btn_them.IconMarginLeft = 0;
-            this.btn_them.IconMarginRight = 0;
-            this.btn_them.IconRightVisible = true;
-            this.btn_them.IconRightZoom = 0D;
-            this.btn_them.IconVisible = true;
-            this.btn_them.IconZoom = 50D;
-            this.btn_them.IsTab = false;
-            this.btn_them.Location = new System.Drawing.Point(16, 38);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_them.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.btn_them.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_them.selected = false;
-            this.btn_them.Size = new System.Drawing.Size(243, 35);
-            this.btn_them.TabIndex = 20;
-            this.btn_them.Text = "Thêm ";
-            this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_them.Textcolor = System.Drawing.Color.White;
-            this.btn_them.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            this.btn_sua.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_sua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_sua.BorderRadius = 5;
+            this.btn_sua.ButtonText = "Sửa";
+            this.btn_sua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_sua.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_sua.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_sua.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
+            this.btn_sua.Iconimage_right = null;
+            this.btn_sua.Iconimage_right_Selected = null;
+            this.btn_sua.Iconimage_Selected = null;
+            this.btn_sua.IconMarginLeft = 0;
+            this.btn_sua.IconMarginRight = 0;
+            this.btn_sua.IconRightVisible = true;
+            this.btn_sua.IconRightZoom = 0D;
+            this.btn_sua.IconVisible = true;
+            this.btn_sua.IconZoom = 50D;
+            this.btn_sua.IsTab = false;
+            this.btn_sua.Location = new System.Drawing.Point(16, 54);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
+            this.btn_sua.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
+            this.btn_sua.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_sua.selected = false;
+            this.btn_sua.Size = new System.Drawing.Size(243, 35);
+            this.btn_sua.TabIndex = 20;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_sua.Textcolor = System.Drawing.Color.White;
+            this.btn_sua.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // label9
             // 
@@ -452,7 +415,7 @@
             this.txb_chucvu.selectedIndex = -1;
             this.txb_chucvu.Size = new System.Drawing.Size(177, 35);
             this.txb_chucvu.TabIndex = 23;
-            this.txb_chucvu.onItemSelected += new System.EventHandler(this.txb_gioitinh_onItemSelected);
+            this.txb_chucvu.onItemSelected += new System.EventHandler(this.txb_chucvu_onItemSelected);
             // 
             // txb_ngaysinh
             // 
@@ -627,6 +590,7 @@
             // txb_taikhoan
             // 
             this.txb_taikhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_taikhoan.Enabled = false;
             this.txb_taikhoan.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txb_taikhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txb_taikhoan.HintForeColor = System.Drawing.Color.Empty;
@@ -749,14 +713,14 @@
             this.label11.TabIndex = 11;
             this.label11.Text = "Mật khẩu:";
             // 
-            // UC_NV_Them
+            // UC_NV_Sua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lb_username);
             this.Controls.Add(this.groupBox1);
-            this.Name = "UC_NV_Them";
+            this.Name = "UC_NV_Sua";
             this.Size = new System.Drawing.Size(916, 584);
             this.Load += new System.EventHandler(this.UC_NV_Them_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
@@ -772,7 +736,7 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuFlatButton btn_them;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_sua;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label9;
@@ -791,8 +755,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_cmnd;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_hoten;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_taikhoan;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_refer;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_themvaxem;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_suavaxem;
         private Bunifu.Framework.UI.BunifuDropdown txb_gioitinh;
         private Bunifu.Framework.UI.BunifuDropdown txb_chucvu;
         private Bunifu.Framework.UI.BunifuDatepicker txb_ngaysinh;
