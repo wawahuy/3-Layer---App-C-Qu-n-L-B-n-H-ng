@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace App_QLBan_Hang.Dashboard.SizeMau
 {
-    public partial class UC_Mau : UserControl
+    public partial class UC_KichCo : UserControl
     {
-        DTO.DTOMau mauChon;
+        DTO.DTOKichCo kichCoChon;
 
-        public UC_Mau()
+        public UC_KichCo()
         {
             InitializeComponent();
 
@@ -26,7 +26,7 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
 
         private void load()
         {
-            BUS.BUSMau busMau = new BUS.BUSMau();
+            BUS.BUSKichCo busMau = new BUS.BUSKichCo();
 
             if(txb_search.text == "")
                 datagrid.DataSource = busMau.lay();
@@ -37,9 +37,9 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
         private void datagrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (datagrid.SelectedRows.Count == 0) return;
-            mauChon = (DTO.DTOMau)datagrid.SelectedRows[0].DataBoundItem;
+            kichCoChon = (DTO.DTOKichCo)datagrid.SelectedRows[0].DataBoundItem;
 
-            txb_tenmau.Text = mauChon.Ten;
+            txb_tenmau.Text = kichCoChon.Ten;
             btn_huy.Visible = true;
             btn_sua.Visible = true;
             btn_xoa.Visible = true;
@@ -48,10 +48,10 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            DTO.DTOMau mau = new DTO.DTOMau();
-            mau.Ten = txb_tenmau.Text;
+            DTO.DTOKichCo kichco = new DTO.DTOKichCo();
+            kichco.Ten = txb_tenmau.Text;
 
-            if (new BUS.BUSMau().them(mau))
+            if (new BUS.BUSKichCo().them(kichco))
             {
                 MessageBox.Show("Thêm thành công!");
             } else
@@ -64,7 +64,7 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-            if(new BUS.BUSMau().xoa(mauChon))
+            if(new BUS.BUSKichCo().xoa(kichCoChon))
             {
                 MessageBox.Show("Xóa thành công!");
             } else
@@ -77,8 +77,8 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            mauChon.Ten = txb_tenmau.Text;
-            if (new BUS.BUSMau().sua(mauChon))
+            kichCoChon.Ten = txb_tenmau.Text;
+            if (new BUS.BUSKichCo().sua(kichCoChon))
             {
                 MessageBox.Show("Sửa thành công!");
             }
@@ -96,7 +96,7 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
             btn_sua.Visible = false;
             btn_xoa.Visible = false;
             btn_them.Visible = true;
-            mauChon = null;
+            kichCoChon = null;
             txb_search.text = "";
         }
 
@@ -105,13 +105,12 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
             load();
         }
 
-        private void UC_Mau_Load(object sender, EventArgs e)
+        private void UC_KichCo_Load(object sender, EventArgs e)
         {
             try
             {
                 load();
-            }
-            catch { }
+            } catch { }
         }
     }
 }

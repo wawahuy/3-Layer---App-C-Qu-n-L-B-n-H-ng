@@ -57,5 +57,10 @@ namespace App_QLBan_Hang
         {
             transitionPage.openGUI(new Dashboard.UCSizeMau());
         }
+
+        private void btn_sanpham_Click(object sender, EventArgs e)
+        {
+            transitionPage.openGUI(new Dashboard.UCSanPham());
+        }
     }
 }

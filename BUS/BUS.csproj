@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUSKichCo.cs" />
     <Compile Include="BUSMau.cs" />
     <Compile Include="BUSChucVu.cs" />
     <Compile Include="BUSKhachHang.cs" />

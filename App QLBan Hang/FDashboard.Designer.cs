@@ -38,7 +38,7 @@
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_size_mau = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_sanpham = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_khachhang = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_nhanvien = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -75,7 +75,7 @@
             this.panel_menu.Controls.Add(this.bunifuFlatButton4);
             this.panel_menu.Controls.Add(this.bunifuFlatButton3);
             this.panel_menu.Controls.Add(this.btn_size_mau);
-            this.panel_menu.Controls.Add(this.bunifuFlatButton1);
+            this.panel_menu.Controls.Add(this.btn_sanpham);
             this.panel_menu.Controls.Add(this.btn_khachhang);
             this.panel_menu.Controls.Add(this.btn_nhanvien);
             this.bunifuTransition.SetDecoration(this.panel_menu, BunifuAnimatorNS.DecorationType.None);
@@ -280,44 +280,45 @@
             this.btn_size_mau.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_size_mau.Click += new System.EventHandler(this.btn_size_mau_Click);
             // 
-            // bunifuFlatButton1
+            // btn_sanpham
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(102)))));
-            this.bunifuFlatButton1.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "     Sản Phẩm";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_box_filled_32;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 9;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = false;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 55D;
-            this.bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 92);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(282, 46);
-            this.bunifuFlatButton1.TabIndex = 4;
-            this.bunifuFlatButton1.Text = "     Sản Phẩm";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sanpham.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(102)))));
+            this.btn_sanpham.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.btn_sanpham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
+            this.btn_sanpham.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_sanpham.BorderRadius = 0;
+            this.btn_sanpham.ButtonText = "     Sản Phẩm";
+            this.btn_sanpham.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition.SetDecoration(this.btn_sanpham, BunifuAnimatorNS.DecorationType.None);
+            this.btn_sanpham.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_sanpham.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_sanpham.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_sanpham.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_box_filled_32;
+            this.btn_sanpham.Iconimage_right = null;
+            this.btn_sanpham.Iconimage_right_Selected = null;
+            this.btn_sanpham.Iconimage_Selected = null;
+            this.btn_sanpham.IconMarginLeft = 9;
+            this.btn_sanpham.IconMarginRight = 0;
+            this.btn_sanpham.IconRightVisible = false;
+            this.btn_sanpham.IconRightZoom = 0D;
+            this.btn_sanpham.IconVisible = true;
+            this.btn_sanpham.IconZoom = 55D;
+            this.btn_sanpham.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.btn_sanpham.IsTab = true;
+            this.btn_sanpham.Location = new System.Drawing.Point(0, 92);
+            this.btn_sanpham.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.btn_sanpham.Name = "btn_sanpham";
+            this.btn_sanpham.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(104)))), ((int)(((byte)(141)))));
+            this.btn_sanpham.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
+            this.btn_sanpham.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.btn_sanpham.selected = false;
+            this.btn_sanpham.Size = new System.Drawing.Size(282, 46);
+            this.btn_sanpham.TabIndex = 4;
+            this.btn_sanpham.Text = "     Sản Phẩm";
+            this.btn_sanpham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_sanpham.Textcolor = System.Drawing.Color.White;
+            this.btn_sanpham.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sanpham.Click += new System.EventHandler(this.btn_sanpham_Click);
             // 
             // btn_khachhang
             // 
@@ -540,7 +541,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private Bunifu.Framework.UI.BunifuFlatButton btn_size_mau;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_sanpham;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
     }
 }

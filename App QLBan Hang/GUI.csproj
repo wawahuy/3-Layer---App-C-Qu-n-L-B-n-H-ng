@@ -98,11 +98,23 @@
     <Compile Include="Dashboard\NhanVien\UC_NV_Xem.Designer.cs">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\SizeMau\UC_KichCo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SizeMau\UC_KichCo.Designer.cs">
+      <DependentUpon>UC_KichCo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\SizeMau\UC_Mau.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Dashboard\SizeMau\UC_Mau.Designer.cs">
       <DependentUpon>UC_Mau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UCSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UCSanPham.Designer.cs">
+      <DependentUpon>UCSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\UCSizeMau.cs">
       <SubType>UserControl</SubType>
@@ -208,8 +220,14 @@
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_Xem.resx">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\SizeMau\UC_KichCo.resx">
+      <DependentUpon>UC_KichCo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\SizeMau\UC_Mau.resx">
       <DependentUpon>UC_Mau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\UCSanPham.resx">
+      <DependentUpon>UCSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\UCSizeMau.resx">
       <DependentUpon>UCSizeMau.cs</DependentUpon>
