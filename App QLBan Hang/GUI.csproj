@@ -50,6 +50,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard\KhachHang\UC_KH_DanhSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\KhachHang\UC_KH_DanhSach.Designer.cs">
+      <DependentUpon>UC_KH_DanhSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\KhachHang\UC_KH_Sua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\KhachHang\UC_KH_Sua.Designer.cs">
+      <DependentUpon>UC_KH_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\KhachHang\UC_KH_Them.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\KhachHang\UC_KH_Them.Designer.cs">
+      <DependentUpon>UC_KH_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\KhachHang\UC_KH_Xem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\KhachHang\UC_KH_Xem.Designer.cs">
+      <DependentUpon>UC_KH_Xem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\NhanVien\UC_NV_DanhSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,6 +97,12 @@
     </Compile>
     <Compile Include="Dashboard\NhanVien\UC_NV_Xem.Designer.cs">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UCKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UCKhachHang.Designer.cs">
+      <DependentUpon>UCKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\UCNhanVien.cs">
       <SubType>UserControl</SubType>
@@ -142,6 +172,18 @@
     <Compile Include="Yuh\CT_Waiting.Designer.cs">
       <DependentUpon>CT_Waiting.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dashboard\KhachHang\UC_KH_DanhSach.resx">
+      <DependentUpon>UC_KH_DanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\KhachHang\UC_KH_Sua.resx">
+      <DependentUpon>UC_KH_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\KhachHang\UC_KH_Them.resx">
+      <DependentUpon>UC_KH_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\KhachHang\UC_KH_Xem.resx">
+      <DependentUpon>UC_KH_Xem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_DanhSach.resx">
       <DependentUpon>UC_NV_DanhSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_Xem.resx">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\UCKhachHang.resx">
+      <DependentUpon>UCKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\UCNhanVien.resx">
       <DependentUpon>UCNhanVien.cs</DependentUpon>
@@ -336,6 +381,10 @@
   <ItemGroup>
     <None Include="Resources\icons8-development-skill-321.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-groups-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -21,6 +21,11 @@ namespace App_QLBan_Hang
             btn_nhanvien_Click(null, null);
         }
 
+        public static void openUserControl(UserControl uc)
+        {
+            currentShow.transitionPage.openGUINoAnimation(uc);
+        }
+
         private void btn_menu_Click(object sender, EventArgs e)
         {
             int MIN_PANEL_MENU = 45;
@@ -43,10 +48,11 @@ namespace App_QLBan_Hang
             transitionPage.openGUI(new Dashboard.UCNhanVien());
         }
 
-        public static void openUserControl(UserControl uc)
-        {
-            currentShow.transitionPage.openGUINoAnimation(uc);
-        }
+        
 
+        private void btn_khachhang_Click(object sender, EventArgs e)
+        {
+            transitionPage.openGUI(new Dashboard.UCKhachHang());
+        }
     }
 }

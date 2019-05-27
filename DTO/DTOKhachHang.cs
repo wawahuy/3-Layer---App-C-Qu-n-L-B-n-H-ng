@@ -10,11 +10,14 @@ namespace DTO
     {
         private int ma;
         private string cmnd;
+        private string ten;
         private bool giotinh;                   //0:Nam, 1:Nu
-        private string luong;
         private string sdt;
         private string diachi;
         private DateTime ngaysinh;
+        private int diem;
+
+        private string tengioitinh;
 
         public int Ma
         {
@@ -52,21 +55,10 @@ namespace DTO
             set
             {
                 giotinh = value;
+                Tengioitinh = giotinh ? "Nữ" : "Nam";
             }
         }
 
-        public string Luong
-        {
-            get
-            {
-                return luong;
-            }
-
-            set
-            {
-                luong = value;
-            }
-        }
 
         public string Sdt
         {
@@ -104,6 +96,45 @@ namespace DTO
             set
             {
                 ngaysinh = value;
+            }
+        }
+
+        public int Diem
+        {
+            get
+            {
+                return diem;
+            }
+
+            set
+            {
+                diem = value;
+            }
+        }
+
+        public string Tengioitinh
+        {
+            get
+            {
+                return tengioitinh;
+            }
+
+            set
+            {
+                tengioitinh = value;
+            }
+        }
+
+        public string Ten
+        {
+            get
+            {
+                return ten;
+            }
+
+            set
+            {
+                ten = value;
             }
         }
     }

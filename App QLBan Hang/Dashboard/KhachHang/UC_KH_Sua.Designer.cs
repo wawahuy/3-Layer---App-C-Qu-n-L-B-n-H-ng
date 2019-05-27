@@ -1,6 +1,6 @@
-﻿namespace App_QLBan_Hang.Dashboard.NhanVien
+﻿namespace App_QLBan_Hang.Dashboard.KhachHang
 {
-    partial class UC_NV_Them
+    partial class UC_KH_Sua
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,49 +30,28 @@
         {
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_refer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_themvaxem = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_them = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lb_sdt = new System.Windows.Forms.Label();
             this.lb_chucvu = new System.Windows.Forms.Label();
             this.lb_cmnd = new System.Windows.Forms.Label();
             this.lb_diachi = new System.Windows.Forms.Label();
-            this.lb_luong = new System.Windows.Forms.Label();
             this.lb_hoten = new System.Windows.Forms.Label();
             this.lb_gioitinh = new System.Windows.Forms.Label();
-            this.btn_xem_cv = new Bunifu.Framework.UI.BunifuImageButton();
-            this.txb_chucvu = new Bunifu.Framework.UI.BunifuDropdown();
             this.txb_ngaysinh = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.txb_gianhap = new Bunifu.Framework.UI.BunifuDatepicker();
             this.txb_gioitinh = new Bunifu.Framework.UI.BunifuDropdown();
             this.txb_sdt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txb_luong = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txb_diachi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txb_cmnd = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txb_hoten = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txb_taikhoan = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.lb_username = new System.Windows.Forms.GroupBox();
-            this.lb_taikhoan = new System.Windows.Forms.Label();
-            this.lb_pass1 = new System.Windows.Forms.Label();
-            this.lb_pass2 = new System.Windows.Forms.Label();
-            this.txb_pass2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txb_pass1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_xem_cv)).BeginInit();
-            this.lb_username.SuspendLayout();
             this.SuspendLayout();
             // 
             // label10
@@ -82,7 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(35, 508);
+            this.label10.Location = new System.Drawing.Point(35, 491);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(34, 15);
             this.label10.TabIndex = 9;
@@ -91,50 +70,14 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.btn_refer);
             this.groupBox2.Controls.Add(this.btn_themvaxem);
             this.groupBox2.Controls.Add(this.btn_them);
-            this.groupBox2.Location = new System.Drawing.Point(608, 368);
+            this.groupBox2.Location = new System.Drawing.Point(617, 17);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(275, 201);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
-            // 
-            // btn_refer
-            // 
-            this.btn_refer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_refer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_refer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_refer.BorderRadius = 5;
-            this.btn_refer.ButtonText = "Làm mới";
-            this.btn_refer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_refer.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_refer.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_refer.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_edit_property_filled_321;
-            this.btn_refer.Iconimage_right = null;
-            this.btn_refer.Iconimage_right_Selected = null;
-            this.btn_refer.Iconimage_Selected = null;
-            this.btn_refer.IconMarginLeft = 0;
-            this.btn_refer.IconMarginRight = 0;
-            this.btn_refer.IconRightVisible = true;
-            this.btn_refer.IconRightZoom = 0D;
-            this.btn_refer.IconVisible = true;
-            this.btn_refer.IconZoom = 50D;
-            this.btn_refer.IsTab = false;
-            this.btn_refer.Location = new System.Drawing.Point(16, 144);
-            this.btn_refer.Name = "btn_refer";
-            this.btn_refer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_refer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.btn_refer.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_refer.selected = false;
-            this.btn_refer.Size = new System.Drawing.Size(243, 35);
-            this.btn_refer.TabIndex = 22;
-            this.btn_refer.Text = "Làm mới";
-            this.btn_refer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_refer.Textcolor = System.Drawing.Color.White;
-            this.btn_refer.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refer.Click += new System.EventHandler(this.btn_refer_Click);
             // 
             // btn_themvaxem
             // 
@@ -142,7 +85,7 @@
             this.btn_themvaxem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.btn_themvaxem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_themvaxem.BorderRadius = 5;
-            this.btn_themvaxem.ButtonText = "Thêm Và Xem";
+            this.btn_themvaxem.ButtonText = "Sửa Và Xem";
             this.btn_themvaxem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_themvaxem.DisabledColor = System.Drawing.Color.Gray;
             this.btn_themvaxem.Iconcolor = System.Drawing.Color.Transparent;
@@ -157,7 +100,7 @@
             this.btn_themvaxem.IconVisible = true;
             this.btn_themvaxem.IconZoom = 50D;
             this.btn_themvaxem.IsTab = false;
-            this.btn_themvaxem.Location = new System.Drawing.Point(16, 92);
+            this.btn_themvaxem.Location = new System.Drawing.Point(16, 127);
             this.btn_themvaxem.Name = "btn_themvaxem";
             this.btn_themvaxem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.btn_themvaxem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
@@ -165,11 +108,11 @@
             this.btn_themvaxem.selected = false;
             this.btn_themvaxem.Size = new System.Drawing.Size(243, 35);
             this.btn_themvaxem.TabIndex = 21;
-            this.btn_themvaxem.Text = "Thêm Và Xem";
+            this.btn_themvaxem.Text = "Sửa Và Xem";
             this.btn_themvaxem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_themvaxem.Textcolor = System.Drawing.Color.White;
             this.btn_themvaxem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_themvaxem.Click += new System.EventHandler(this.btn_themvaxem_Click);
+            this.btn_themvaxem.Click += new System.EventHandler(this.btn_suavaxem_Click);
             // 
             // btn_them
             // 
@@ -177,7 +120,7 @@
             this.btn_them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.btn_them.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_them.BorderRadius = 5;
-            this.btn_them.ButtonText = "Thêm ";
+            this.btn_them.ButtonText = "Sửa";
             this.btn_them.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_them.DisabledColor = System.Drawing.Color.Gray;
             this.btn_them.Iconcolor = System.Drawing.Color.Transparent;
@@ -192,7 +135,7 @@
             this.btn_them.IconVisible = true;
             this.btn_them.IconZoom = 50D;
             this.btn_them.IsTab = false;
-            this.btn_them.Location = new System.Drawing.Point(16, 38);
+            this.btn_them.Location = new System.Drawing.Point(16, 58);
             this.btn_them.Name = "btn_them";
             this.btn_them.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.btn_them.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
@@ -200,35 +143,11 @@
             this.btn_them.selected = false;
             this.btn_them.Size = new System.Drawing.Size(243, 35);
             this.btn_them.TabIndex = 20;
-            this.btn_them.Text = "Thêm ";
+            this.btn_them.Text = "Sửa";
             this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_them.Textcolor = System.Drawing.Color.White;
             this.btn_them.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(35, 405);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 15);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Chức vụ:";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(306, 405);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 15);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Gia nhập:";
+            this.btn_them.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // label6
             // 
@@ -236,7 +155,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(306, 109);
+            this.label6.Location = new System.Drawing.Point(35, 411);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 15);
             this.label6.TabIndex = 5;
@@ -249,7 +168,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(35, 214);
+            this.label5.Location = new System.Drawing.Point(35, 232);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 4;
@@ -261,7 +180,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(35, 109);
+            this.label4.Location = new System.Drawing.Point(35, 147);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 15);
             this.label4.TabIndex = 3;
@@ -274,21 +193,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(35, 292);
+            this.label3.Location = new System.Drawing.Point(35, 321);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Địa chỉ:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(23, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tài khoản:";
             // 
             // label1
             // 
@@ -303,19 +212,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Họ và tên:";
             // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(35, 359);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 15);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Lương:";
-            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -324,23 +220,15 @@
             this.groupBox1.Controls.Add(this.lb_chucvu);
             this.groupBox1.Controls.Add(this.lb_cmnd);
             this.groupBox1.Controls.Add(this.lb_diachi);
-            this.groupBox1.Controls.Add(this.lb_luong);
             this.groupBox1.Controls.Add(this.lb_hoten);
             this.groupBox1.Controls.Add(this.lb_gioitinh);
-            this.groupBox1.Controls.Add(this.btn_xem_cv);
-            this.groupBox1.Controls.Add(this.txb_chucvu);
             this.groupBox1.Controls.Add(this.txb_ngaysinh);
-            this.groupBox1.Controls.Add(this.txb_gianhap);
             this.groupBox1.Controls.Add(this.txb_gioitinh);
             this.groupBox1.Controls.Add(this.txb_sdt);
-            this.groupBox1.Controls.Add(this.txb_luong);
             this.groupBox1.Controls.Add(this.txb_diachi);
             this.groupBox1.Controls.Add(this.txb_cmnd);
             this.groupBox1.Controls.Add(this.txb_hoten);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -356,7 +244,7 @@
             // lb_sdt
             // 
             this.lb_sdt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_sdt.Location = new System.Drawing.Point(150, 527);
+            this.lb_sdt.Location = new System.Drawing.Point(150, 510);
             this.lb_sdt.Name = "lb_sdt";
             this.lb_sdt.Size = new System.Drawing.Size(367, 15);
             this.lb_sdt.TabIndex = 32;
@@ -374,7 +262,7 @@
             // lb_cmnd
             // 
             this.lb_cmnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_cmnd.Location = new System.Drawing.Point(150, 233);
+            this.lb_cmnd.Location = new System.Drawing.Point(150, 252);
             this.lb_cmnd.Name = "lb_cmnd";
             this.lb_cmnd.Size = new System.Drawing.Size(367, 15);
             this.lb_cmnd.TabIndex = 30;
@@ -383,20 +271,11 @@
             // lb_diachi
             // 
             this.lb_diachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_diachi.Location = new System.Drawing.Point(150, 311);
+            this.lb_diachi.Location = new System.Drawing.Point(150, 340);
             this.lb_diachi.Name = "lb_diachi";
             this.lb_diachi.Size = new System.Drawing.Size(367, 15);
             this.lb_diachi.TabIndex = 29;
             this.lb_diachi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lb_luong
-            // 
-            this.lb_luong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_luong.Location = new System.Drawing.Point(150, 378);
-            this.lb_luong.Name = "lb_luong";
-            this.lb_luong.Size = new System.Drawing.Size(367, 15);
-            this.lb_luong.TabIndex = 28;
-            this.lb_luong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lb_hoten
             // 
@@ -410,41 +289,11 @@
             // lb_gioitinh
             // 
             this.lb_gioitinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_gioitinh.Location = new System.Drawing.Point(35, 165);
+            this.lb_gioitinh.Location = new System.Drawing.Point(150, 166);
             this.lb_gioitinh.Name = "lb_gioitinh";
             this.lb_gioitinh.Size = new System.Drawing.Size(180, 16);
             this.lb_gioitinh.TabIndex = 25;
             this.lb_gioitinh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btn_xem_cv
-            // 
-            this.btn_xem_cv.BackColor = System.Drawing.Color.White;
-            this.btn_xem_cv.Image = global::App_QLBan_Hang.Properties.Resources.icons8_add_new_64;
-            this.btn_xem_cv.ImageActive = null;
-            this.btn_xem_cv.Location = new System.Drawing.Point(225, 422);
-            this.btn_xem_cv.Name = "btn_xem_cv";
-            this.btn_xem_cv.Size = new System.Drawing.Size(29, 35);
-            this.btn_xem_cv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_xem_cv.TabIndex = 24;
-            this.btn_xem_cv.TabStop = false;
-            this.btn_xem_cv.Zoom = 10;
-            // 
-            // txb_chucvu
-            // 
-            this.txb_chucvu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txb_chucvu.BackColor = System.Drawing.Color.Transparent;
-            this.txb_chucvu.BorderRadius = 3;
-            this.txb_chucvu.ForeColor = System.Drawing.Color.White;
-            this.txb_chucvu.Items = new string[0];
-            this.txb_chucvu.Location = new System.Drawing.Point(38, 424);
-            this.txb_chucvu.Name = "txb_chucvu";
-            this.txb_chucvu.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_chucvu.onHoverColor = System.Drawing.Color.Gray;
-            this.txb_chucvu.selectedIndex = -1;
-            this.txb_chucvu.Size = new System.Drawing.Size(177, 35);
-            this.txb_chucvu.TabIndex = 23;
-            this.txb_chucvu.onItemSelected += new System.EventHandler(this.txb_gioitinh_onItemSelected);
             // 
             // txb_ngaysinh
             // 
@@ -455,26 +304,11 @@
             this.txb_ngaysinh.ForeColor = System.Drawing.Color.White;
             this.txb_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txb_ngaysinh.FormatCustom = "dd/MM/yyyy";
-            this.txb_ngaysinh.Location = new System.Drawing.Point(309, 126);
+            this.txb_ngaysinh.Location = new System.Drawing.Point(153, 390);
             this.txb_ngaysinh.Name = "txb_ngaysinh";
-            this.txb_ngaysinh.Size = new System.Drawing.Size(213, 36);
+            this.txb_ngaysinh.Size = new System.Drawing.Size(168, 36);
             this.txb_ngaysinh.TabIndex = 22;
             this.txb_ngaysinh.Value = new System.DateTime(2019, 5, 19, 23, 34, 32, 315);
-            // 
-            // txb_gianhap
-            // 
-            this.txb_gianhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txb_gianhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_gianhap.BorderRadius = 0;
-            this.txb_gianhap.ForeColor = System.Drawing.Color.White;
-            this.txb_gianhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txb_gianhap.FormatCustom = "dd/MM/yyyy";
-            this.txb_gianhap.Location = new System.Drawing.Point(309, 423);
-            this.txb_gianhap.Name = "txb_gianhap";
-            this.txb_gianhap.Size = new System.Drawing.Size(208, 36);
-            this.txb_gianhap.TabIndex = 21;
-            this.txb_gianhap.Value = new System.DateTime(2019, 5, 19, 23, 34, 32, 315);
             // 
             // txb_gioitinh
             // 
@@ -486,7 +320,7 @@
             this.txb_gioitinh.Items = new string[] {
         "Nam",
         "Nữ"};
-            this.txb_gioitinh.Location = new System.Drawing.Point(38, 127);
+            this.txb_gioitinh.Location = new System.Drawing.Point(153, 127);
             this.txb_gioitinh.Name = "txb_gioitinh";
             this.txb_gioitinh.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.txb_gioitinh.onHoverColor = System.Drawing.Color.Gray;
@@ -510,7 +344,7 @@
             this.txb_sdt.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_sdt.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.txb_sdt.LineThickness = 3;
-            this.txb_sdt.Location = new System.Drawing.Point(153, 479);
+            this.txb_sdt.Location = new System.Drawing.Point(153, 462);
             this.txb_sdt.Margin = new System.Windows.Forms.Padding(4);
             this.txb_sdt.Name = "txb_sdt";
             this.txb_sdt.Size = new System.Drawing.Size(364, 44);
@@ -518,30 +352,6 @@
             this.txb_sdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txb_sdt.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
             this.txb_sdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
-            // 
-            // txb_luong
-            // 
-            this.txb_luong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txb_luong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_luong.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txb_luong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txb_luong.HintForeColor = System.Drawing.Color.Empty;
-            this.txb_luong.HintText = "không bao gồm dấu \'.\' (Tính bằn VNĐ)";
-            this.txb_luong.isPassword = false;
-            this.txb_luong.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_luong.LineIdleColor = System.Drawing.Color.Gray;
-            this.txb_luong.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_luong.LineThickness = 3;
-            this.txb_luong.Location = new System.Drawing.Point(153, 330);
-            this.txb_luong.Margin = new System.Windows.Forms.Padding(4);
-            this.txb_luong.Name = "txb_luong";
-            this.txb_luong.Size = new System.Drawing.Size(364, 44);
-            this.txb_luong.TabIndex = 16;
-            this.txb_luong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txb_luong.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
-            this.txb_luong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
             // 
             // txb_diachi
             // 
@@ -558,7 +368,7 @@
             this.txb_diachi.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_diachi.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.txb_diachi.LineThickness = 3;
-            this.txb_diachi.Location = new System.Drawing.Point(153, 263);
+            this.txb_diachi.Location = new System.Drawing.Point(153, 292);
             this.txb_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.txb_diachi.Name = "txb_diachi";
             this.txb_diachi.Size = new System.Drawing.Size(364, 44);
@@ -581,7 +391,7 @@
             this.txb_cmnd.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_cmnd.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.txb_cmnd.LineThickness = 3;
-            this.txb_cmnd.Location = new System.Drawing.Point(153, 185);
+            this.txb_cmnd.Location = new System.Drawing.Point(153, 204);
             this.txb_cmnd.Margin = new System.Windows.Forms.Padding(4);
             this.txb_cmnd.Name = "txb_cmnd";
             this.txb_cmnd.Size = new System.Drawing.Size(364, 44);
@@ -613,149 +423,19 @@
             this.txb_hoten.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txb_hoten.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
             // 
-            // txb_taikhoan
-            // 
-            this.txb_taikhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_taikhoan.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txb_taikhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txb_taikhoan.HintForeColor = System.Drawing.Color.Empty;
-            this.txb_taikhoan.HintText = "không chứ khoản trắng (>=6 kí tự)";
-            this.txb_taikhoan.isPassword = false;
-            this.txb_taikhoan.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_taikhoan.LineIdleColor = System.Drawing.Color.Gray;
-            this.txb_taikhoan.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_taikhoan.LineThickness = 3;
-            this.txb_taikhoan.Location = new System.Drawing.Point(26, 58);
-            this.txb_taikhoan.Margin = new System.Windows.Forms.Padding(4);
-            this.txb_taikhoan.Name = "txb_taikhoan";
-            this.txb_taikhoan.Size = new System.Drawing.Size(222, 37);
-            this.txb_taikhoan.TabIndex = 10;
-            this.txb_taikhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txb_taikhoan.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
-            // 
-            // lb_username
-            // 
-            this.lb_username.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lb_username.Controls.Add(this.lb_taikhoan);
-            this.lb_username.Controls.Add(this.lb_pass1);
-            this.lb_username.Controls.Add(this.lb_pass2);
-            this.lb_username.Controls.Add(this.txb_pass2);
-            this.lb_username.Controls.Add(this.label12);
-            this.lb_username.Controls.Add(this.txb_pass1);
-            this.lb_username.Controls.Add(this.label11);
-            this.lb_username.Controls.Add(this.txb_taikhoan);
-            this.lb_username.Controls.Add(this.label2);
-            this.lb_username.Location = new System.Drawing.Point(608, 17);
-            this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(275, 326);
-            this.lb_username.TabIndex = 5;
-            this.lb_username.TabStop = false;
-            this.lb_username.Text = "Nhập thông tin đăng nhập";
-            // 
-            // lb_taikhoan
-            // 
-            this.lb_taikhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_taikhoan.Location = new System.Drawing.Point(23, 99);
-            this.lb_taikhoan.Name = "lb_taikhoan";
-            this.lb_taikhoan.Size = new System.Drawing.Size(225, 15);
-            this.lb_taikhoan.TabIndex = 35;
-            this.lb_taikhoan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lb_pass1
-            // 
-            this.lb_pass1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_pass1.Location = new System.Drawing.Point(23, 196);
-            this.lb_pass1.Name = "lb_pass1";
-            this.lb_pass1.Size = new System.Drawing.Size(225, 15);
-            this.lb_pass1.TabIndex = 34;
-            this.lb_pass1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lb_pass2
-            // 
-            this.lb_pass2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_pass2.Location = new System.Drawing.Point(23, 294);
-            this.lb_pass2.Name = "lb_pass2";
-            this.lb_pass2.Size = new System.Drawing.Size(225, 15);
-            this.lb_pass2.TabIndex = 33;
-            this.lb_pass2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txb_pass2
-            // 
-            this.txb_pass2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_pass2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txb_pass2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txb_pass2.HintForeColor = System.Drawing.Color.Empty;
-            this.txb_pass2.HintText = "Mật khẩu >=6 và <=32 kí tự";
-            this.txb_pass2.isPassword = true;
-            this.txb_pass2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_pass2.LineIdleColor = System.Drawing.Color.Gray;
-            this.txb_pass2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_pass2.LineThickness = 3;
-            this.txb_pass2.Location = new System.Drawing.Point(26, 253);
-            this.txb_pass2.Margin = new System.Windows.Forms.Padding(4);
-            this.txb_pass2.Name = "txb_pass2";
-            this.txb_pass2.Size = new System.Drawing.Size(222, 37);
-            this.txb_pass2.TabIndex = 14;
-            this.txb_pass2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txb_pass2.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.Location = new System.Drawing.Point(23, 234);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 15);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Nhập lại mật khẩu:";
-            // 
-            // txb_pass1
-            // 
-            this.txb_pass1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_pass1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txb_pass1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txb_pass1.HintForeColor = System.Drawing.Color.Empty;
-            this.txb_pass1.HintText = "Mật khẩu >=6 và <=32 kí tự";
-            this.txb_pass1.isPassword = true;
-            this.txb_pass1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_pass1.LineIdleColor = System.Drawing.Color.Gray;
-            this.txb_pass1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_pass1.LineThickness = 3;
-            this.txb_pass1.Location = new System.Drawing.Point(26, 155);
-            this.txb_pass1.Margin = new System.Windows.Forms.Padding(4);
-            this.txb_pass1.Name = "txb_pass1";
-            this.txb_pass1.Size = new System.Drawing.Size(222, 37);
-            this.txb_pass1.TabIndex = 12;
-            this.txb_pass1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txb_pass1.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(23, 138);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 15);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Mật khẩu:";
-            // 
-            // UC_NV_Them
+            // UC_KH_Sua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.lb_username);
             this.Controls.Add(this.groupBox1);
-            this.Name = "UC_NV_Them";
+            this.Name = "UC_KH_Sua";
             this.Size = new System.Drawing.Size(916, 584);
             this.Load += new System.EventHandler(this.UC_NV_Them_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_xem_cv)).EndInit();
-            this.lb_username.ResumeLayout(false);
-            this.lb_username.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -765,43 +445,24 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_them;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_sdt;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_luong;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_diachi;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_cmnd;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_hoten;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_taikhoan;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_refer;
         private Bunifu.Framework.UI.BunifuFlatButton btn_themvaxem;
         private Bunifu.Framework.UI.BunifuDropdown txb_gioitinh;
-        private Bunifu.Framework.UI.BunifuDropdown txb_chucvu;
         private Bunifu.Framework.UI.BunifuDatepicker txb_ngaysinh;
-        private Bunifu.Framework.UI.BunifuDatepicker txb_gianhap;
-        private Bunifu.Framework.UI.BunifuImageButton btn_xem_cv;
-        private System.Windows.Forms.GroupBox lb_username;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_pass1;
-        private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_pass2;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lb_sdt;
         private System.Windows.Forms.Label lb_chucvu;
         private System.Windows.Forms.Label lb_cmnd;
         private System.Windows.Forms.Label lb_diachi;
-        private System.Windows.Forms.Label lb_luong;
         private System.Windows.Forms.Label lb_hoten;
         private System.Windows.Forms.Label lb_gioitinh;
-        private System.Windows.Forms.Label lb_taikhoan;
-        private System.Windows.Forms.Label lb_pass1;
-        private System.Windows.Forms.Label lb_pass2;
     }
 }
