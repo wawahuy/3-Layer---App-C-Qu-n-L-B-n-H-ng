@@ -48,11 +48,14 @@ namespace App_QLBan_Hang
             transitionPage.openGUI(new Dashboard.UCNhanVien());
         }
 
-        
-
         private void btn_khachhang_Click(object sender, EventArgs e)
         {
             transitionPage.openGUI(new Dashboard.UCKhachHang());
+        }
+
+        private void btn_size_mau_Click(object sender, EventArgs e)
+        {
+            transitionPage.openGUI(new Dashboard.UCSizeMau());
         }
     }
 }

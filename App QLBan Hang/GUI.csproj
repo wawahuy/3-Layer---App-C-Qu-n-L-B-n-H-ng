@@ -98,6 +98,18 @@
     <Compile Include="Dashboard\NhanVien\UC_NV_Xem.Designer.cs">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\SizeMau\UC_Mau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SizeMau\UC_Mau.Designer.cs">
+      <DependentUpon>UC_Mau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UCSizeMau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UCSizeMau.Designer.cs">
+      <DependentUpon>UCSizeMau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\UCKhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,6 +207,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_Xem.resx">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\SizeMau\UC_Mau.resx">
+      <DependentUpon>UC_Mau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\UCSizeMau.resx">
+      <DependentUpon>UCSizeMau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\UCKhachHang.resx">
       <DependentUpon>UCKhachHang.cs</DependentUpon>
@@ -384,7 +402,24 @@
   <ItemGroup>
     <None Include="Resources\icons8-user-groups-filled-32.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-box-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bed-size-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paid-bill-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-input-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-report-script-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-rounded-up-filled-32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

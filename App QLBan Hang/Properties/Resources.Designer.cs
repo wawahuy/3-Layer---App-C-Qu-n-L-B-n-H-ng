@@ -83,6 +83,26 @@ namespace App_QLBan_Hang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bed_size_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bed-size-filled-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_box_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-box-filled-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_window_filled_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-close-window-filled-16", resourceCulture);
@@ -183,9 +203,29 @@ namespace App_QLBan_Hang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_graph_report_script_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-graph-report-script-filled-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_help_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-help-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_input_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-input-filled-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +246,16 @@ namespace App_QLBan_Hang.Properties {
         internal static System.Drawing.Bitmap icons8_lock_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-lock-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_rounded_up_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-rounded-up-filled-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +326,16 @@ namespace App_QLBan_Hang.Properties {
         internal static System.Drawing.Bitmap icons8_name_tag_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-name-tag-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_paid_bill_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-paid-bill-filled-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
