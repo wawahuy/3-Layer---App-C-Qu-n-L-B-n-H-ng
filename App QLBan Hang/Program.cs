@@ -8,7 +8,7 @@ namespace App_QLBan_Hang
 {
     static class Program
     {
-        static DTO.DTONhanVien loginCurrent;
+        public static DTO.DTONhanVien loginCurrent;
 
         /// <summary>
         /// The main entry point for the application.
@@ -23,7 +23,7 @@ namespace App_QLBan_Hang
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             FormGuest = new FGuest();
-            Application.Run(FormGuest);
+            //Application.Run(FormGuest);
 
             Application.Run(new FDashboard());
 

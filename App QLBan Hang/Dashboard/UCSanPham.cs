@@ -26,14 +26,9 @@ namespace App_QLBan_Hang.Dashboard
 
         public void xemDanhSach()
         {
-            //transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_DanhSach());
+            transitionPage.openGUI(new Dashboard.SanPham.UC_SP_DanhSach());
         }
 
-        public void themSanPham()
-        {
-            Form f = new SanPham.FThemSanPham();
-            f.ShowDialog();
-        }
 
         public void loaiSanPham()
         {
@@ -61,10 +56,6 @@ namespace App_QLBan_Hang.Dashboard
             {   
                 case "Danh sách":
                     xemDanhSach();
-                    break;
-
-                case "Thêm sản phẩm":
-                    themSanPham();
                     break;
 
                 case "Loại Sản Phẩm":

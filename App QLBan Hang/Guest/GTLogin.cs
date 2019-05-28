@@ -31,9 +31,11 @@ namespace App_QLBan_Hang.UCGuest
             DTO.DTONhanVien nv = bnv.DangNhap(txb_username.Text, txb_password.Text, ref thongbao);
             if ( nv != null) 
             {
+                Program.loginCurrent = nv;
                 Program.FormGuest.Hide();
                 new FDashboard().ShowDialog();
                 Program.FormGuest.Show();
+                txb_password.Text = "";
             }
             else
             {
@@ -43,6 +45,8 @@ namespace App_QLBan_Hang.UCGuest
                 , 2000);
                 lb_thongbao.Text = thongbao;
             }
+
+            Program.loginCurrent = null;
 
             
         }

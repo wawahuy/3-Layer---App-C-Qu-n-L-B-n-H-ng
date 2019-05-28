@@ -13,6 +13,7 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
     public partial class UC_KichCo : UserControl
     {
         DTO.DTOKichCo kichCoChon;
+        Shared.SDelegate.CALLBACK1 callback;
 
         public UC_KichCo()
         {
@@ -23,6 +24,11 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
             btn_xoa.Visible = false;
         }
 
+
+        public void setWindowSelectItem(Shared.SDelegate.CALLBACK1 callback)
+        {
+            this.callback = callback;
+        }
 
         private void load()
         {
@@ -111,6 +117,13 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
             {
                 load();
             } catch { }
+        }
+
+        private void datagrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (datagrid.SelectedRows.Count == 0 || callback == null) return;
+            kichCoChon = (DTO.DTOKichCo)datagrid.SelectedRows[0].DataBoundItem;
+            callback((object)kichCoChon);
         }
     }
 }

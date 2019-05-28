@@ -73,6 +73,16 @@ namespace DAO
         }
 
 
+        public List<DTO.DTOLoaiSanPham> layQuaMaKoKiemTra(int ma)
+        {
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select * from loaisanpham where malsp = @malsp")
+                        .BindParam("@malsp", ma)
+                        .ExecuteReader());
+        }
+
+
         public List<DTO.DTOLoaiSanPham> timKiemTen(string ten)
         {
             return TachDTO(

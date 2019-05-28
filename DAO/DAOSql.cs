@@ -241,6 +241,19 @@ namespace DAO
             YuhsqlDeltail = m_sqlDelt;
         }
 
+        public static bool ContainsColumn(IDataReader dataReader, string columnName)
+        {
+            /// See: http://stackoverflow.com/questions/373230/check-for-column-name-in-a-sqldatareader-object/7248381#7248381
+            try
+            {
+                return dataReader.GetOrdinal(columnName) >= 0;
+            }
+            catch (IndexOutOfRangeException)
+            {
+                return false;
+            }
+        }
+
         /// <summary>
         /// Query
         /// </summary>

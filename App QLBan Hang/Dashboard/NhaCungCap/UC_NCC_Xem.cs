@@ -32,7 +32,7 @@ namespace App_QLBan_Hang.Dashboard.NhaCungCap
         private void btn_sua_Click(object sender, EventArgs e)
         {
             UCNhaCungCap ucncc = new UCNhaCungCap();
-            //kh.suaThongTin(khachhang);
+            ucncc.suaThongTin(ncc);
             FDashboard.openUserControl(ucncc);
         }
 

@@ -50,7 +50,7 @@ namespace App_QLBan_Hang.Dashboard.NhanVien
             DTO.DTONhanVien nhanvien = new DTO.DTONhanVien();
             nhanvien.Taikhoan = txb_taikhoan.Text;
             nhanvien.Ten = txb_hoten.Text;
-            nhanvien.Giotinh = txb_gioitinh.selectedIndex == 0;
+            nhanvien.Giotinh = txb_gioitinh.selectedIndex == 1;
             nhanvien.Diachi = txb_diachi.Text;
             nhanvien.Luong = int.Parse(txb_luong.Text);
             nhanvien.Gianhap = txb_gianhap.Value;

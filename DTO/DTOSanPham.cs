@@ -8,9 +8,9 @@ namespace DTO
 {
     public class DTOSanPham
     {
+        private string ten;
         private int ma;
-        private int gia;
-        private int sanpham;
+        private long gia;
         private DTOLoaiSanPham loai;
         private int tongsl;
         private bool xoa;
@@ -28,7 +28,7 @@ namespace DTO
             }
         }
 
-        public int Gia
+        public long Gia
         {
             get
             {
@@ -41,18 +41,6 @@ namespace DTO
             }
         }
 
-        public int Sanpham
-        {
-            get
-            {
-                return sanpham;
-            }
-
-            set
-            {
-                sanpham = value;
-            }
-        }
 
         public DTOLoaiSanPham Loai
         {
@@ -91,6 +79,28 @@ namespace DTO
             {
                 xoa = value;
             }
+        }
+
+        public string Ten
+        {
+            get
+            {
+                return ten;
+            }
+
+            set
+            {
+                ten = value;
+            }
+        }
+
+        public string TenLoai
+        {
+            get
+            {
+                return loai.Ten;
+            }
+
         }
     }
 }

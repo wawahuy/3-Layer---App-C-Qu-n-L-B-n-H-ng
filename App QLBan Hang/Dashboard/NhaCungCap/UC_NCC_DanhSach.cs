@@ -63,8 +63,8 @@ namespace App_QLBan_Hang.Dashboard.NhaCungCap
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            UCKhachHang kh = new UCKhachHang();
-            kh.suaThongTin((DTO.DTOKhachHang)datagrid.SelectedRows[0].DataBoundItem);
+            UCNhaCungCap kh = new UCNhaCungCap();
+            kh.suaThongTin((DTO.DTONhaCungCap)datagrid.SelectedRows[0].DataBoundItem);
             FDashboard.openUserControl(kh);
         }
 

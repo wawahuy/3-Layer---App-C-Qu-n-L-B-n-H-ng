@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild uC_MenuTopChild1 = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild();
             App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild uC_MenuTopChild2 = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild();
-            App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild uC_MenuTopChild3 = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild();
             this.panel_main = new System.Windows.Forms.Panel();
             this.uC_MenuTop = new App_QLBan_Hang.Yuh.UC_MenuTop();
             this.transitionPage = new App_QLBan_Hang.Yuh.TransitionPage(this.components);
@@ -60,15 +59,10 @@
             uC_MenuTopChild2.Coloridel = System.Drawing.Color.Black;
             uC_MenuTopChild2.Colorselected = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             uC_MenuTopChild2.Enable = true;
-            uC_MenuTopChild2.Text = "Thêm sản phẩm";
-            uC_MenuTopChild3.Coloridel = System.Drawing.Color.Black;
-            uC_MenuTopChild3.Colorselected = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            uC_MenuTopChild3.Enable = true;
-            uC_MenuTopChild3.Text = "Loại Sản Phẩm";
+            uC_MenuTopChild2.Text = "Loại Sản Phẩm";
             this.uC_MenuTop.Yuhitems = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild[] {
         uC_MenuTopChild1,
-        uC_MenuTopChild2,
-        uC_MenuTopChild3};
+        uC_MenuTopChild2};
             this.uC_MenuTop.YuhClick += new System.EventHandler(this.uC_MenuTop1_YuhClick);
             this.uC_MenuTop.Load += new System.EventHandler(this.uC_MenuTop_Load);
             // 

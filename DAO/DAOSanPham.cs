@@ -10,77 +10,85 @@ namespace DAO
     public class DAOSanPham
     {
 
-        private List<DTO.DTOLoaiSanPham> TachDTO(SqlDataReader reader)
+        private List<DTO.DTOSanPham> TachDTO(SqlDataReader reader)
         {
-            List<DTO.DTOLoaiSanPham> danhsach = new List<DTO.DTOLoaiSanPham>();
+            List<DTO.DTOSanPham> danhsach = new List<DTO.DTOSanPham>();
             //DataTable dt;
 
             while (reader.Read())
             {
-                DTO.DTOLoaiSanPham mau = new DTO.DTOLoaiSanPham();
-                mau.Ma = (int)reader["malsp"];
-                mau.Ten = (string)reader["tenlsp"];
-                danhsach.Add(mau);
+                DTO.DTOSanPham sp = new DTO.DTOSanPham();
+                sp.Ma = (int)reader["masp"];
+                sp.Ten = (string)reader["tensp"];
+                if(DAOSql.ContainsColumn(reader, "tongsl"))
+                    sp.Tongsl = reader["tongsl"] is DBNull ? 0 : (int)reader["tongsl"];
+                sp.Loai = new DAO.DAOLoai().layQuaMaKoKiemTra((int)reader["malsp"])[0];
+                sp.Gia = (long)((decimal)reader["gia"]);
+                danhsach.Add(sp);
             }
 
             return danhsach;
         }
 
 
-        public bool Them(DTO.DTOLoaiSanPham mau)
+        public bool Them(DTO.DTOSanPham sp)
         {
-            return new DAO.DAOSql()
-                        .Procedure("ThemLoai")
-                        .BindParam("@ten", mau.Ten)
+            return new DAOSql()
+                        .Procedure("ThemSanPham")
+                        .BindParam("@ten", sp.Ten)
+                        .BindParam("@loai", sp.Loai.Ma)
+                        .BindParam("@gia", sp.Gia, System.Data.SqlDbType.Decimal)
                         .ExecuteNonQuery() > 0;
         }
 
-        public bool Xoa(DTO.DTOLoaiSanPham mau)
+        public bool Xoa(DTO.DTOSanPham sp)
         {
-            return new DAO.DAOSql()
-                        .Procedure("XoaLoai")
-                        .BindParam("@ma", mau.Ma)
-                        .ExecuteNonQuery() > 0;
-        }
-
-
-        public bool Sua(DTO.DTOLoaiSanPham mau)
-        {
-            return new DAO.DAOSql()
-                        .Procedure("SuaLoai")
-                        .BindParam("@ma", mau.Ma)
-                        .BindParam("@ten", mau.Ten)
+            return new DAOSql()
+                        .Procedure("XoaSanPham")
+                        .BindParam("@ma", sp.Ma)
                         .ExecuteNonQuery() > 0;
         }
 
 
-        public List<DTO.DTOLoaiSanPham> Lay()
+        public bool Sua(DTO.DTOSanPham sp)
+        {
+            return new DAOSql()
+                        .Procedure("SuaSanPham")
+                        .BindParam("@ma", sp.Ma)
+                        .BindParam("@ten", sp.Ten)
+                        .BindParam("@loai", sp.Loai.Ma)
+                        .BindParam("@gia", (decimal)sp.Gia, System.Data.SqlDbType.Decimal)
+                        .ExecuteNonQuery() > 0;
+        }
+
+
+        public List<DTO.DTOSanPham> layQuaTen(string ten)
         {
             return TachDTO(
                     new DAOSql()
-                        .Query("Select * from loaisanpham where xoa=0")
-                        .ExecuteReader());
-        }
-
-
-        public List<DTO.DTOLoaiSanPham> layQuaTen(string ten)
-        {
-            return TachDTO(
-                    new DAOSql()
-                        .Query("Select * from loaisanpham where tenlsp = @ten and xoa=0")
+                        .Query("Select * from sanpham where tensp = @ten and xoa=0")
                         .BindParam("@ten", ten)
                         .ExecuteReader());
         }
 
 
-        public List<DTO.DTOLoaiSanPham> timKiemTen(string ten)
+        public List<DTO.DTOSanPham> lay()
         {
             return TachDTO(
                     new DAOSql()
-                        .Query("Select * from loaisanpham where tenlsp like @ten and xoa=0")
-                        .BindParam("@ten", "%"+ten+"%")
+                        .Query("Select * from layDanhSachSanPham()")
                         .ExecuteReader());
         }
+
+
+        //public List<DTO.DTOLoaiSanPham> timKiemTen(string ten)
+        //{
+        //    return TachDTO(
+        //            new DAOSql()
+        //                .Query("Select * from loaisanpham where tenlsp like @ten and xoa=0")
+        //                .BindParam("@ten", "%"+ten+"%")
+        //                .ExecuteReader());
+        //}
 
     }
 }

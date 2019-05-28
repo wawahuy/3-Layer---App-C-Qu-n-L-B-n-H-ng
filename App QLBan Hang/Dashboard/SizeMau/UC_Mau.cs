@@ -13,6 +13,7 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
     public partial class UC_Mau : UserControl
     {
         DTO.DTOMau mauChon;
+        Shared.SDelegate.CALLBACK1 callback;
 
         public UC_Mau()
         {
@@ -21,6 +22,11 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
             btn_huy.Visible = false;
             btn_sua.Visible = false;
             btn_xoa.Visible = false;
+        }
+
+        public void setWindowSelectItem(Shared.SDelegate.CALLBACK1 callback)
+        {
+            this.callback = callback;
         }
 
 
@@ -103,6 +109,13 @@ namespace App_QLBan_Hang.Dashboard.SizeMau
         private void txb_search_OnTextChange(object sender, EventArgs e)
         {
             load();
+        }
+
+        private void datagrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (datagrid.SelectedRows.Count == 0 || callback == null) return;
+            mauChon = (DTO.DTOMau)datagrid.SelectedRows[0].DataBoundItem;
+            callback((object)mauChon);
         }
 
         private void UC_Mau_Load(object sender, EventArgs e)

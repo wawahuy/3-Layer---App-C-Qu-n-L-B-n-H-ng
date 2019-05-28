@@ -9,39 +9,29 @@ namespace BUS
     public class BUSSanPham
     {
 
-        public List<DTO.DTOLoaiSanPham> lay()
+        public bool tonTaiTen(string ten)
         {
-            return new DAO.DAOLoai().Lay();
+            return new DAO.DAOSanPham().layQuaTen(ten).Count > 0;
         }
 
-        public bool them(DTO.DTOLoaiSanPham mau)
+        public bool them(DTO.DTOSanPham sp)
         {
-            DAO.DAOLoai dao = new DAO.DAOLoai();
-
-            if(dao.layQuaTen(mau.Ten).Count > 0)
-            {
-                return false;
-            }
-
-            return dao.Them(mau);
+            return new DAO.DAOSanPham().Them(sp);
         }
 
-
-        public bool xoa(DTO.DTOLoaiSanPham mau)
+        public bool xoa(DTO.DTOSanPham sp)
         {
-            return new DAO.DAOLoai().Xoa(mau);
+            return new DAO.DAOSanPham().Xoa(sp);
         }
 
-
-        public bool sua(DTO.DTOLoaiSanPham mau)
+        public bool sua(DTO.DTOSanPham sp)
         {
-            return new DAO.DAOLoai().Sua(mau);
+            return new DAO.DAOSanPham().Sua(sp);
         }
 
-
-        public List<DTO.DTOLoaiSanPham> search(string se)
+        public List<DTO.DTOSanPham> layDanhSach()
         {
-            return new DAO.DAOLoai().timKiemTen(se);
+            return new DAO.DAOSanPham().lay();
         }
 
     }

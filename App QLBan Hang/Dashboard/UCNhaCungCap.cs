@@ -40,10 +40,10 @@ namespace App_QLBan_Hang.Dashboard
             transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_Xem(ncc));
         }
 
-        public void suaThongTin(DTO.DTOKhachHang khachhang)
+        public void suaThongTin(DTO.DTONhaCungCap ncc)
         {
             uC_MenuTop.click(3);
-            transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_Sua(khachhang));
+            transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_Sua(ncc));
         }
 
         private void uC_MenuTop1_YuhClick(object sender, EventArgs e)

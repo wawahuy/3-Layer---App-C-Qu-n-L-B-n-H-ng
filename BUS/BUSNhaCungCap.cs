@@ -33,12 +33,10 @@ namespace BUS
         }
 
 
-        public bool sua(DTO.DTOKhachHang kh)
+        public bool sua(DTO.DTONhaCungCap kh)
         {
-            return new DAO.DAOKhachHang().Sua(kh);
+            return new DAO.DAONhaCungCap().Sua(kh);
         }
-
-
 
 
 
