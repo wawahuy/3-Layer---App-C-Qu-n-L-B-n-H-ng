@@ -74,6 +74,24 @@
     <Compile Include="Dashboard\KhachHang\UC_KH_Xem.Designer.cs">
       <DependentUpon>UC_KH_Xem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\NhaCungCap\UC_NCC_Xem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\NhaCungCap\UC_NCC_Xem.Designer.cs">
+      <DependentUpon>UC_NCC_Xem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\NhaCungCap\UC_NCC_Them.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\NhaCungCap\UC_NCC_Them.Designer.cs">
+      <DependentUpon>UC_NCC_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\NhaCungCap\UC_NCC_DanhSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\NhaCungCap\UC_NCC_DanhSach.Designer.cs">
+      <DependentUpon>UC_NCC_DanhSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\NhanVien\UC_NV_DanhSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +116,18 @@
     <Compile Include="Dashboard\NhanVien\UC_NV_Xem.Designer.cs">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\SanPham\FLoaiSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SanPham\FLoaiSanPham.Designer.cs">
+      <DependentUpon>FLoaiSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\SanPham\FThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SanPham\FThemSanPham.Designer.cs">
+      <DependentUpon>FThemSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\SizeMau\UC_KichCo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +139,12 @@
     </Compile>
     <Compile Include="Dashboard\SizeMau\UC_Mau.Designer.cs">
       <DependentUpon>UC_Mau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UCNhaCungCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UCNhaCungCap.Designer.cs">
+      <DependentUpon>UCNhaCungCap.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\UCSanPham.cs">
       <SubType>UserControl</SubType>
@@ -208,6 +244,15 @@
     <EmbeddedResource Include="Dashboard\KhachHang\UC_KH_Xem.resx">
       <DependentUpon>UC_KH_Xem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\NhaCungCap\UC_NCC_Xem.resx">
+      <DependentUpon>UC_NCC_Xem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\NhaCungCap\UC_NCC_Them.resx">
+      <DependentUpon>UC_NCC_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\NhaCungCap\UC_NCC_DanhSach.resx">
+      <DependentUpon>UC_NCC_DanhSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_DanhSach.resx">
       <DependentUpon>UC_NV_DanhSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,11 +265,20 @@
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_Xem.resx">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\SanPham\FLoaiSanPham.resx">
+      <DependentUpon>FLoaiSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\SanPham\FThemSanPham.resx">
+      <DependentUpon>FThemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\SizeMau\UC_KichCo.resx">
       <DependentUpon>UC_KichCo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\SizeMau\UC_Mau.resx">
       <DependentUpon>UC_Mau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\UCNhaCungCap.resx">
+      <DependentUpon>UCNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\UCSanPham.resx">
       <DependentUpon>UCSanPham.cs</DependentUpon>
@@ -437,6 +491,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-logout-rounded-up-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supplier-filled-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

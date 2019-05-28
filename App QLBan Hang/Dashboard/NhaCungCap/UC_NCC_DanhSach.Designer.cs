@@ -1,6 +1,6 @@
-﻿namespace App_QLBan_Hang.Dashboard.NhanVien
+﻿namespace App_QLBan_Hang.Dashboard.NhaCungCap
 {
-    partial class UC_NV_DanhSach
+    partial class UC_NCC_DanhSach
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,32 +32,21 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.datagrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dd_loaitimkiem = new Bunifu.Framework.UI.BunifuDropdown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lb_alert_search = new System.Windows.Forms.Label();
-            this.dd_search = new Bunifu.Framework.UI.BunifuDropdown();
             this.txb_search = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_lammoi = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_xem_ds_hoa_don = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_sua = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_xoa = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_xem = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.taikhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chucvu2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaygianhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matkhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chucvur = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giotinht = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -85,20 +74,11 @@
             this.datagrid.ColumnHeadersHeight = 40;
             this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.taikhoan,
             this.ten,
-            this.gioitinh,
-            this.chucvu2,
-            this.ngaysinh,
-            this.ngaygianhap,
             this.sdt,
-            this.cmnd,
             this.diachi,
-            this.Luong,
-            this.matkhau,
-            this.chucvur,
-            this.giotinht,
-            this.ma});
+            this.ma,
+            this.Column1});
             this.datagrid.DoubleBuffered = true;
             this.datagrid.EnableHeadersVisualStyles = false;
             this.datagrid.GridColor = System.Drawing.Color.White;
@@ -124,6 +104,43 @@
             this.datagrid.TabIndex = 1;
             this.datagrid.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.datagrid_CellMouseMove);
             // 
+            // ten
+            // 
+            this.ten.DataPropertyName = "Ten";
+            this.ten.HeaderText = "Tên Nhà Cung Cấp";
+            this.ten.Name = "ten";
+            this.ten.ReadOnly = true;
+            // 
+            // sdt
+            // 
+            this.sdt.DataPropertyName = "Sdt";
+            this.sdt.HeaderText = "SĐT";
+            this.sdt.Name = "sdt";
+            this.sdt.ReadOnly = true;
+            // 
+            // diachi
+            // 
+            this.diachi.DataPropertyName = "Diachi";
+            this.diachi.HeaderText = "Địa chỉ";
+            this.diachi.Name = "diachi";
+            this.diachi.ReadOnly = true;
+            // 
+            // ma
+            // 
+            this.ma.DataPropertyName = "Ma";
+            this.ma.HeaderText = "Mã";
+            this.ma.Name = "ma";
+            this.ma.ReadOnly = true;
+            this.ma.Visible = false;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Xoa";
+            this.Column1.HeaderText = "Xoa";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -143,12 +160,9 @@
             this.dd_loaitimkiem.ForeColor = System.Drawing.Color.White;
             this.dd_loaitimkiem.Items = new string[] {
         "Tấc cả",
-        "Tìm theo Tài Khoản",
         "Tìm theo Tên",
-        "Tìm theo CMND",
         "Tìm theo SĐT",
-        "Tìm theo Chức Vụ",
-        "Tìm theo Giới tính"};
+        "Tìm theo Địa Chỉ"};
             this.dd_loaitimkiem.Location = new System.Drawing.Point(18, 21);
             this.dd_loaitimkiem.Name = "dd_loaitimkiem";
             this.dd_loaitimkiem.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
@@ -161,7 +175,6 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lb_alert_search);
-            this.groupBox2.Controls.Add(this.dd_search);
             this.groupBox2.Controls.Add(this.txb_search);
             this.groupBox2.Controls.Add(this.dd_loaitimkiem);
             this.groupBox2.Location = new System.Drawing.Point(17, 4);
@@ -179,22 +192,6 @@
             this.lb_alert_search.Size = new System.Drawing.Size(263, 23);
             this.lb_alert_search.TabIndex = 9;
             this.lb_alert_search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // dd_search
-            // 
-            this.dd_search.BackColor = System.Drawing.Color.Transparent;
-            this.dd_search.BorderRadius = 3;
-            this.dd_search.ForeColor = System.Drawing.Color.White;
-            this.dd_search.Items = new string[0];
-            this.dd_search.Location = new System.Drawing.Point(18, 63);
-            this.dd_search.Name = "dd_search";
-            this.dd_search.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.dd_search.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(132)))));
-            this.dd_search.selectedIndex = -1;
-            this.dd_search.Size = new System.Drawing.Size(260, 35);
-            this.dd_search.TabIndex = 8;
-            this.dd_search.Visible = false;
-            this.dd_search.onItemSelected += new System.EventHandler(this.dd_search_onItemSelected);
             // 
             // txb_search
             // 
@@ -219,7 +216,6 @@
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.btn_lammoi);
-            this.groupBox3.Controls.Add(this.btn_xem_ds_hoa_don);
             this.groupBox3.Controls.Add(this.btn_sua);
             this.groupBox3.Controls.Add(this.btn_xoa);
             this.groupBox3.Controls.Add(this.btn_xem);
@@ -264,41 +260,6 @@
             this.btn_lammoi.Textcolor = System.Drawing.Color.White;
             this.btn_lammoi.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_lammoi.Click += new System.EventHandler(this.btn_lammoi_Click);
-            // 
-            // btn_xem_ds_hoa_don
-            // 
-            this.btn_xem_ds_hoa_don.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xem_ds_hoa_don.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xem_ds_hoa_don.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_xem_ds_hoa_don.BorderRadius = 5;
-            this.btn_xem_ds_hoa_don.ButtonText = "Xem  DS Hóa Đơn";
-            this.btn_xem_ds_hoa_don.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_xem_ds_hoa_don.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_xem_ds_hoa_don.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_xem_ds_hoa_don.Iconimage = global::App_QLBan_Hang.Properties.Resources.icons8_view_filled_32;
-            this.btn_xem_ds_hoa_don.Iconimage_right = null;
-            this.btn_xem_ds_hoa_don.Iconimage_right_Selected = null;
-            this.btn_xem_ds_hoa_don.Iconimage_Selected = null;
-            this.btn_xem_ds_hoa_don.IconMarginLeft = 0;
-            this.btn_xem_ds_hoa_don.IconMarginRight = 0;
-            this.btn_xem_ds_hoa_don.IconRightVisible = true;
-            this.btn_xem_ds_hoa_don.IconRightZoom = 0D;
-            this.btn_xem_ds_hoa_don.IconVisible = true;
-            this.btn_xem_ds_hoa_don.IconZoom = 50D;
-            this.btn_xem_ds_hoa_don.IsTab = false;
-            this.btn_xem_ds_hoa_don.Location = new System.Drawing.Point(19, 64);
-            this.btn_xem_ds_hoa_don.Name = "btn_xem_ds_hoa_don";
-            this.btn_xem_ds_hoa_don.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.btn_xem_ds_hoa_don.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
-            this.btn_xem_ds_hoa_don.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_xem_ds_hoa_don.selected = false;
-            this.btn_xem_ds_hoa_don.Size = new System.Drawing.Size(153, 35);
-            this.btn_xem_ds_hoa_don.TabIndex = 6;
-            this.btn_xem_ds_hoa_don.Text = "Xem  DS Hóa Đơn";
-            this.btn_xem_ds_hoa_don.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_xem_ds_hoa_don.Textcolor = System.Drawing.Color.White;
-            this.btn_xem_ds_hoa_don.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xem_ds_hoa_don.Click += new System.EventHandler(this.btn_xem_ds_hoa_don_Click);
             // 
             // btn_sua
             // 
@@ -405,128 +366,14 @@
             this.btn_xem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xem.Click += new System.EventHandler(this.btn_xem_Click);
             // 
-            // taikhoan
-            // 
-            this.taikhoan.DataPropertyName = "Taikhoan";
-            this.taikhoan.FillWeight = 19.68061F;
-            this.taikhoan.HeaderText = "Tài Khoản";
-            this.taikhoan.Name = "taikhoan";
-            this.taikhoan.ReadOnly = true;
-            // 
-            // ten
-            // 
-            this.ten.DataPropertyName = "Ten";
-            this.ten.FillWeight = 22.69037F;
-            this.ten.HeaderText = "Họ & Tên";
-            this.ten.Name = "ten";
-            this.ten.ReadOnly = true;
-            // 
-            // gioitinh
-            // 
-            this.gioitinh.DataPropertyName = "Tengioitinh";
-            this.gioitinh.FillWeight = 17.77152F;
-            this.gioitinh.HeaderText = "Giới tính";
-            this.gioitinh.Name = "gioitinh";
-            this.gioitinh.ReadOnly = true;
-            // 
-            // chucvu2
-            // 
-            this.chucvu2.DataPropertyName = "Tenchucvu";
-            this.chucvu2.FillWeight = 17.77152F;
-            this.chucvu2.HeaderText = "Chức vụ";
-            this.chucvu2.Name = "chucvu2";
-            this.chucvu2.ReadOnly = true;
-            // 
-            // ngaysinh
-            // 
-            this.ngaysinh.DataPropertyName = "Ngaysinh";
-            this.ngaysinh.FillWeight = 17.77152F;
-            this.ngaysinh.HeaderText = "Ngày Sinh";
-            this.ngaysinh.Name = "ngaysinh";
-            this.ngaysinh.ReadOnly = true;
-            // 
-            // ngaygianhap
-            // 
-            this.ngaygianhap.DataPropertyName = "Gianhap";
-            this.ngaygianhap.HeaderText = "Gia Nhập";
-            this.ngaygianhap.Name = "ngaygianhap";
-            this.ngaygianhap.ReadOnly = true;
-            this.ngaygianhap.Visible = false;
-            // 
-            // sdt
-            // 
-            this.sdt.DataPropertyName = "Sdt";
-            this.sdt.FillWeight = 17.77152F;
-            this.sdt.HeaderText = "SĐT";
-            this.sdt.Name = "sdt";
-            this.sdt.ReadOnly = true;
-            // 
-            // cmnd
-            // 
-            this.cmnd.DataPropertyName = "Cmnd";
-            this.cmnd.FillWeight = 17.77152F;
-            this.cmnd.HeaderText = "CMND";
-            this.cmnd.Name = "cmnd";
-            this.cmnd.ReadOnly = true;
-            // 
-            // diachi
-            // 
-            this.diachi.DataPropertyName = "Diachi";
-            this.diachi.HeaderText = "Địa chỉ";
-            this.diachi.Name = "diachi";
-            this.diachi.ReadOnly = true;
-            this.diachi.Visible = false;
-            // 
-            // Luong
-            // 
-            this.Luong.DataPropertyName = "Luong";
-            this.Luong.FillWeight = 17.77152F;
-            this.Luong.HeaderText = "Lương";
-            this.Luong.Name = "Luong";
-            this.Luong.ReadOnly = true;
-            // 
-            // matkhau
-            // 
-            this.matkhau.DataPropertyName = "Matkhau";
-            this.matkhau.HeaderText = "Mật khẩu";
-            this.matkhau.Name = "matkhau";
-            this.matkhau.ReadOnly = true;
-            this.matkhau.Visible = false;
-            // 
-            // chucvur
-            // 
-            this.chucvur.DataPropertyName = "Chucvu";
-            this.chucvur.HeaderText = "Chức Vụ R";
-            this.chucvur.Name = "chucvur";
-            this.chucvur.ReadOnly = true;
-            this.chucvur.Visible = false;
-            // 
-            // giotinht
-            // 
-            this.giotinht.DataPropertyName = "Giotinh";
-            this.giotinht.HeaderText = "Giới tính R";
-            this.giotinht.Name = "giotinht";
-            this.giotinht.ReadOnly = true;
-            this.giotinht.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.giotinht.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.giotinht.Visible = false;
-            // 
-            // ma
-            // 
-            this.ma.DataPropertyName = "Ma";
-            this.ma.HeaderText = "Mã";
-            this.ma.Name = "ma";
-            this.ma.ReadOnly = true;
-            this.ma.Visible = false;
-            // 
-            // UC_NV_DanhSach
+            // UC_NCC_DanhSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "UC_NV_DanhSach";
+            this.Name = "UC_NCC_DanhSach";
             this.Size = new System.Drawing.Size(916, 584);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -546,24 +393,13 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private Bunifu.Framework.UI.BunifuFlatButton btn_sua;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_xem_ds_hoa_don;
         private Bunifu.Framework.UI.BunifuFlatButton btn_lammoi;
         private Bunifu.Framework.UI.BunifuMetroTextbox txb_search;
-        private Bunifu.Framework.UI.BunifuDropdown dd_search;
         private System.Windows.Forms.Label lb_alert_search;
-        private System.Windows.Forms.DataGridViewTextBoxColumn taikhoan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ten;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gioitinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn chucvu2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaygianhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cmnd;
         private System.Windows.Forms.DataGridViewTextBoxColumn diachi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Luong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn matkhau;
-        private System.Windows.Forms.DataGridViewTextBoxColumn chucvur;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn giotinht;
         private System.Windows.Forms.DataGridViewTextBoxColumn ma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

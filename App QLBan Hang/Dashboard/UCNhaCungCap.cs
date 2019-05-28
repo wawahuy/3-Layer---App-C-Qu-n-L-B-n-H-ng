@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace App_QLBan_Hang.Dashboard
 {
-    public partial class UCSanPham : UserControl
+    public partial class UCNhaCungCap : UserControl
     {
         
-        public UCSanPham()
+        public UCNhaCungCap()
         {
             InitializeComponent();
             clickXemDanhSach();
@@ -26,31 +26,24 @@ namespace App_QLBan_Hang.Dashboard
 
         public void xemDanhSach()
         {
-            //transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_DanhSach());
+            transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_DanhSach());
         }
 
-        public void themSanPham()
+        public void themKhachHang()
         {
-            Form f = new SanPham.FThemSanPham();
-            f.ShowDialog();
+            transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_Them());
         }
 
-        public void loaiSanPham()
+        public void xemThongTin(DTO.DTONhaCungCap ncc)
         {
-            Form f = new SanPham.FLoaiSanPham();
-            f.ShowDialog();
-        }
-
-        public void xemThongTin(DTO.DTOKhachHang kh)
-        {
-            //uC_MenuTop.click(2);
-            //transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_Xem(kh));
+            uC_MenuTop.click(2);
+            transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_Xem(ncc));
         }
 
         public void suaThongTin(DTO.DTOKhachHang khachhang)
         {
-            ///uC_MenuTop.click(3);
-            //transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_Sua(khachhang));
+            uC_MenuTop.click(3);
+            transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_Sua(khachhang));
         }
 
         private void uC_MenuTop1_YuhClick(object sender, EventArgs e)
@@ -63,12 +56,8 @@ namespace App_QLBan_Hang.Dashboard
                     xemDanhSach();
                     break;
 
-                case "Thêm sản phẩm":
-                    themSanPham();
-                    break;
-
-                case "Loại Sản Phẩm":
-                    loaiSanPham();
+                case "Thêm nhà cung cấp":
+                    themKhachHang();
                     break;
             }
 

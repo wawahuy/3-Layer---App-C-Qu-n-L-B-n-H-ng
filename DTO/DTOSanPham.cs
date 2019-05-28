@@ -12,6 +12,8 @@ namespace DTO
         private int gia;
         private int sanpham;
         private DTOLoaiSanPham loai;
+        private int tongsl;
+        private bool xoa;
 
         public int Ma
         {
@@ -62,6 +64,32 @@ namespace DTO
             set
             {
                 loai = value;
+            }
+        }
+
+        public int Tongsl
+        {
+            get
+            {
+                return tongsl;
+            }
+
+            set
+            {
+                tongsl = value;
+            }
+        }
+
+        public bool Xoa
+        {
+            get
+            {
+                return xoa;
+            }
+
+            set
+            {
+                xoa = value;
             }
         }
     }

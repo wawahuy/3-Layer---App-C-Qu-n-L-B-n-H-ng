@@ -1,6 +1,6 @@
 ﻿namespace App_QLBan_Hang.Dashboard
 {
-    partial class UCSanPham
+    partial class UCNhaCungCap
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,6 +32,7 @@
             App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild uC_MenuTopChild1 = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild();
             App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild uC_MenuTopChild2 = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild();
             App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild uC_MenuTopChild3 = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild();
+            App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild uC_MenuTopChild4 = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild();
             this.panel_main = new System.Windows.Forms.Panel();
             this.uC_MenuTop = new App_QLBan_Hang.Yuh.UC_MenuTop();
             this.transitionPage = new App_QLBan_Hang.Yuh.TransitionPage(this.components);
@@ -60,15 +61,20 @@
             uC_MenuTopChild2.Coloridel = System.Drawing.Color.Black;
             uC_MenuTopChild2.Colorselected = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             uC_MenuTopChild2.Enable = true;
-            uC_MenuTopChild2.Text = "Thêm sản phẩm";
-            uC_MenuTopChild3.Coloridel = System.Drawing.Color.Black;
+            uC_MenuTopChild2.Text = "Thêm nhà cung cấp";
+            uC_MenuTopChild3.Coloridel = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             uC_MenuTopChild3.Colorselected = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            uC_MenuTopChild3.Enable = true;
-            uC_MenuTopChild3.Text = "Loại Sản Phẩm";
+            uC_MenuTopChild3.Enable = false;
+            uC_MenuTopChild3.Text = "Xem  nhà cung cấp";
+            uC_MenuTopChild4.Coloridel = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
+            uC_MenuTopChild4.Colorselected = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            uC_MenuTopChild4.Enable = false;
+            uC_MenuTopChild4.Text = "Sửa  nhà cung cấp";
             this.uC_MenuTop.Yuhitems = new App_QLBan_Hang.Yuh.UC_MenuTop.UC_MenuTopChild[] {
         uC_MenuTopChild1,
         uC_MenuTopChild2,
-        uC_MenuTopChild3};
+        uC_MenuTopChild3,
+        uC_MenuTopChild4};
             this.uC_MenuTop.YuhClick += new System.EventHandler(this.uC_MenuTop1_YuhClick);
             this.uC_MenuTop.Load += new System.EventHandler(this.uC_MenuTop_Load);
             // 
@@ -79,13 +85,13 @@
             this.transitionPage.Yuh_Panel_main = this.panel_main;
             this.transitionPage.Yuh_timemax = 500;
             // 
-            // UCSanPham
+            // UCNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.uC_MenuTop);
-            this.Name = "UCSanPham";
+            this.Name = "UCNhaCungCap";
             this.Size = new System.Drawing.Size(916, 665);
             this.ResumeLayout(false);
 

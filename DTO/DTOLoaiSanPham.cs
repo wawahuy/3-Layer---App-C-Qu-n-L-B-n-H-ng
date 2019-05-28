@@ -10,7 +10,7 @@ namespace DTO
     {
         private int ma;
         private string ten;
-        private string donvi;
+        private bool xoa;
 
         public int Ma
         {
@@ -38,16 +38,17 @@ namespace DTO
             }
         }
 
-        public string Donvi
+
+        public bool Xoa
         {
             get
             {
-                return donvi;
+                return xoa;
             }
 
             set
             {
-                donvi = value;
+                xoa = value;
             }
         }
     }

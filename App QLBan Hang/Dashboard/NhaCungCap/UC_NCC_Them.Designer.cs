@@ -1,6 +1,6 @@
-﻿namespace App_QLBan_Hang.Dashboard.KhachHang
+﻿namespace App_QLBan_Hang.Dashboard.NhaCungCap
 {
-    partial class UC_KH_Them
+    partial class UC_NCC_Them
     {
         /// <summary> 
         /// Required designer variable.
@@ -33,23 +33,14 @@
             this.btn_refer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_themvaxem = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_them = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lb_sdt = new System.Windows.Forms.Label();
-            this.lb_chucvu = new System.Windows.Forms.Label();
-            this.lb_cmnd = new System.Windows.Forms.Label();
             this.lb_diachi = new System.Windows.Forms.Label();
             this.lb_hoten = new System.Windows.Forms.Label();
-            this.lb_gioitinh = new System.Windows.Forms.Label();
-            this.txb_ngaysinh = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.txb_gioitinh = new Bunifu.Framework.UI.BunifuDropdown();
             this.txb_sdt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txb_diachi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txb_cmnd = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txb_hoten = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -62,7 +53,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(35, 491);
+            this.label10.Location = new System.Drawing.Point(35, 267);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(34, 15);
             this.label10.TabIndex = 9;
@@ -76,7 +67,7 @@
             this.groupBox2.Controls.Add(this.btn_them);
             this.groupBox2.Location = new System.Drawing.Point(617, 17);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(275, 201);
+            this.groupBox2.Size = new System.Drawing.Size(275, 326);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -186,43 +177,6 @@
             this.btn_them.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(35, 411);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 15);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Ngày sình:";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(35, 232);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "CMND:";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(35, 147);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Giới tính:";
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -230,7 +184,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(35, 321);
+            this.label3.Location = new System.Drawing.Point(35, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 2;
@@ -254,26 +208,17 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.lb_sdt);
-            this.groupBox1.Controls.Add(this.lb_chucvu);
-            this.groupBox1.Controls.Add(this.lb_cmnd);
             this.groupBox1.Controls.Add(this.lb_diachi);
             this.groupBox1.Controls.Add(this.lb_hoten);
-            this.groupBox1.Controls.Add(this.lb_gioitinh);
-            this.groupBox1.Controls.Add(this.txb_ngaysinh);
-            this.groupBox1.Controls.Add(this.txb_gioitinh);
             this.groupBox1.Controls.Add(this.txb_sdt);
             this.groupBox1.Controls.Add(this.txb_diachi);
-            this.groupBox1.Controls.Add(this.txb_cmnd);
             this.groupBox1.Controls.Add(this.txb_hoten);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(34, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(547, 552);
+            this.groupBox1.Size = new System.Drawing.Size(547, 326);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
@@ -281,34 +226,16 @@
             // lb_sdt
             // 
             this.lb_sdt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_sdt.Location = new System.Drawing.Point(150, 510);
+            this.lb_sdt.Location = new System.Drawing.Point(150, 286);
             this.lb_sdt.Name = "lb_sdt";
             this.lb_sdt.Size = new System.Drawing.Size(367, 15);
             this.lb_sdt.TabIndex = 32;
             this.lb_sdt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lb_chucvu
-            // 
-            this.lb_chucvu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_chucvu.Location = new System.Drawing.Point(35, 462);
-            this.lb_chucvu.Name = "lb_chucvu";
-            this.lb_chucvu.Size = new System.Drawing.Size(180, 15);
-            this.lb_chucvu.TabIndex = 31;
-            this.lb_chucvu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lb_cmnd
-            // 
-            this.lb_cmnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_cmnd.Location = new System.Drawing.Point(150, 252);
-            this.lb_cmnd.Name = "lb_cmnd";
-            this.lb_cmnd.Size = new System.Drawing.Size(367, 15);
-            this.lb_cmnd.TabIndex = 30;
-            this.lb_cmnd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // lb_diachi
             // 
             this.lb_diachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_diachi.Location = new System.Drawing.Point(150, 340);
+            this.lb_diachi.Location = new System.Drawing.Point(150, 186);
             this.lb_diachi.Name = "lb_diachi";
             this.lb_diachi.Size = new System.Drawing.Size(367, 15);
             this.lb_diachi.TabIndex = 29;
@@ -322,49 +249,6 @@
             this.lb_hoten.Size = new System.Drawing.Size(367, 16);
             this.lb_hoten.TabIndex = 26;
             this.lb_hoten.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lb_gioitinh
-            // 
-            this.lb_gioitinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_gioitinh.Location = new System.Drawing.Point(150, 166);
-            this.lb_gioitinh.Name = "lb_gioitinh";
-            this.lb_gioitinh.Size = new System.Drawing.Size(180, 16);
-            this.lb_gioitinh.TabIndex = 25;
-            this.lb_gioitinh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txb_ngaysinh
-            // 
-            this.txb_ngaysinh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txb_ngaysinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_ngaysinh.BorderRadius = 0;
-            this.txb_ngaysinh.ForeColor = System.Drawing.Color.White;
-            this.txb_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txb_ngaysinh.FormatCustom = "dd/MM/yyyy";
-            this.txb_ngaysinh.Location = new System.Drawing.Point(153, 390);
-            this.txb_ngaysinh.Name = "txb_ngaysinh";
-            this.txb_ngaysinh.Size = new System.Drawing.Size(168, 36);
-            this.txb_ngaysinh.TabIndex = 22;
-            this.txb_ngaysinh.Value = new System.DateTime(2019, 5, 19, 23, 34, 32, 315);
-            // 
-            // txb_gioitinh
-            // 
-            this.txb_gioitinh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txb_gioitinh.BackColor = System.Drawing.Color.Transparent;
-            this.txb_gioitinh.BorderRadius = 3;
-            this.txb_gioitinh.ForeColor = System.Drawing.Color.White;
-            this.txb_gioitinh.Items = new string[] {
-        "Nam",
-        "Nữ"};
-            this.txb_gioitinh.Location = new System.Drawing.Point(153, 127);
-            this.txb_gioitinh.Name = "txb_gioitinh";
-            this.txb_gioitinh.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_gioitinh.onHoverColor = System.Drawing.Color.Gray;
-            this.txb_gioitinh.selectedIndex = -1;
-            this.txb_gioitinh.Size = new System.Drawing.Size(177, 35);
-            this.txb_gioitinh.TabIndex = 20;
-            this.txb_gioitinh.onItemSelected += new System.EventHandler(this.txb_gioitinh_onItemSelected);
             // 
             // txb_sdt
             // 
@@ -381,10 +265,10 @@
             this.txb_sdt.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_sdt.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.txb_sdt.LineThickness = 3;
-            this.txb_sdt.Location = new System.Drawing.Point(153, 462);
+            this.txb_sdt.Location = new System.Drawing.Point(153, 234);
             this.txb_sdt.Margin = new System.Windows.Forms.Padding(4);
             this.txb_sdt.Name = "txb_sdt";
-            this.txb_sdt.Size = new System.Drawing.Size(364, 44);
+            this.txb_sdt.Size = new System.Drawing.Size(364, 48);
             this.txb_sdt.TabIndex = 19;
             this.txb_sdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txb_sdt.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
@@ -405,37 +289,13 @@
             this.txb_diachi.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_diachi.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.txb_diachi.LineThickness = 3;
-            this.txb_diachi.Location = new System.Drawing.Point(153, 292);
+            this.txb_diachi.Location = new System.Drawing.Point(153, 130);
             this.txb_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.txb_diachi.Name = "txb_diachi";
-            this.txb_diachi.Size = new System.Drawing.Size(364, 44);
+            this.txb_diachi.Size = new System.Drawing.Size(364, 49);
             this.txb_diachi.TabIndex = 15;
             this.txb_diachi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txb_diachi.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
-            // 
-            // txb_cmnd
-            // 
-            this.txb_cmnd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txb_cmnd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_cmnd.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txb_cmnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txb_cmnd.HintForeColor = System.Drawing.Color.Empty;
-            this.txb_cmnd.HintText = "nhập số CMND (9-12) số";
-            this.txb_cmnd.isPassword = false;
-            this.txb_cmnd.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_cmnd.LineIdleColor = System.Drawing.Color.Gray;
-            this.txb_cmnd.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
-            this.txb_cmnd.LineThickness = 3;
-            this.txb_cmnd.Location = new System.Drawing.Point(153, 204);
-            this.txb_cmnd.Margin = new System.Windows.Forms.Padding(4);
-            this.txb_cmnd.Name = "txb_cmnd";
-            this.txb_cmnd.Size = new System.Drawing.Size(364, 44);
-            this.txb_cmnd.TabIndex = 14;
-            this.txb_cmnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txb_cmnd.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
-            this.txb_cmnd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
             // 
             // txb_hoten
             // 
@@ -452,21 +312,21 @@
             this.txb_hoten.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_hoten.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(94)))));
             this.txb_hoten.LineThickness = 3;
-            this.txb_hoten.Location = new System.Drawing.Point(153, 30);
+            this.txb_hoten.Location = new System.Drawing.Point(153, 20);
             this.txb_hoten.Margin = new System.Windows.Forms.Padding(4);
             this.txb_hoten.Name = "txb_hoten";
-            this.txb_hoten.Size = new System.Drawing.Size(364, 44);
+            this.txb_hoten.Size = new System.Drawing.Size(364, 53);
             this.txb_hoten.TabIndex = 11;
             this.txb_hoten.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txb_hoten.OnValueChanged += new System.EventHandler(this.txb_update_OnValueChanged);
             // 
-            // UC_KH_Them
+            // UC_NCC_Them
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "UC_KH_Them";
+            this.Name = "UC_NCC_Them";
             this.Size = new System.Drawing.Size(916, 584);
             this.Load += new System.EventHandler(this.UC_NV_Them_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_number_KeyPress);
@@ -482,25 +342,16 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_them;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_sdt;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_diachi;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txb_cmnd;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txb_hoten;
         private Bunifu.Framework.UI.BunifuFlatButton btn_refer;
         private Bunifu.Framework.UI.BunifuFlatButton btn_themvaxem;
-        private Bunifu.Framework.UI.BunifuDropdown txb_gioitinh;
-        private Bunifu.Framework.UI.BunifuDatepicker txb_ngaysinh;
         private System.Windows.Forms.Label lb_sdt;
-        private System.Windows.Forms.Label lb_chucvu;
-        private System.Windows.Forms.Label lb_cmnd;
         private System.Windows.Forms.Label lb_diachi;
         private System.Windows.Forms.Label lb_hoten;
-        private System.Windows.Forms.Label lb_gioitinh;
     }
 }

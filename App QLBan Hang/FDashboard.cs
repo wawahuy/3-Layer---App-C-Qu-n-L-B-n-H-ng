@@ -62,5 +62,10 @@ namespace App_QLBan_Hang
         {
             transitionPage.openGUI(new Dashboard.UCSanPham());
         }
+
+        private void btn_nhacungcap_Click(object sender, EventArgs e)
+        {
+            transitionPage.openGUI(new Dashboard.UCNhaCungCap());
+        }
     }
 }

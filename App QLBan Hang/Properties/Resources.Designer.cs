@@ -413,6 +413,16 @@ namespace App_QLBan_Hang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_supplier_filled_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-supplier-filled-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_groups_filled_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-groups-filled-32", resourceCulture);
