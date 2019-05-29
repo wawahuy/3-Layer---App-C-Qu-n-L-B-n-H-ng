@@ -14,6 +14,8 @@ namespace App_QLBan_Hang.Dashboard.SanPham
     {
         DTO.DTOLoaiSanPham lsp;
         DTO.DTOSanPham sanphamchon;
+        Shared.SDelegate.CALLBACK1 callback;
+        bool hasCallback;
 
         public UC_SP_DanhSach()
         {
@@ -21,10 +23,19 @@ namespace App_QLBan_Hang.Dashboard.SanPham
             lsp = new DTO.DTOLoaiSanPham();
         }
 
+        public void setCallBackSelect(Shared.SDelegate.CALLBACK1 callback)
+        {
+            this.callback = callback;
+            hasCallback = true;
+        }
+
 
         private void LoadDS()
         {
-            datagrid.DataSource = new BUS.BUSSanPham().layDanhSach();
+            try
+            {
+                datagrid.DataSource = new BUS.BUSSanPham().layDanhSach();
+            } catch { }
         }
 
 
@@ -176,6 +187,13 @@ namespace App_QLBan_Hang.Dashboard.SanPham
         private void datagrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             sanphamchon = (DTO.DTOSanPham)datagrid.SelectedRows[0].DataBoundItem;
+
+            if(hasCallback)
+            {
+                callback((object)sanphamchon);
+                return;
+            }
+
             new FCTSanPham(sanphamchon).ShowDialog();
             LoadDS();
         }

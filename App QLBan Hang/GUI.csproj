@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard\FNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\FNhaCungCap.Designer.cs">
+      <DependentUpon>FNhaCungCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\KhachHang\UC_KH_DanhSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +128,18 @@
     <Compile Include="Dashboard\NhanVien\UC_NV_Xem.Designer.cs">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\NhapHang\FNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\NhapHang\FNhapHang.Designer.cs">
+      <DependentUpon>FNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\SanPham\FChonSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SanPham\FChonSanPham.Designer.cs">
+      <DependentUpon>FChonSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\SanPham\FCTSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +181,12 @@
     </Compile>
     <Compile Include="Dashboard\SizeMau\UC_Mau.Designer.cs">
       <DependentUpon>UC_Mau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UCNhapHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UCNhapHang.Designer.cs">
+      <DependentUpon>UCNhapHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\UCNhaCungCap.cs">
       <SubType>UserControl</SubType>
@@ -256,6 +280,9 @@
     <Compile Include="Yuh\CT_Waiting.Designer.cs">
       <DependentUpon>CT_Waiting.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dashboard\FNhaCungCap.resx">
+      <DependentUpon>FNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\KhachHang\UC_KH_DanhSach.resx">
       <DependentUpon>UC_KH_DanhSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +319,12 @@
     <EmbeddedResource Include="Dashboard\NhanVien\UC_NV_Xem.resx">
       <DependentUpon>UC_NV_Xem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\NhapHang\FNhapHang.resx">
+      <DependentUpon>FNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\SanPham\FChonSanPham.resx">
+      <DependentUpon>FChonSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\SanPham\FCTSanPham.resx">
       <DependentUpon>FCTSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\SizeMau\UC_Mau.resx">
       <DependentUpon>UC_Mau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\UCNhapHang.resx">
+      <DependentUpon>UCNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\UCNhaCungCap.resx">
       <DependentUpon>UCNhaCungCap.cs</DependentUpon>

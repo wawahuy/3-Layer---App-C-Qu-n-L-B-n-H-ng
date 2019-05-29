@@ -10,17 +10,13 @@ using System.Windows.Forms;
 
 namespace App_QLBan_Hang.Dashboard
 {
-    public partial class UCNhaCungCap : UserControl
+    public partial class UCNhapHang : UserControl
     {
         
-        public UCNhaCungCap()
+        public UCNhapHang()
         {
             InitializeComponent();
-            try
-            {
-                clickXemDanhSach();
-            }
-            catch { }
+            clickXemDanhSach();
         }
 
         public void clickXemDanhSach()
@@ -30,25 +26,9 @@ namespace App_QLBan_Hang.Dashboard
 
         public void xemDanhSach()
         {
-            transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_DanhSach());
+            //transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_DanhSach());
         }
 
-        public void themKhachHang()
-        {
-            transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_Them());
-        }
-
-        public void xemThongTin(DTO.DTONhaCungCap ncc)
-        {
-            uC_MenuTop.click(2);
-            transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_Xem(ncc));
-        }
-
-        public void suaThongTin(DTO.DTONhaCungCap ncc)
-        {
-            uC_MenuTop.click(3);
-            transitionPage.openGUI(new Dashboard.NhaCungCap.UC_NCC_Sua(ncc));
-        }
 
         private void uC_MenuTop1_YuhClick(object sender, EventArgs e)
         {
@@ -60,12 +40,12 @@ namespace App_QLBan_Hang.Dashboard
                     xemDanhSach();
                     break;
 
-                case "Thêm nhà cung cấp":
-                    themKhachHang();
+                case "Nhập Hàng":
+                    Form f = new NhapHang.FNhapHang();
+                    f.ShowDialog();
+                    clickXemDanhSach();
                     break;
             }
-
-
 
         }
 

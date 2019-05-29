@@ -12,18 +12,31 @@ namespace App_QLBan_Hang
 {
     public partial class FDashboard : FTemplate
     {
-        static FDashboard currentShow;
+        private static FDashboard currentShow;
+
+        public static FDashboard CurrentShow
+        {
+            get
+            {
+                return currentShow;
+            }
+
+            set
+            {
+                currentShow = value;
+            }
+        }
 
         public FDashboard()
         {
-            currentShow = this;
+            CurrentShow = this;
             InitializeComponent();
             btn_nhanvien_Click(null, null);
         }
 
         public static void openUserControl(UserControl uc)
         {
-            currentShow.transitionPage.openGUINoAnimation(uc);
+            CurrentShow.transitionPage.openGUINoAnimation(uc);
         }
 
         private void btn_menu_Click(object sender, EventArgs e)
@@ -66,6 +79,11 @@ namespace App_QLBan_Hang
         private void btn_nhacungcap_Click(object sender, EventArgs e)
         {
             transitionPage.openGUI(new Dashboard.UCNhaCungCap());
+        }
+
+        private void brn_nhaphang_Click(object sender, EventArgs e)
+        {
+            transitionPage.openGUI(new Dashboard.UCNhapHang());
         }
     }
 }

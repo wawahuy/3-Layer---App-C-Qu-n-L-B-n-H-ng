@@ -123,5 +123,15 @@ namespace App_QLBan_Hang.Dashboard.NhaCungCap
 
             datagrid.DataSource = lNCC;
         }
+
+        private void datagrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+             DTO.DTONhaCungCap ncc = (DTO.DTONhaCungCap)datagrid.SelectedRows[0].DataBoundItem;
+             if(FNhaCungCap.Current != null)
+            {
+                FNhaCungCap.Ncc = ncc;
+                FNhaCungCap.Current.Close();
+            }
+        }
     }
 }

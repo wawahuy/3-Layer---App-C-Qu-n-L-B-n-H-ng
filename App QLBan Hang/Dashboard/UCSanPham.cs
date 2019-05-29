@@ -36,18 +36,6 @@ namespace App_QLBan_Hang.Dashboard
             f.ShowDialog();
         }
 
-        public void xemThongTin(DTO.DTOKhachHang kh)
-        {
-            //uC_MenuTop.click(2);
-            //transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_Xem(kh));
-        }
-
-        public void suaThongTin(DTO.DTOKhachHang khachhang)
-        {
-            ///uC_MenuTop.click(3);
-            //transitionPage.openGUI(new Dashboard.KhachHang.UC_KH_Sua(khachhang));
-        }
-
         private void uC_MenuTop1_YuhClick(object sender, EventArgs e)
         {
             Yuh.UC_MenuTop.UC_MenuTopChild item = (Yuh.UC_MenuTop.UC_MenuTopChild)sender;

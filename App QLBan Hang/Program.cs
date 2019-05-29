@@ -25,7 +25,12 @@ namespace App_QLBan_Hang
             FormGuest = new FGuest();
             //Application.Run(FormGuest);
 
-            Application.Run(new FDashboard());
+
+            //test
+            Form f = new Dashboard.NhapHang.FNhapHang();
+            f.ShowDialog();
+
+            //Application.Run(new FDashboard());
 
         }
 

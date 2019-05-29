@@ -202,6 +202,7 @@
             this.brn_nhaphang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.brn_nhaphang.Textcolor = System.Drawing.Color.White;
             this.brn_nhaphang.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brn_nhaphang.Click += new System.EventHandler(this.brn_nhaphang_Click);
             // 
             // btn_hoadon
             // 

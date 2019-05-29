@@ -102,6 +102,7 @@
             this.datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagrid.Size = new System.Drawing.Size(847, 373);
             this.datagrid.TabIndex = 1;
+            this.datagrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_CellDoubleClick);
             this.datagrid.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.datagrid_CellMouseMove);
             // 
             // ten

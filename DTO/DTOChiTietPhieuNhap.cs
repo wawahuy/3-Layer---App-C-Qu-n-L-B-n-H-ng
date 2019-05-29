@@ -9,10 +9,24 @@ namespace DTO
     public class DTOChiTietPhieuNhap
     {
         private int ma;
-        private DTOSanPham sanpham;
-        private DTOMau mau;
-        private DTOKichCo kichco;
+        private DTOChiTietSanPham sanpham;
         private int soluong;
+        private int gia;
+
+        public string HT_TenSP
+        {
+            get { return sanpham.Sanpham.Ten; }
+        }
+
+        public string HT_Mau
+        {
+            get { return sanpham.TenMau; }
+        }
+
+        public string HT_KichCo
+        {
+            get { return sanpham.TenKichCo; }
+        }
 
         public int Ma
         {
@@ -27,7 +41,7 @@ namespace DTO
             }
         }
 
-        public DTOSanPham Sanpham
+        public DTOChiTietSanPham Sanpham
         {
             get
             {
@@ -37,32 +51,6 @@ namespace DTO
             set
             {
                 sanpham = value;
-            }
-        }
-
-        public DTOMau Mau
-        {
-            get
-            {
-                return mau;
-            }
-
-            set
-            {
-                mau = value;
-            }
-        }
-
-        public DTOKichCo Kichco
-        {
-            get
-            {
-                return kichco;
-            }
-
-            set
-            {
-                kichco = value;
             }
         }
 
@@ -76,6 +64,19 @@ namespace DTO
             set
             {
                 soluong = value;
+            }
+        }
+
+        public int Gia
+        {
+            get
+            {
+                return gia;
+            }
+
+            set
+            {
+                gia = value;
             }
         }
     }

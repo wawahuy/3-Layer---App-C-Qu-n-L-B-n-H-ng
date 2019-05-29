@@ -10,12 +10,16 @@ namespace DTO
     {
         private int ma;
         private int tongtien;
-        private int thue;
         private DateTime ngaylap;
         private bool trangthai;
-        private DTOChiTietPhieuNhap[] chitietnhap;
+        private List<DTOChiTietPhieuNhap> chitietnhap;
         private DTONhaCungCap nhacungcap;
         private DTONhanVien nhanvien;
+
+        public DTOPhieuNhap()
+        {
+            Chitietnhap = new List<DTOChiTietPhieuNhap>();
+        }
 
         public int Ma
         {
@@ -43,18 +47,6 @@ namespace DTO
             }
         }
 
-        public int Thue
-        {
-            get
-            {
-                return thue;
-            }
-
-            set
-            {
-                thue = value;
-            }
-        }
 
         public DateTime Ngaylap
         {
@@ -82,18 +74,6 @@ namespace DTO
             }
         }
 
-        public DTOChiTietPhieuNhap[] Chitietnhap
-        {
-            get
-            {
-                return chitietnhap;
-            }
-
-            set
-            {
-                chitietnhap = value;
-            }
-        }
 
         public DTONhaCungCap Nhacungcap
         {
@@ -118,6 +98,19 @@ namespace DTO
             set
             {
                 nhanvien = value;
+            }
+        }
+
+        public List<DTOChiTietPhieuNhap> Chitietnhap
+        {
+            get
+            {
+                return chitietnhap;
+            }
+
+            set
+            {
+                chitietnhap = value;
             }
         }
     }
