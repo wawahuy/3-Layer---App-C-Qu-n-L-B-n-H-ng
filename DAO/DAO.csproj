@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DAONhaCungCap.cs" />
     <Compile Include="DAOKichCo.cs" />
+    <Compile Include="DAOCTSanPham.cs" />
     <Compile Include="DAOSanPham.cs" />
     <Compile Include="DAOLoai.cs" />
     <Compile Include="DAOMau.cs" />

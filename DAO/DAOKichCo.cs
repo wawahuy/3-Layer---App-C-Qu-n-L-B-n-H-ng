@@ -72,6 +72,15 @@ namespace DAO
                         .ExecuteReader());
         }
 
+        public List<DTO.DTOKichCo> layQuaMaKRB(int ma)
+        {
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select * from kichcosp where makc = @ma")
+                        .BindParam("@ma", ma)
+                        .ExecuteReader());
+        }
+
 
         public List<DTO.DTOKichCo> timKiemTen(string ten)
         {

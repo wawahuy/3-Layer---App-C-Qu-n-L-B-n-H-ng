@@ -176,7 +176,7 @@ namespace App_QLBan_Hang.Dashboard.SanPham
         private void datagrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             sanphamchon = (DTO.DTOSanPham)datagrid.SelectedRows[0].DataBoundItem;
-            new FCTSanPham().ShowDialog();
+            new FCTSanPham(sanphamchon).ShowDialog();
             LoadDS();
         }
 

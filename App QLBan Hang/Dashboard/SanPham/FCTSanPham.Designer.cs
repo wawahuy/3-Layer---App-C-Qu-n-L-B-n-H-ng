@@ -48,6 +48,10 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel2.SuspendLayout();
@@ -115,7 +119,7 @@
             this.btn_xoa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
             this.btn_xoa.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_xoa.selected = false;
-            this.btn_xoa.Size = new System.Drawing.Size(89, 35);
+            this.btn_xoa.Size = new System.Drawing.Size(85, 35);
             this.btn_xoa.TabIndex = 33;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -205,6 +209,7 @@
             this.txb_soluong.Size = new System.Drawing.Size(145, 44);
             this.txb_soluong.TabIndex = 28;
             this.txb_soluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txb_soluong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_soluong_KeyPress);
             // 
             // btn_size
             // 
@@ -215,6 +220,7 @@
             this.btn_size.ButtonText = "  (Click để chọn)";
             this.btn_size.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_size.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_size.Enabled = false;
             this.btn_size.Iconcolor = System.Drawing.Color.Transparent;
             this.btn_size.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_size.Iconimage")));
             this.btn_size.Iconimage_right = null;
@@ -250,6 +256,7 @@
             this.btn_mau.ButtonText = "  (Click để chọn)";
             this.btn_mau.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_mau.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_mau.Enabled = false;
             this.btn_mau.Iconcolor = System.Drawing.Color.Transparent;
             this.btn_mau.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_mau.Iconimage")));
             this.btn_mau.Iconimage_right = null;
@@ -310,7 +317,11 @@
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4});
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
             this.datagrid.DoubleBuffered = true;
             this.datagrid.EnableHeadersVisualStyles = false;
             this.datagrid.GridColor = System.Drawing.Color.White;
@@ -335,6 +346,8 @@
             this.datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagrid.Size = new System.Drawing.Size(751, 241);
             this.datagrid.TabIndex = 3;
+            this.datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_CellClick);
+            this.datagrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_CellDoubleClick);
             // 
             // Column1
             // 
@@ -346,21 +359,56 @@
             // 
             // Column2
             // 
+            this.Column2.DataPropertyName = "TenKichCo";
             this.Column2.HeaderText = "Kích Thước";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
+            this.Column3.DataPropertyName = "TenMau";
             this.Column3.HeaderText = "Màu Sắc";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
+            this.Column4.DataPropertyName = "Soluong";
             this.Column4.HeaderText = "Số Lượng";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Mau";
+            this.Column5.HeaderText = "Mau";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Kichco";
+            this.Column6.HeaderText = "KichCo";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Sanpham";
+            this.Column7.HeaderText = "Sanpham";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Visible = false;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Ma";
+            this.Column8.HeaderText = "Ma";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Visible = false;
             // 
             // label1
             // 
@@ -416,10 +464,6 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid datagrid;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -429,5 +473,13 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_mau;
         private Bunifu.Framework.UI.BunifuFlatButton btn_xoa;
         private Bunifu.Framework.UI.BunifuFlatButton btn_sua;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }

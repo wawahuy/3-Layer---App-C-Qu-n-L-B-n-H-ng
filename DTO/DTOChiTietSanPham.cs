@@ -14,6 +14,16 @@ namespace DTO
         private DTOKichCo kichco;
         private int soluong;
 
+        public string TenMau
+        {
+            get { return mau.Ten; }
+        }
+
+        public string TenKichCo
+        {
+            get { return kichco.Ten; }
+        }
+
         public int Ma
         {
             get

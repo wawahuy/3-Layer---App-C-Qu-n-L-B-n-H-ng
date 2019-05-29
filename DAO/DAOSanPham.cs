@@ -72,6 +72,14 @@ namespace DAO
         }
 
 
+        public List<DTO.DTOSanPham> layQuaMaKRB(int ma){
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select * from sanpham where masp = @ma")
+                        .BindParam("@ma", ma)
+                        .ExecuteReader());
+        }
+
         public List<DTO.DTOSanPham> lay()
         {
             return TachDTO(

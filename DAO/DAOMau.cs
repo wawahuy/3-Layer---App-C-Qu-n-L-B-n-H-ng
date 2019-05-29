@@ -72,6 +72,15 @@ namespace DAO
                         .ExecuteReader());
         }
 
+        public List<DTO.DTOMau> layQuaMaKRB(int ma)
+        {
+            return TachDTO(
+                    new DAOSql()
+                        .Query("Select * from mausp where mamau = @ma")
+                        .BindParam("@ma", ma)
+                        .ExecuteReader());
+        }
+
 
         public List<DTO.DTOMau> timKiemTen(string ten)
         {
